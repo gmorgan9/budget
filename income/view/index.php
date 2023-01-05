@@ -30,7 +30,7 @@ session_start();
             } else {
               echo "Error updating record: " . mysqli_error($conn);
             }
-            $_SESSION['firstname']         = $row['firstname'];
+            $_SESSION['firstname']        = $row['firstname'];
             $_SESSION['user_id']          = $row['user_id'];
             $_SESSION['loggedin']         = $row['loggedin'];
             $_SESSION['user_idno']        = $row['idno'];
@@ -126,41 +126,50 @@ session_start();
 <html lang="en">
 <head>
     <!-- APPLE HOME SCREEN META TAGS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- <link rel="apple-touch-icon" href="assets/images/gm.png"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- <link rel="apple-touch-icon" href="assets/images/gm.png"> -->
+    <!-- END APPLE TAGS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
     <title>Budget</title>
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- end bootstrap -->
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="style.css">
-
-
+        <link rel="stylesheet" href="style.css">
+    <!-- end custom styles -->
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
 
     <?php 
+    $person_idno = $_SESSION['idno'];
+    $select2 = " SELECT * FROM users WHERE idno = '$person_idno' ";
+    $result2 = mysqli_query($conn, $select2);
+    if (mysqli_num_rows($result2) > 0) {
+        while($row1 = mysqli_fetch_assoc($result2)) {
+            $account_link    = $row1['account_link'];
+    }}
+
 
     $inc_id = $_GET['id'];
-    $select = " SELECT * FROM income WHERE inc_id = '$inc_id' ";
+    $select = " SELECT * FROM income WHERE inc_id = '$inc_id' AND account_link = '$account_link'";
     $result = mysqli_query($conn, $select);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $description    = $row['description'];
-            $firstname    = $row['firstname'];
-            $lastname     = $row['lastname'];
-            $loggedin     = $row['loggedin'];
-            $role         = $row['isadmin'];
-            $profile_pic  = $row['profile_picture'];
-            $account_link = $row['account_link'];
+            $amount         = $row['amount'];
+            $date_gained    = $row['date_gained'];
+            $cat_idno       = $row['cat_idno'];
+            $card_idno      = $row['card_idno'];
+            $comments       = $row['comments'];
+            // $account_link   = $row['account_link'];
     }}
 
     ?>
@@ -182,9 +191,9 @@ session_start();
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
-                <input type="hidden" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
-                <input type="hidden" class="form-control" name="person_ln" value="<?php echo $lastname;?>">
-                <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
+                <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
+                <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
+                <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
@@ -193,17 +202,27 @@ session_start();
                 <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
                 <div class="mb-3 input-group">
                     <span class="input-group-text" id="basic-addon1">$</span>
-                    <input type="text" name="amount" class="form-control" id="amount">
+                    <input type="text" name="amount" class="form-control" id="amount" value="<?php echo $amount ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Spent</label>
-                    <input type="date" name="date_gained" class="form-control" id="amount">
+                    <label for="date" class="form-label text-white">Date Gained</label>
+                    <input type="date" name="date_gained" class="form-control" id="date" value="<?php echo $date_gained ?>">
                 </div>
                 <div class="row">
                 <div class="mb-3 w-50">
+                    <?php 
+                        $select3 = " SELECT * FROM categories WHERE idno = '$cat_idno'";
+                        $result3 = mysqli_query($conn, $select3);
+                        if (mysqli_num_rows($result3) > 0) {
+                            while($row2 = mysqli_fetch_assoc($result3)) {
+                                $cat_name           = $row2['name'];
+                        }}
+
+                    ?>
+
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
-                        <option value="">Select one...</option>
+                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_name; ?></option>
                         <?php
                         $query ="SELECT * FROM categories";
                         $result = $conn->query($query);
@@ -219,9 +238,19 @@ session_start();
                     </select>
                 </div>
                 <div class="mb-3 w-50">
+
+                    <?php 
+                        $select4 = " SELECT * FROM card WHERE idno = '$card_idno'";
+                        $result4 = mysqli_query($conn, $select4);
+                        if (mysqli_num_rows($result4) > 0) {
+                            while($row3 = mysqli_fetch_assoc($result4)) {
+                                $card_name           = $row3['name'];
+                        }}
+
+                    ?>
                     <label for="date" class="form-label text-white">Card</label>
                     <select name="card_idno" id="card" class="form-control">
-                        <option value="">Select one...</option>
+                        <option value="<?php echo $card_idno; ?>"><?php echo $card_name; ?></option>
                         <?php
                         $query ="SELECT * FROM cards";
                         $result = $conn->query($query);
@@ -239,7 +268,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
-                    <textarea class="form-control" name="comments" id="comment"></textarea>
+                    <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
                 </div>
                 <button type="submit" name="inc" class="btn btn-secondary">Submit</button>
             </form>
