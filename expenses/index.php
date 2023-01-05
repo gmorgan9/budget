@@ -65,7 +65,7 @@ session_start();
                     $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
-                    echo "<b>Expenses Records:</b> $rowtotal[0]";
+                    echo "<b>Expense Records:</b> $rowtotal[0]";
 
                     ?>
                 </p>
