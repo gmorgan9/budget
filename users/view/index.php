@@ -117,6 +117,7 @@ session_start();
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $firstname    = $row['firstname'];
+            $lastname     = $row['lastname'];
             $amount         = $row['amount'];
             $date_gained    = $row['date_gained'];
             $cat_idno       = $row['cat_idno'];
