@@ -1,6 +1,6 @@
 <?php
-require_once "../../database/connection.php";
-require_once "../../path.php";
+require_once "../database/connection.php";
+require_once "../path.php";
 session_start();
 ?>
 <?php
@@ -104,7 +104,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../style.css">
     <!-- end custom styles -->
 
 </head>
