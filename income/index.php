@@ -63,7 +63,7 @@ session_start();
             // $status         = $row['status'];
             ?>
     <tr>
-        <th scope="row" style="width: 15px;"><?php echo $idno; ?></th>
+        <th class="text-center" scope="row" style="width: 15px;"><?php echo $idno; ?></th>
         <td><?php echo $description; ?></td>
         <td style="width: 20px;">
           <div class="d-flex">
