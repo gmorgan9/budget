@@ -99,13 +99,6 @@ if(mysqli_num_rows($result) > 0){
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
-<?php 
-if(isset($_SESSION['username'])) {
-echo $_SESSION['username']; 
-}
-else {
-    echo "not";
-}?>
     <div class="login">
 
         <div class="mt-4"></div>
