@@ -82,7 +82,7 @@ session_start();
         }else {
             $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_spent')";
             mysqli_query($conn, $insert);
-            //   header('location: all_posts.php');
+            header('location: /');
         }
   
     };
@@ -115,7 +115,7 @@ session_start();
         }else {
             $insert = "INSERT INTO income (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_gained')";
             mysqli_query($conn, $insert);
-            //header('location: all_posts.php');
+            header('location: /');
         }
 
     };
