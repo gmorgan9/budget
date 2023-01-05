@@ -134,7 +134,7 @@ if(mysqli_num_rows($result) > 0){
         <section class="active" data-page="home">
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Welcome, <?php echo $_SESSION['firstname']; ?>!
+                Welcome, <?php echo $firstname; ?>!
             </h2>
             <p class="date text-muted">
                 Wednesday, January  4th, 2023
