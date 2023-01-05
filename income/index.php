@@ -3,6 +3,17 @@ require_once "../database/connection.php";
 require_once "../path.php";
 session_start();
 ?>
+<?php 
+
+// delete income
+    if (isset($_POST['delete'])) {
+        $delete = "DELETE FROM income WHERE inc_id = '".$_POST['inc_id']."'";
+        $terUpdateResult = mysqli_query($conn, $delete);
+        header('location: /');
+    }
+// end delete income
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
