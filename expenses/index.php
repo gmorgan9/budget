@@ -42,15 +42,15 @@ session_start();
 
             <div class="mt-4"></div>
             <?php 
-                $month = date('F');
+                $month_year = date('F Y');
                 
                 ?>
             <h2 class="text-white">
-                <?php echo $month; ?>Expenses
+                <?php echo $month_year; ?> Expenses
             </h2>
             
             <p class="text-muted">
-                Compliled list of Expenses for <?php echo $month; ?>.
+                Compliled list of Expenses for <?php echo $month_year; ?>.
             </p>
             <hr>
             <div class="mt-4"></div>
