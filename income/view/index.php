@@ -120,6 +120,31 @@ session_start();
 
     };
 // end add income
+
+// update income
+    if(isset($_POST['update_inc'])){
+        $idno  = rand(10000, 99999);
+        $description = mysqli_real_escape_string($conn, $_POST['description']);
+        $amount = mysqli_real_escape_string($conn, $_POST['amount']);
+        $comments = mysqli_real_escape_string($conn, $_POST['comments']);
+        $date_gained = mysqli_real_escape_string($conn, $_POST['date_gained']);
+        $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
+        $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
+        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
+        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
+        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
+    
+    
+        date_default_timezone_set('America/Denver');
+        $date = date('F d, Y, g:i a', time());
+    
+        $insert = "UPDATE income SET description = '$description', amount = '$amount', comments = '$comments', date_gained = '$date_gained', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE inc_id = '".$_POST['inc_id']."'";
+        mysqli_query($conn, $insert);
+        header("location: /");
+    
+      };
+// end update income
 ?>
 
 <!DOCTYPE html>
@@ -270,7 +295,7 @@ session_start();
                     <label for="comment" class="form-label text-white">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
                 </div>
-                <button type="submit" name="inc" class="btn btn-secondary">Submit</button>
+                <button type="submit" name="update_inc" class="btn btn-secondary">Update</button>
             </form>
         </section>
 
