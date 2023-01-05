@@ -67,6 +67,7 @@ session_start();
         $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
         $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
         $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
         // $created_date = date("F j, Y");
         // $created_time = date("g:i a");
   
@@ -79,7 +80,7 @@ session_start();
             $error[] = 'expense already exist!';
   
         }else {
-            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_spent')";
+            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_spent')";
             mysqli_query($conn, $insert);
             //   header('location: all_posts.php');
         }
@@ -99,6 +100,7 @@ session_start();
         $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
         $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
         $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
         // $created_date = date("F j, Y");
         // $created_time = date("g:i a");
 
@@ -111,7 +113,7 @@ session_start();
             $error[] = 'income already exist!';
 
         }else {
-            $insert = "INSERT INTO income (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_gained')";
+            $insert = "INSERT INTO income (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_gained')";
             mysqli_query($conn, $insert);
             //header('location: all_posts.php');
         }
@@ -189,6 +191,7 @@ session_start();
             $loggedin     = $row['loggedin'];
             $role         = $row['isadmin'];
             $profile_pic  = $row['profile_picture'];
+            $account_link = $row['account_link'];
     }}
 
     ?>
@@ -299,6 +302,7 @@ session_start();
                 <input type="hidden" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
                 <input type="hidden" class="form-control" name="person_ln" value="<?php echo $lastname;?>">
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
+                <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
@@ -373,6 +377,7 @@ session_start();
                 <input type="hidden" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
                 <input type="hidden" class="form-control" name="person_ln" value="<?php echo $lastname;?>">
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
+                <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
