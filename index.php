@@ -98,7 +98,7 @@ if(mysqli_num_rows($result) > 0){
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
-
+<?php echo $_SESSION['username']; ?>
     <div class="login">
 
         <div class="mt-4"></div>
