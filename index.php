@@ -308,7 +308,7 @@ session_start();
                                     $result=mysqli_query($conn,$sql);
                                     $month_expenses=mysqli_fetch_array($result); 
                                     $m_expenses = $month_expenses[0];
-                                    if($count_y_income == 0){
+                                    if($count_m_expenses == 0){
                                         echo "$0";
                                     } else {
                                         echo "$$month_expenses[0]";
@@ -323,11 +323,21 @@ session_start();
                             <h3 class="card-title text-center">Yearly</h3>
                             <p class="card-text fs-5 text-center">
                                 <?php
+                                $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_y_expenses = $rowtotal[0];
+                                ?>
+                                <?php
                                     $sql="SELECT sum(amount) FROM expenses WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $year_expenses=mysqli_fetch_array($result); 
                                     $y_expenses = $year_expenses[0];
-                                    echo "$$year_expenses[0]";
+                                    if($count_m_expenses == 0){
+                                        echo "$0";
+                                    } else {
+                                        echo "$$year_expenses[0]";
+                                    }
                                 ?>
                             </p>
                         </div>
