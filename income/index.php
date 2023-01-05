@@ -51,7 +51,7 @@ session_start();
             <div class="mt-4"></div>
 
             <?php 
-                $some_time = strtotime("last day of January 2023");
+                $some_time = strtotime("last day of current month");
                 echo date('F d, Y', $some_time);
                 
                 ?>
