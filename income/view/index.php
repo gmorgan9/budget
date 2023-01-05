@@ -211,18 +211,18 @@ session_start();
                 <div class="row">
                 <div class="mb-3 w-50">
                     <?php 
-                        $select2 = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
-                        $result2 = mysqli_query($conn, $select2);
-                        if (mysqli_num_rows($result2) > 0) {
-                            while($row2 = mysqli_fetch_assoc($result2)) {
-                                $cat_name    = $row2['name'];
-                        }}
+                        // $select2 = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
+                        // $result2 = mysqli_query($conn, $select2);
+                        // if (mysqli_num_rows($result2) > 0) {
+                        //     while($row2 = mysqli_fetch_assoc($result2)) {
+                        //         $cat_name    = $row2['name'];
+                        // }}
 
                     ?>
 
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
-                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_name; ?></option>
+                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_idno; ?></option>
                         <?php
                         $query ="SELECT * FROM categories";
                         $result = $conn->query($query);
