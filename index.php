@@ -238,7 +238,8 @@ session_start();
                           ?>
                             
                             <?php
-                                $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                // $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '2023-02-01' AND '2023-02-28' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
                                 $month_income=mysqli_fetch_array($result); 
                                 $m_income = $month_income[0];
