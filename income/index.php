@@ -51,7 +51,7 @@ session_start();
             <div class="mt-4"></div>
 
             <?php 
-                $date = date();
+                $date = date('m/d/Y');
                 $last_date = strtotime($date);
                 
                 ?>
@@ -66,7 +66,7 @@ session_start();
 
                     ?>
 
-                    
+
             <table class=" table table-bordered">
                 <thead style="background-color: white;">
                   <tr>
