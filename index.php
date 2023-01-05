@@ -232,8 +232,8 @@ session_start();
                             <?php
                                 $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
-                                $rowtotal=mysqli_fetch_array($result); 
-                                echo "$$rowtotal[0]";
+                                $month_income=mysqli_fetch_array($result); 
+                                echo "$$month_income[0]";
                             ?>
                           </p>
                         </div>
@@ -274,8 +274,8 @@ session_start();
                                 <?php
                                     $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
-                                    $rowtotal=mysqli_fetch_array($result); 
-                                    echo "$$rowtotal[0]";
+                                    $month_expenses=mysqli_fetch_array($result); 
+                                    echo "$$month_expenses[0]";
                                 ?>
                             </p>
                         </div>
@@ -306,23 +306,6 @@ session_start();
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
                             <?php 
-                                    $month_year = date('F Y');
-                                    $firstday = strtotime("first day of ". $month_year);
-                                    $first_day = date('Y-m-d', $firstday);
-                                    $month_year = date('F Y');
-                                    $lastday = strtotime("last day of ". $month_year);
-                                    $last_day = date('Y-m-d', $lastday);
-                                ?>
-                                <?php
-                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                    $result=mysqli_query($conn,$sql);
-                                    $mon_expenses=mysqli_fetch_array($result);
-                                ?>
-                                <?php
-                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                    $result=mysqli_query($conn,$sql);
-                                    $mon_income=mysqli_fetch_array($result);
-
                                     $month_total = $mon_income - $mon_expenses;
                                 ?>
                                 <?php echo $month_total; ?>
