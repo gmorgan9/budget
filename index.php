@@ -322,7 +322,7 @@ session_start();
                             <h5 class="card-title text-center">Monthly</h5>
                             <p class="card-text fs-1 text-center">
                                 <?php 
-                                    $year_total = $y_income - $y_expenses;
+                                    $year_total = $y_income - $y_income;
                                     echo "$$year_total"; 
                                 ?>
                             </p>
