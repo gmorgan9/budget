@@ -45,7 +45,7 @@ session_start();
   <thead style="background-color: white;">
     <tr>
       <th class="text-center" scope="col-1">ID #</th>
-      <th class="text-center" scope="col">Title</th>
+      <th scope="col">Title</th>
       <!-- <th scope="col"></th> -->
       <th class="text-center" scope="col">Actions</th>
     </tr>
@@ -66,7 +66,7 @@ session_start();
         <th class="text-center" scope="row" style="width: 15px;"><?php echo $idno; ?></th>
         <td><?php echo $description; ?></td>
         <td style="width: 20px;">
-          <div class="d-flex">
+          <div class="d-flex justify-content-center">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
             <form method="post" action="">
