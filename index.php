@@ -248,7 +248,7 @@ session_start();
                                     $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $year_income=mysqli_fetch_array($result);
-                                    $y_income = $yearly_income[0]; 
+                                    $y_income = $year_income[0]; 
                                     echo "$$year_income[0]";
                                 ?>
                             </p>
@@ -322,7 +322,7 @@ session_start();
                             <h5 class="card-title text-center">Monthly</h5>
                             <p class="card-text fs-1 text-center">
                                 <?php 
-                                    $year_total = $y_income - $y_income;
+                                    $year_total = $y_income - $y_expenses;
                                     echo "$$year_total"; 
                                 ?>
                             </p>
