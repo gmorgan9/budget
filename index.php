@@ -83,12 +83,14 @@ if(mysqli_num_rows($result) > 0){
             }
             .container {
                 visibility: visible;
+                display: block;
             }
         </style>
     <?php } else { ?>
         <style>
             .login {
                 visibility: visible;
+                display: block;
             }
             .container {
                 visibility: hidden;
