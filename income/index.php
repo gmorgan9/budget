@@ -51,8 +51,11 @@ session_start();
             <div class="mt-4"></div>
 
             <?php 
-                $date = date('m/d/Y');
-                $last_date = strtotime('last day of this month', $date);
+                $some_time = strtotime("last day of November 2021");
+                16
+                // Output — Last day of November 2021 will be Tuesday. 
+                17
+                echo 'Last day of November 2021 will be '.date('F d, Y', $some_time).'.';
                 
                 ?>
                     
