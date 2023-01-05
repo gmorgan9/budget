@@ -162,64 +162,6 @@ session_start();
                     <label for="date" class="form-label text-white">Date Gained</label>
                     <input type="date" name="date_gained" class="form-control" id="date" value="<?php echo $date_gained ?>">
                 </div>
-                <div class="row">
-                <div class="mb-3 w-50">
-                    <?php 
-                        $grab = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
-                        $put = mysqli_query($conn, $grab);
-                        if (mysqli_num_rows($put) > 0) {
-                            while($cap = mysqli_fetch_assoc($put)) {
-                                $cat_name    = $cap['category'];
-                        }}
-
-                    ?>
-
-                    <label for="category" class="form-label text-white">Category</label>
-                    <select name="cat_idno" id="category" class="form-control">
-                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_name; ?></option>
-                        <?php
-                        $query ="SELECT * FROM categories";
-                        $result = $conn->query($query);
-                        if($result->num_rows> 0){
-                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                        }
-                        ?>
-                        <?php 
-                            foreach ($options as $option) {
-                        ?>
-                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
-                        <?php } ?>
-                    </select>
-                </div>
-                <div class="mb-3 w-50">
-
-                    <?php 
-                        $select4 = " SELECT * FROM cards WHERE idno = '$card_idno'";
-                        $result4 = mysqli_query($conn, $select4);
-                        if (mysqli_num_rows($result4) > 0) {
-                            while($row3 = mysqli_fetch_assoc($result4)) {
-                                $card_name           = $row3['name'];
-                        }}
-
-                    ?>
-                    <label for="date" class="form-label text-white">Card</label>
-                    <select name="card_idno" id="card" class="form-control">
-                        <option value="<?php echo $card_idno; ?>"><?php echo $card_name; ?></option>
-                        <?php
-                        $query ="SELECT * FROM cards";
-                        $result = $conn->query($query);
-                        if($result->num_rows> 0){
-                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                        }
-                        ?>
-                        <?php 
-                            foreach ($options as $option) {
-                        ?>
-                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['name']; ?></option>
-                        <?php } ?>
-                    </select>
-                </div>
-                </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
