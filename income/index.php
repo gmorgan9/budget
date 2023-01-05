@@ -38,6 +38,19 @@ session_start();
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
+
+<?php
+
+    $id = $_SESSION['user_id'];
+    $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
+    $result2 = mysqli_query($conn, $select2);
+    if (mysqli_num_rows($result2) > 0) {
+        while($row2 = mysqli_fetch_assoc($result2)) {
+            $account_link    = $row2['account_link'];
+    }}
+
+?>
+
     <div class="container">
 
             <div class="mt-4"></div>
@@ -84,7 +97,7 @@ session_start();
 
                 <?php
 
-                    $sql = "SELECT * FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' ORDER BY date_gained DESC ";
+                    $sql = "SELECT * FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link' ORDER BY date_gained DESC ";
                     $all = mysqli_query($conn, $sql);
                     if($all) {
                         while ($row = mysqli_fetch_assoc($all)) {
