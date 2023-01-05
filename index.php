@@ -367,7 +367,7 @@ session_start();
                             <p class="card-text fs-5 text-center">
                                 <?php 
                                     $year_total = $y_income - $y_expenses;
-                                    if($year_total > 0) {
+                                    if($year_total < 0) {
                                         echo "<div style='color: red !important;'>$$year_total</div>";
                                     } else {
                                         echo "$$year_total";
