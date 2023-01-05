@@ -148,11 +148,11 @@ session_start();
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
 
                 <div class="row">
-                    <div class="mb-3">
+                    <div class="mb-3 w-50">
                         <label for="fn" class="form-label text-white">First Name</label>
                         <input type="text" name="firstname" class="form-control" id="fn" value="<?php echo $firstname; ?>">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 w-50">
                         <label for="ln" class="form-label text-white">Last Name</label>
                         <input type="text" name="lastname" class="form-control" id="ln" value="<?php echo $lastname; ?>">
                     </div>
