@@ -75,22 +75,22 @@ if(mysqli_num_rows($result) > 0){
     <link rel="stylesheet" href="style.css">
 
     
-    <?php if(!isset($_SESSION['username'])) {?>
+    <?php if(isset($_SESSION['username'])) {?>
         <style>
             .login {
-                display: block;
+                display: none;
             }
             .container {
-                display: none;
+                display: block;
             }
         </style>
     <?php } else { ?>
         <style>
             .login {
-                display: none;
+                display: block;
             }
             .container {
-                display: block;
+                display: none;
             }
         </style>
     <?php } ?>
