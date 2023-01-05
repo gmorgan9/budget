@@ -182,7 +182,7 @@ session_start();
         <!-- <section class="" data-page="income"> -->
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Income <?php echo $cat_idno; ?>
+                Income
             </h2>
             <p class="text-muted">
                 Enter an income to keep track of.
@@ -211,11 +211,11 @@ session_start();
                 <div class="row">
                 <div class="mb-3 w-50">
                     <?php 
-                        $select = " SELECT * FROM categories WHERE idno = '$cat_idno'";
-                        $result = mysqli_query($conn, $select);
-                        if (mysqli_num_rows($result) > 0) {
-                            while($row = mysqli_fetch_assoc($result)) {
-                                $cat_name = $row['name'];
+                        $select1 = " SELECT * FROM categories WHERE idno = '$cat_idno'";
+                        $result1 = mysqli_query($conn, $select1);
+                        if (mysqli_num_rows($result1) > 0) {
+                            while($row1 = mysqli_fetch_assoc($result1)) {
+                                $cat_name = $row1['name'];
                         }}
 
                     ?>
