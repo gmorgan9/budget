@@ -99,8 +99,8 @@ session_start();
                 <tfoot>
 
                 <?php 
-
-                $last_date = strtotime($last_date);
+                $date = date();
+                $last_date = strtotime($date);
                 
                 ?>
                     
@@ -113,7 +113,6 @@ session_start();
                     echo "Records: $rowtotal[0]";
 
                     ?>
-                </tfoot>
             </table>
 
 
