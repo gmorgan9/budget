@@ -222,7 +222,7 @@ session_start();
 
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
-                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_idno; ?></option>
+                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_name; ?></option>
                         <?php
                         $query ="SELECT * FROM categories";
                         $result = $conn->query($query);
