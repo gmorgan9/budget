@@ -41,7 +41,7 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
-            <div class="header position-fixed" style="bottom: 25;">
+            <div class="header position-fixed" >
             <h2 class="text-white">
                 Income
             </h2>
@@ -52,7 +52,7 @@ session_start();
             </div>
             <div class="mt-4"></div>
 
-            <table id="dtBasicExample" class=" table table-bordered">
+            <table id="dtBasicExample" class=" table table-bordered" style="top: 25;">
                 <thead style="background-color: white;">
                   <tr>
                     <th class="text-center" scope="col-1">ID #</th>
