@@ -45,7 +45,7 @@ session_start();
   <thead style="background-color: white;">
     <tr>
       <th scope="col-1">ID #</th>
-      <th scope="col" colspan="2">Title</th>
+      <th scope="col">Title</th>
       <!-- <th scope="col"></th> -->
       <th scope="col">Actions</th>
     </tr>
@@ -63,8 +63,8 @@ session_start();
             // $status         = $row['status'];
             ?>
     <tr>
-        <th scope="row"><?php echo $idno; ?></th>
-        <td colspan="2"><?php echo $description; ?></td>
+        <th scope="row" style="width: 15px;"><?php echo $idno; ?></th>
+        <td><?php echo $description; ?></td>
         <td>
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
