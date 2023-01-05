@@ -55,7 +55,7 @@ session_start();
                 $firstday = strtotime("first day of ". $month_year);
                 echo date('Y-m-d', $firstday);
                 $month_year = date('F Y');
-                $lastday = strtotime("last day of ". $month_year);
+                $lastday = strtotime('Y-m-d', "last day of ". $month_year);
                 echo date('Y-m-d', $lastday);
                 
                 ?>
