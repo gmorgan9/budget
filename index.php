@@ -220,7 +220,15 @@ session_start();
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
                           <h5 class="card-title text-center">Monthly</h5>
-                          <p class="card-text fs-1 text-center">1</p>
+                          <p class="card-text fs-1 text-center">
+                            <?php
+
+                                $sql = mysql_query("SELECT SUM(Value) as total FROM income");
+                                $row = mysql_fetch_array($sql);
+                                $sum = $row['total'];
+
+                            ?>
+                          </p>
                           <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
                     </div>
