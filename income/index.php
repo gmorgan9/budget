@@ -52,15 +52,18 @@ session_start();
 
             <?php 
                 $month_year = date('F Y');
-                $some_time = strtotime("last day of ". $month_year);
-                echo date('F d, Y', $some_time);
+                $firstday = strtotime("first day of ". $month_year);
+                echo date('F d, Y', $firstday);
+                $month_year = date('F Y');
+                $lastday = strtotime("last day of ". $month_year);
+                echo date('F d, Y', $lastday);
                 
                 ?>
                     
                     Records:  <?php echo $last_date; ?>
                     <?php 
 
-                    $sql="SELECT count('1') FROM income";
+                    $sql="SELECT count('1') FROM income where date gained";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "Records: $rowtotal[0]";
