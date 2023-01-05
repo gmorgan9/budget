@@ -67,10 +67,10 @@ session_start();
         <td><?php echo $description; ?></td>
         <td style="width: 20px;">
           <div class="d-flex justify-content-center">
-            <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
+            <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="view/index.php?id=<?php echo $inc_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
             <form method="post" action="">
-              <input type="hidden" name="post_id" value="<?php echo $inc_id; ?>" />
+              <input type="hidden" name="inc_id" value="<?php echo $inc_id; ?>" />
               <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
             </form>
           </div>
