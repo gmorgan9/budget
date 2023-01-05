@@ -211,12 +211,12 @@ session_start();
                 <div class="row">
                 <div class="mb-3 w-50">
                     <?php 
-                        // $select2 = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
-                        // $result2 = mysqli_query($conn, $select2);
-                        // if (mysqli_num_rows($result2) > 0) {
-                        //     while($row2 = mysqli_fetch_assoc($result2)) {
-                        //         $cat_name    = $row2['name'];
-                        // }}
+                        $grab = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
+                        $put = mysqli_query($conn, $grab);
+                        if (mysqli_num_rows($put) > 0) {
+                            while($cap = mysqli_fetch_assoc($put)) {
+                                $cat_name    = $cap['name'];
+                        }}
 
                     ?>
 
