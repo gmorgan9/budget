@@ -290,7 +290,7 @@ session_start();
             <hr>
             <div class="d-flex justify-content-center">
                 <span class="profile-img">
-                    <img src="<?php echo $profile_pic?>" alt="">
+                    <img src="<?php echo $profile_pic?>" height="150px" width="150px" style="border-radius: 100px;" alt="">
                 </span>
             </div>
             <div class="mt-3"></div>
