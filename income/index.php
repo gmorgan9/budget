@@ -46,7 +46,7 @@ session_start();
     <tr>
       <th scope="col-1">ID #</th>
       <th scope="col">Title</th>
-      <!-- <th scope="col">Status</th> -->
+      <th scope="col"></th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -81,7 +81,7 @@ session_start();
     <tr>
       <th scope="col">ID #</th>
       <th scope="col">Title</th>
-      <!-- <th scope="col">Status</th> -->
+      <th scope="col"></th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
