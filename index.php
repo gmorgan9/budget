@@ -109,13 +109,32 @@ if(mysqli_num_rows($result) > 0){
     
 <?php } else { ?>
 
+    <!-- php code -->
+
+    <?php 
+
+    $user_id = $_SESSION['user_id'];
+    $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+    $result = mysqli_query($conn, $select);
+    if (mysqli_num_rows($result) > 0) {
+        while($row = mysqli_fetch_assoc($result)) {
+            $firstname    = $row['firstname'];
+            $loggedin     = $row['loggedin'];
+            $acct_type    = $row['isadmin'];
+    }}
+
+    ?>
+
+    <!-- end php code -->
+
+
     <div class="container">
 
 
         <section class="active" data-page="home">
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Welcome, <?php echo $_SESSION['firstname']; ?> <?php echo $_SESSION['lastname']; ?>!
+                Welcome, <?php echo $_SESSION['firstname']; ?>!
             </h2>
             <p class="date text-muted">
                 Wednesday, January  4th, 2023
