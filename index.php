@@ -152,6 +152,7 @@ if(isset($_POST['expense'])){
     $result = mysqli_query($conn, $select);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
+            $user_idno    = $row['idno'];
             $firstname    = $row['firstname'];
             $lastname     = $row['lastname'];
             $loggedin     = $row['loggedin'];
@@ -264,7 +265,9 @@ if(isset($_POST['expense'])){
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
-                <input type="text" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
+                <input type="hidden" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
+                <input type="hidden" class="form-control" name="person_ln" value="<?php echo $lastname;?>">
+                <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" class="form-control" id="desc">
