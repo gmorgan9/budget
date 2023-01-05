@@ -232,7 +232,7 @@ session_start();
                             ?>
                             <?php
 
-                                $sql="SELECT count(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
                                 $rowtotal=mysqli_fetch_array($result); 
                                 echo "<b>Income Records:</b> $rowtotal[0]";
