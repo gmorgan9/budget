@@ -41,13 +41,14 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
-            <h2 class="text-white">
-                Expenses
-            </h2>
             <?php 
                 $month = date('F');
                 
                 ?>
+            <h2 class="text-white">
+                <?php echo $month; ?>Expenses
+            </h2>
+            
             <p class="text-muted">
                 Compliled list of Expenses for <?php echo $month; ?>.
             </p>
