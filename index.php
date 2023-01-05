@@ -27,10 +27,10 @@ session_start();
     <?php if(!isset($_SESSION['username'])) {?>
         <style>
             .login {
-                display: none;
+                display: block;
             }
             .container {
-                display: block;
+                display: none;
             }
         </style>
     <?php } else { ?>
