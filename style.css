@@ -80,11 +80,11 @@
      * shadow
      */
     
-    /* --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
     --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25); */
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
   
     /**
      * transition
@@ -105,6 +105,9 @@ section.active {
     height: auto;
     display: block;
     color: white;
+}
+.card {
+    background-color: #4c4c4c !important;
 }
 
 button {
