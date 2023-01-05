@@ -53,17 +53,17 @@ session_start();
             <?php 
                 $month_year = date('F Y');
                 $firstday = strtotime("first day of ". $month_year);
-                echo date('Y-m-d', $firstday);
+                $first_day = date('Y-m-d', $firstday);
                 $month_year = date('F Y');
                 $lastday = strtotime("last day of ". $month_year);
-                echo $lastday;
+                $last_day = date('Y-m-d', $lastday);
                 
                 ?>
                     
                     Records:  <?php echo $last_date; ?>
                     <?php 
 
-                    $sql="SELECT count('1') FROM income where date_gained BETWEEN '$firstday' AND '$lastday'";
+                    $sql="SELECT count('1') FROM income where date_gained BETWEEN '$first_day' AND '$last_day'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "Records: $rowtotal[0]";
