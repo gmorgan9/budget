@@ -55,73 +55,7 @@ session_start();
     };
 // end login
 
-// add expense
-    if(isset($_POST['exp'])){
-        $idno  = rand(10000, 99999); // figure how to not allow duplicates
-        $description = mysqli_real_escape_string($conn, $_POST['description']);
-        $amount = mysqli_real_escape_string($conn, $_POST['amount']);
-        $comments = mysqli_real_escape_string($conn, $_POST['comments']);
-        $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
-        $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
-        $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
-        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
-        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
-        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
-        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
-        // $created_date = date("F j, Y");
-        // $created_time = date("g:i a");
-  
-        $select = " SELECT * FROM expenses WHERE idno = '$idno'";
-  
-        $result = mysqli_query($conn, $select);
-  
-        if(mysqli_num_rows($result) > 0){
-  
-            $error[] = 'expense already exist!';
-  
-        }else {
-            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_spent')";
-            mysqli_query($conn, $insert);
-            header('location: /');
-        }
-  
-    };
-// end add expense
-
-// add income
-    if(isset($_POST['inc'])){
-        $idno  = rand(10000, 99999); // figure how to not allow duplicates
-        $description = mysqli_real_escape_string($conn, $_POST['description']);
-        $amount = mysqli_real_escape_string($conn, $_POST['amount']);
-        $comments = mysqli_real_escape_string($conn, $_POST['comments']);
-        $date_gained = mysqli_real_escape_string($conn, $_POST['date_gained']);
-        $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
-        $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
-        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
-        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
-        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
-        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
-        // $created_date = date("F j, Y");
-        // $created_time = date("g:i a");
-
-        $select = " SELECT * FROM income WHERE idno = '$idno'";
-
-        $result = mysqli_query($conn, $select);
-
-        if(mysqli_num_rows($result) > 0){
-
-            $error[] = 'income already exist!';
-
-        }else {
-            $insert = "INSERT INTO income (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, account_link, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$account_link', '$card_idno', '$date_gained')";
-            mysqli_query($conn, $insert);
-            header('location: /');
-        }
-
-    };
-// end add income
-
-// update income
+// update expenses
     if(isset($_POST['update_exp'])){
         $idno  = rand(10000, 99999);
         $description = mysqli_real_escape_string($conn, $_POST['description']);
@@ -139,12 +73,12 @@ session_start();
         date_default_timezone_set('America/Denver');
         $date = date('F d, Y, g:i a', time());
     
-        $insert = "UPDATE expenses SET description = '$description', amount = '$amount', comments = '$comments', date_gained = '$date_gained', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE inc_id = '".$_POST['inc_id']."'";
+        $insert = "UPDATE expenses SET description = '$description', amount = '$amount', comments = '$comments', date_gained = '$date_gained', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE exp_id = '".$_POST['exp_id']."'";
         mysqli_query($conn, $insert);
         header("location: /");
     
       };
-// end update income
+// end update expenses
 ?>
 
 <!DOCTYPE html>
@@ -183,14 +117,14 @@ session_start();
     }}
 
 
-    $inc_id = $_GET['id'];
+    $exp_id = $_GET['id'];
     $select = " SELECT * FROM expenses WHERE exp_id = '$exp_id' AND account_link = '$account_link'";
     $result = mysqli_query($conn, $select);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $description    = $row['description'];
             $amount         = $row['amount'];
-            $date_gained    = $row['date_gained'];
+            $date_spent    = $row['date_spent'];
             $cat_idno       = $row['cat_idno'];
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
@@ -207,16 +141,16 @@ session_start();
         <!-- <section class="" data-page="income"> -->
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Income
+                Expenses
             </h2>
             <p class="text-muted">
-                Enter an income to keep track of.
+                Enter an expenses to keep track of.
             </p>
             <hr>
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
-                <input type="hidden" class="form-control" name="inc_id" value="<?php echo $inc_id;?>">
+                <input type="hidden" class="form-control" name="exp_id" value="<?php echo $exp_id;?>">
                 <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
                 <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
                 <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
@@ -296,7 +230,7 @@ session_start();
                     <label for="comment" class="form-label text-white">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
                 </div>
-                <button type="submit" name="update_inc" class="btn btn-secondary">Update</button>
+                <button type="submit" name="update_exp" class="btn btn-secondary">Update</button>
             </form>
         </section>
 
