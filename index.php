@@ -74,34 +74,12 @@ if(mysqli_num_rows($result) > 0){
     <!-- custom styles -->
     <link rel="stylesheet" href="style.css">
 
-    
-    <?php if(isset($_SESSION['username'])) {?>
-        <style>
-            .login {
-                visibility: hidden;
-                display: none;
-            }
-            .container {
-                visibility: visible;
-                display: block;
-            }
-        </style>
-    <?php } else { ?>
-        <style>
-            .login {
-                visibility: visible;
-                display: block;
-            }
-            .container {
-                visibility: hidden;
-                display: none;
-            }
-        </style>
-    <?php } ?>
 
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
+
+<?php if(isset($_SESSION['username'])) {?>
 
     <div class="login">
 
@@ -129,7 +107,8 @@ if(mysqli_num_rows($result) > 0){
 
     </div>
     
-    
+<?php } else { ?>
+
     <div class="container">
 
 
@@ -333,6 +312,8 @@ if(mysqli_num_rows($result) > 0){
 
 
     </div>
+
+<?php } ?>
 
     <!-- custom script -->
     <script src="script.js"></script>
