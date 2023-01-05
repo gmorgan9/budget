@@ -41,6 +41,7 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
+            <div class="header position-sticky">
             <h2 class="text-white">
                 Income
             </h2>
@@ -48,6 +49,7 @@ session_start();
                 Enter an income to keep track of.
             </p>
             <hr>
+            </div>
             <div class="mt-4"></div>
 
             <table id="dtBasicExample" class=" table table-bordered">
