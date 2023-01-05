@@ -247,8 +247,9 @@ session_start();
                                 <?php
                                     $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
-                                    $rowtotal=mysqli_fetch_array($result); 
-                                    echo "$$rowtotal[0]";
+                                    $year_income=mysqli_fetch_array($result);
+                                    $y_income = $yearly_income[0]; 
+                                    echo "$$year_income[0]";
                                 ?>
                             </p>
                         </div>
@@ -290,8 +291,9 @@ session_start();
                                 <?php
                                     $sql="SELECT sum(amount) FROM expenses WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
-                                    $rowtotal=mysqli_fetch_array($result); 
-                                    echo "$$rowtotal[0]";
+                                    $year_expenses=mysqli_fetch_array($result); 
+                                    $y_expenses = $year_expenses[0];
+                                    echo "$$year_expenses[0]";
                                 ?>
                             </p>
                         </div>
@@ -307,12 +309,10 @@ session_start();
                         <div class="card-body">
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
-                            <?php 
+                                <?php 
                                     $month_total = $m_income - $m_expenses;
+                                    echo "$$month_total"; 
                                 ?>
-                                <?php echo "$$month_total"; ?>
-
-
                             </p>
                         </div>
                     </div>
@@ -320,8 +320,12 @@ session_start();
                     <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
                             <h5 class="card-title text-center">Monthly</h5>
-                            <p class="card-text fs-1 text-center">6</p>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <p class="card-text fs-1 text-center">
+                                <?php 
+                                    $year_total = $y_income - $y_expenses;
+                                    echo "$$year_total"; 
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div>
