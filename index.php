@@ -102,16 +102,16 @@ session_start();
         // $created_date = date("F j, Y");
         // $created_time = date("g:i a");
 
-        $select = " SELECT * FROM expenses WHERE idno = '$idno'";
+        $select = " SELECT * FROM income WHERE idno = '$idno'";
 
         $result = mysqli_query($conn, $select);
 
         if(mysqli_num_rows($result) > 0){
 
-            $error[] = 'expense already exist!';
+            $error[] = 'income already exist!';
 
         }else {
-            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_gained')";
+            $insert = "INSERT INTO income (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_gained')";
             mysqli_query($conn, $insert);
             //header('location: all_posts.php');
         }
