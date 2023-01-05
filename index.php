@@ -235,7 +235,7 @@ session_start();
                                 $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
                                 $rowtotal=mysqli_fetch_array($result); 
-                                echo "$ $rowtotal[0]";
+                                echo "$$rowtotal[0]";
 
 
                             ?>
@@ -247,8 +247,14 @@ session_start();
                     <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
                             <h5 class="card-title text-center">Yearly</h5>
-                            <p class="card-text fs-1 text-center">2</p>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            <p class="card-text fs-1 text-center">
+                                <?php
+                                    $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    echo "$$rowtotal[0]";
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div>
