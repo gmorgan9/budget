@@ -63,7 +63,7 @@ if(isset($_POST['expense'])){
     $comments = mysqli_real_escape_string($conn, $_POST['comments']);
     $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
     $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
-    $card = mysqli_real_escape_string($conn, $_POST['card']);
+    $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
     $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
     $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
     $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
@@ -79,7 +79,7 @@ if(isset($_POST['expense'])){
        $error[] = 'expense already exist!';
   
     }else {
-          $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card', '$date_spent')";
+          $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_spent')";
           mysqli_query($conn, $insert);
         //   header('location: all_posts.php');
        }
@@ -281,10 +281,9 @@ if(isset($_POST['expense'])){
                     <input type="date" name="date_spent" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Spent</label>
-                    <select style="width: 99%;" name="cat_idno" class="form-control">
+                    <label for="category" class="form-label text-white">Category</label>
+                    <select name="cat_idno" id="category" class="form-control">
                         <option value="">Select one...</option>
-                        <!-- <option value="none">None</option> -->
                         <?php
                         $query ="SELECT * FROM categories";
                         $result = $conn->query($query);
@@ -292,16 +291,30 @@ if(isset($_POST['expense'])){
                           $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
                         }
                         ?>
-                <?php 
-                    foreach ($options as $option) {
-                ?>
-                <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
-                <?php } ?>
-            </select>
+                        <?php 
+                            foreach ($options as $option) {
+                        ?>
+                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Spent</label>
-                    <input type="date" name="date_spent" class="form-control" id="amount">
+                    <label for="date" class="form-label text-white">Card</label>
+                    <select name="card_idno" id="card" class="form-control">
+                        <option value="">Select one...</option>
+                        <?php
+                        $query ="SELECT * FROM cards";
+                        $result = $conn->query($query);
+                        if($result->num_rows> 0){
+                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        }
+                        ?>
+                        <?php 
+                            foreach ($options as $option) {
+                        ?>
+                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['name']; ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
