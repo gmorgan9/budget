@@ -63,7 +63,7 @@ session_start();
                     Records:  <?php echo $last_date; ?>
                     <?php 
 
-                    $sql="SELECT count('1') FROM income where date gained";
+                    $sql="SELECT count('1') FROM income where date_gained BETWEEN '$firstday' AND '$lastday'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "Records: $rowtotal[0]";
