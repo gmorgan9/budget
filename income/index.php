@@ -53,10 +53,10 @@ session_start();
             <?php 
                 $month_year = date('F Y');
                 $firstday = strtotime("first day of ". $month_year);
-                echo date('F d, Y', $firstday);
+                echo date('Y-m-d', $firstday);
                 $month_year = date('F Y');
                 $lastday = strtotime("last day of ". $month_year);
-                echo date('F d, Y', $lastday);
+                echo date('Y-m-d', $lastday);
                 
                 ?>
                     
