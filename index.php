@@ -319,8 +319,8 @@ session_start();
 
                     <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Monthly</h5>
-                            <p class="card-text fs-1 text-center">
+                            <h3 class="card-title text-center">Yearly</h3>
+                            <p class="card-text fs-5 text-center">
                                 <?php 
                                     $year_total = $y_income - $y_expenses;
                                     echo "$$year_total"; 
