@@ -65,7 +65,7 @@ session_start();
     <tr>
         <th scope="row" style="width: 15px;"><?php echo $idno; ?></th>
         <td><?php echo $description; ?></td>
-        <td>
+        <td style="width: 20px;">
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
