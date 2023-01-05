@@ -56,37 +56,68 @@ session_start();
 // end login
 
 // add expense
-if(isset($_POST['exp'])){
-    $idno  = rand(10000, 99999); // figure how to not allow duplicates
-    $description = mysqli_real_escape_string($conn, $_POST['description']);
-    $amount = mysqli_real_escape_string($conn, $_POST['amount']);
-    $comments = mysqli_real_escape_string($conn, $_POST['comments']);
-    $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
-    $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
-    $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
-    $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
-    $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
-    $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
-    // $created_date = date("F j, Y");
-    // $created_time = date("g:i a");
+    if(isset($_POST['exp'])){
+        $idno  = rand(10000, 99999); // figure how to not allow duplicates
+        $description = mysqli_real_escape_string($conn, $_POST['description']);
+        $amount = mysqli_real_escape_string($conn, $_POST['amount']);
+        $comments = mysqli_real_escape_string($conn, $_POST['comments']);
+        $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
+        $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
+        $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
+        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
+        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
+        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        // $created_date = date("F j, Y");
+        // $created_time = date("g:i a");
   
-    $select = " SELECT * FROM expenses WHERE idno = '$idno'";
+        $select = " SELECT * FROM expenses WHERE idno = '$idno'";
   
-    $result = mysqli_query($conn, $select);
+        $result = mysqli_query($conn, $select);
   
-    if(mysqli_num_rows($result) > 0){
+        if(mysqli_num_rows($result) > 0){
   
-       $error[] = 'expense already exist!';
+            $error[] = 'expense already exist!';
   
-    }else {
-          $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_spent')";
-          mysqli_query($conn, $insert);
-        //   header('location: all_posts.php');
-       }
+        }else {
+            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_spent')";
+            mysqli_query($conn, $insert);
+            //   header('location: all_posts.php');
+        }
   
-  };
-  
+    };
 // end add expense
+
+// add income
+    if(isset($_POST['inc'])){
+        $idno  = rand(10000, 99999); // figure how to not allow duplicates
+        $description = mysqli_real_escape_string($conn, $_POST['description']);
+        $amount = mysqli_real_escape_string($conn, $_POST['amount']);
+        $comments = mysqli_real_escape_string($conn, $_POST['comments']);
+        $date_gained = mysqli_real_escape_string($conn, $_POST['date_gained']);
+        $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
+        $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
+        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
+        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
+        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        // $created_date = date("F j, Y");
+        // $created_time = date("g:i a");
+
+        $select = " SELECT * FROM expenses WHERE idno = '$idno'";
+
+        $result = mysqli_query($conn, $select);
+
+        if(mysqli_num_rows($result) > 0){
+
+            $error[] = 'expense already exist!';
+
+        }else {
+            $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card_idno, date_gained) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card_idno', '$date_gained')";
+            mysqli_query($conn, $insert);
+            //header('location: all_posts.php');
+        }
+
+    };
+// end add income
 ?>
 
 <!DOCTYPE html>
@@ -339,23 +370,65 @@ if(isset($_POST['exp'])){
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
+                <input type="hidden" class="form-control" name="person_fn" value="<?php echo $firstname;?>">
+                <input type="hidden" class="form-control" name="person_ln" value="<?php echo $lastname;?>">
+                <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <div class="mb-3">
-                    <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "Paycheck"</span></label>
-                    <input type="text" class="form-control" id="desc">
+                    <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
+                    <input type="text" name="description" class="form-control" id="desc">
+                </div>
+                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                    <input type="text" name="amount" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
-                    <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
-                    <input type="number" class="form-control" id="amount">
+                    <label for="date" class="form-label text-white">Date Spent</label>
+                    <input type="date" name="date_gained" class="form-control" id="amount">
                 </div>
-                <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Gained</label>
-                    <input type="date" class="form-control" id="amount">
+                <div class="row">
+                <div class="mb-3 w-50">
+                    <label for="category" class="form-label text-white">Category</label>
+                    <select name="cat_idno" id="category" class="form-control">
+                        <option value="">Select one...</option>
+                        <?php
+                        $query ="SELECT * FROM categories";
+                        $result = $conn->query($query);
+                        if($result->num_rows> 0){
+                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        }
+                        ?>
+                        <?php 
+                            foreach ($options as $option) {
+                        ?>
+                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <div class="mb-3 w-50">
+                    <label for="date" class="form-label text-white">Card</label>
+                    <select name="card_idno" id="card" class="form-control">
+                        <option value="">Select one...</option>
+                        <?php
+                        $query ="SELECT * FROM cards";
+                        $result = $conn->query($query);
+                        if($result->num_rows> 0){
+                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        }
+                        ?>
+                        <?php 
+                            foreach ($options as $option) {
+                        ?>
+                            <option value="<?php echo $option['idno']; ?>"><?php echo $option['name']; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
                 </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
-                    <textarea class="form-control" id="comment"></textarea>
+                    <textarea class="form-control" name="comments" id="comment"></textarea>
                 </div>
-                <button type="submit" name="exp" class="btn btn-secondary">Submit</button>
+                <button type="submit" name="inc" class="btn btn-secondary">Submit</button>
             </form>
         </section>
 
