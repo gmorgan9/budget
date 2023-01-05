@@ -137,6 +137,7 @@ if(mysqli_num_rows($result) > 0){
                 Welcome, <?php echo $firstname; ?>!
             </h2>
             <p class="date text-muted">
+                <?php echo date("F j, Y"); ?>
                 Wednesday, January  4th, 2023
             </p>
             <hr>
