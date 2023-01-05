@@ -79,6 +79,7 @@ if(mysqli_num_rows($result) > 0){
         <style>
             .login {
                 visibility: hidden;
+                display: none;
             }
             .container {
                 visibility: visible;
@@ -91,6 +92,7 @@ if(mysqli_num_rows($result) > 0){
             }
             .container {
                 visibility: hidden;
+                display: none;
             }
         </style>
     <?php } ?>
