@@ -52,9 +52,6 @@ session_start();
 
             <?php 
                 $some_time = strtotime("last day of November 2021");
-                16
-                // Output — Last day of November 2021 will be Tuesday. 
-                17
                 echo 'Last day of November 2021 will be '.date('F d, Y', $some_time).'.';
                 
                 ?>
