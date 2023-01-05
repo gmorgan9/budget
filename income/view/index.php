@@ -153,8 +153,8 @@ session_start();
     $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
     $result2 = mysqli_query($conn, $select2);
     if (mysqli_num_rows($result2) > 0) {
-        while($row1 = mysqli_fetch_assoc($result2)) {
-            $account_link    = $row1['account_link'];
+        while($row2 = mysqli_fetch_assoc($result2)) {
+            $account_link    = $row2['account_link'];
     }}
 
 
@@ -182,7 +182,7 @@ session_start();
         <!-- <section class="" data-page="income"> -->
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Income
+                Income <?php echo $cat_idno; ?>
             </h2>
             <p class="text-muted">
                 Enter an income to keep track of.
