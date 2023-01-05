@@ -106,9 +106,6 @@ section.active {
     display: block;
     color: white;
 }
-.card {
-    background-color: #4c4c4c !important;
-}
 
 button {
     font: inherit;
