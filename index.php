@@ -148,6 +148,7 @@ session_start();
 
 <?php if(!isset($_SESSION['username'])) {?>
 
+<!-- login -->
     <div class="login">
 
         <div class="mt-4"></div>
@@ -173,34 +174,32 @@ session_start();
         </form>
 
     </div>
+<!-- end login -->
     
 <?php } else { ?>
 
     <!-- php code -->
+        <?php 
 
-    <?php 
+        $user_id = $_SESSION['user_id'];
+        $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+        $result = mysqli_query($conn, $select);
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                $user_idno    = $row['idno'];
+                $firstname    = $row['firstname'];
+                $lastname     = $row['lastname'];
+                $loggedin     = $row['loggedin'];
+                $role         = $row['isadmin'];
+                $profile_pic  = $row['profile_picture'];
+                $account_link = $row['account_link'];
+        }}
 
-    $user_id = $_SESSION['user_id'];
-    $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
-    $result = mysqli_query($conn, $select);
-    if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {
-            $user_idno    = $row['idno'];
-            $firstname    = $row['firstname'];
-            $lastname     = $row['lastname'];
-            $loggedin     = $row['loggedin'];
-            $role         = $row['isadmin'];
-            $profile_pic  = $row['profile_picture'];
-            $account_link = $row['account_link'];
-    }}
-
-    ?>
-
+        ?>
     <!-- end php code -->
 
-
+<!-- Container -->
     <div class="container">
-
 
         <section class="active" data-page="home">
             <div class="mt-4"></div>
@@ -468,7 +467,6 @@ session_start();
             </div>
         </section>
 
-
         <div class="footer-nav">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
@@ -491,8 +489,9 @@ session_start();
             </nav>
         </div>
 
-
     </div>
+<!-- end Container -->
+
 
 <?php } ?>
 
