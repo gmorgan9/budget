@@ -46,7 +46,7 @@ session_start();
     <tr>
       <th class="text-center" scope="col-1">ID #</th>
       <th scope="col">Description</th>
-      <th scope="col">Amount</th>
+      <!-- <th scope="col">Amount</th> -->
       <th class="text-center" scope="col">Actions</th>
     </tr>
   </thead>
@@ -65,7 +65,7 @@ session_start();
     <tr>
         <th class="text-center" scope="row" style="width: 15px;"><?php echo $idno; ?></th>
         <td><?php echo $description; ?></td>
-        <td>$<?php echo $amount; ?></td>
+        <!-- <td>$<?php //echo $amount; ?></td> -->
         <td style="width: 20px;">
           <div class="d-flex justify-content-center">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="view/index.php?id=<?php echo $inc_id; ?>"><span class="badge text-bg-success">View</span></a>
@@ -82,7 +82,7 @@ session_start();
     <tr>
       <th class="text-center" scope="col">ID #</th>
       <th scope="col">Description</th>
-      <th scope="col">Amount</th>
+      <!-- <th scope="col">Amount</th> -->
       <th class="text-center" scope="col">Actions</th>
     </tr>
   </thead>
