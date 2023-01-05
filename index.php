@@ -306,7 +306,7 @@ session_start();
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
                             <?php 
-                                    $month_total = $mon_income - $mon_expenses;
+                                    $month_total = $month_income - $month_expenses;
                                 ?>
                                 <?php echo $month_total; ?>
 
