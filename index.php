@@ -220,7 +220,7 @@ session_start();
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
                           <h5 class="card-title text-center">Monthly</h5>
-                          <p class="card-text fs-5 text-center">
+                          <p class="card-text fs-6 text-center">
                             <?php 
                             $month_year = date('F Y');
                             $firstday = strtotime("first day of ". $month_year);
