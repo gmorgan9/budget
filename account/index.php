@@ -121,15 +121,15 @@ session_start();
     // }}
 
 
-    $user_id = $_session['user_id'];
+    $user_id = $_GET['id'];
     $select = " SELECT * FROM users WHERE user_id = '$user_id'";
     $result = mysqli_query($conn, $select);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
-            $firstname    = $row['firstname'];
-            $lastname     = $row['lastname'];
-            $email         = $row['email'];
-            $username    = $row['username'];
+            $firstname      = $row['firstname'];
+            $lastname       = $row['lastname'];
+            $email          = $row['email'];
+            $username       = $row['username'];
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
             $account_link   = $row['account_link'];

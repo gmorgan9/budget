@@ -186,6 +186,7 @@ session_start();
         $result = mysqli_query($conn, $select);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
+                $user_id      = $row['user_id'];
                 $user_idno    = $row['idno'];
                 $firstname    = $row['firstname'];
                 $lastname     = $row['lastname'];
@@ -566,7 +567,7 @@ session_start();
                     <?php } else {}?>
                     <a style="text-decoration: none;" href="expenses/"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Expenses</li></a>
                     <a style="text-decoration: none;" href="income/"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Income</li></a>
-                    <a style="text-decoration: none;" href="account/"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Edit Account</li></a>
+                    <a style="text-decoration: none;" href="account/index.php?id=<?php echo $user_id; ?>"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Edit Account</li></a>
                     <a style="text-decoration: none;" href="logout.php"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Logout</li></a>
                 </ul>
             </div>
