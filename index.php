@@ -355,7 +355,11 @@ session_start();
                             <p class="card-text fs-5 text-center">
                                 <?php 
                                     $month_total = $m_income - $m_expenses;
-                                    echo "$$month_total"; 
+                                    if($month_total < 0) {
+                                        echo "<span class='text-danger'>$$month_total</span>";
+                                    } else {
+                                        echo "$$month_total";
+                                    } 
                                 ?>
                             </p>
                         </div>
