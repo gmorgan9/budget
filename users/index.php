@@ -92,7 +92,7 @@ session_start();
                   <tr>
                   <th class="text-center" scope="col">ID #</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Account Link</th>
+                    <th scope="col">Account</th>
                     <th class="text-center" scope="col">Actions</th>
                   </tr>
                 </thead>
@@ -130,7 +130,7 @@ session_start();
                   <tr>
                     <th class="text-center" scope="col">ID #</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Account Link</th>
+                    <th scope="col">Account</th>
                     <th class="text-center" scope="col">Actions</th>
                   </tr>
                 </thead>
