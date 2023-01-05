@@ -298,7 +298,7 @@ if(mysqli_num_rows($result) > 0){
             <div class="mt-5"></div>
             <div class="d-flex justify-content-center">
                 <ul class="list-group list-group-flush w-75">
-                    <?php if($role === 1) { ?>
+                    <?php if($role == 1) { ?>
                         <a style="text-decoration: none;" href="users/"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Users</li></a>
                     <?php } else {}?>
                     <a style="text-decoration: none;" href="expenses/"><li class="list-group-item text-white text-center" style="background-color: rgb(100, 100, 100) !important;">Expenses</li></a>
