@@ -62,7 +62,7 @@ session_start();
                 <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
                 <?php
-                    $sql = "SELECT * FROM income ORDER BY date_gained ASC";
+                    $sql = "SELECT * FROM income ORDER BY date_gained DESC";
                     $all = mysqli_query($conn, $sql);
                     if($all) {
                         while ($row = mysqli_fetch_assoc($all)) {
