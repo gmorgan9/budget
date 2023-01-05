@@ -184,7 +184,7 @@ session_start();
                     <label for="password" class="form-label text-white">Password</label>
                     <input type="password" name="password" class="form-control" id="password">
                 </div>
-                <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
+                <button type="submit" name="update_acc" class="btn btn-secondary">Update</button>
             </form>
         </section>
 
