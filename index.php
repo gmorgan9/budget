@@ -223,14 +223,16 @@ session_start();
                           <p class="card-text fs-1 text-center">
                             <?php
 
-                                // $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
-                                // $result = mysqli_query($conn, $select);
+                                $select = " SELECT SUM(amount) as total FROM income";
+                                $result = mysqli_query($conn, $select);
+
+                                echo $result;
 
 
-                                $sql = mysql_query($conn, "SELECT SUM(amount) as total FROM income");
-                                $row = mysql_fetch_array($sql);
-                                $sum = $row['total'];
-                                echo $sum;
+                                // $sql = mysql_query($conn, "SELECT SUM(amount) as total FROM income");
+                                // $row = mysql_fetch_array($sql);
+                                // $sum = $row['total'];
+                                // echo $sum;
 
                             ?>
                           </p>
