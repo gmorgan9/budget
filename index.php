@@ -367,9 +367,9 @@ session_start();
                             <p class="card-text fs-5 text-center">
                                 <?php 
                                     $year_total = $y_income - $y_expenses;
-                                    if($year_total > 0) {
-                                        echo "<span class=\"text-danger\">$$year_total</span>";
-                                    } else {
+                                    if($year_total > 0) { ?>
+                                        <span class="text-danger">$<?php echo $year_total;?></span>
+                                    <? } else {
                                         echo "$$year_total";
                                     }
                                      
