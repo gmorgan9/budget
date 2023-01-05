@@ -79,10 +79,10 @@ session_start();
   </tbody>
   <thead class="table-group-divider" style="background-color: white;">
     <tr>
-      <th scope="col">ID #</th>
+      <th class="text-center" scope="col">ID #</th>
       <th scope="col">Title</th>
       <!-- <th scope="col"></th> -->
-      <th scope="col">Actions</th>
+      <th class="text-center" scope="col">Actions</th>
     </tr>
   </thead>
 </table>
