@@ -30,7 +30,7 @@ session_start();
                 display: block;
             }
             .container {
-                display: none;
+                display: block;
             }
         </style>
     <?php } else { ?>
