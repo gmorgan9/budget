@@ -125,6 +125,7 @@ session_start();
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
             $account_link   = $row['account_link'];
+            $password       = $row['password'];
     }}
 
     ?>
@@ -174,7 +175,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Password</label>
-                    <input type="text" name="password" class="form-control" id="password">
+                    <input type="password" name="password" class="form-control" id="password" value="<?php echo $password; ?>">
                 </div>
                 <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
             </form>
