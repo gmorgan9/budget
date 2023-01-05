@@ -41,7 +41,6 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
-            <div class="header position-fixed" >
             <h2 class="text-white">
                 Income
             </h2>
@@ -49,10 +48,9 @@ session_start();
                 Enter an income to keep track of.
             </p>
             <hr>
-            </div>
             <div class="mt-4"></div>
 
-            <table id="dtBasicExample" class=" table table-bordered" style="margin-top: 50px;">
+            <table class=" table table-bordered">
                 <thead style="background-color: white;">
                   <tr>
                     <th class="text-center" scope="col-1">ID #</th>
@@ -98,24 +96,10 @@ session_start();
                   </tr>
                 </thead>
             </table>
-            <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
 
     </div> 
 
-    <script type="text/javascript">
-		$(document).ready(function () {
-  $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
-});
-		</script>
+
 
 
     <!-- custom script -->
