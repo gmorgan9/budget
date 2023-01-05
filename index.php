@@ -223,7 +223,7 @@ session_start();
                           <p class="card-text fs-1 text-center">
                             <?php
 
-                                $sql = mysql_query("SELECT SUM(Value) as total FROM income");
+                                $sql = mysql_query("SELECT SUM(amount) as total FROM income");
                                 $row = mysql_fetch_array($sql);
                                 $sum = $row['total'];
 
