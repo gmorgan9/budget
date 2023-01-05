@@ -62,7 +62,7 @@ if(isset($_POST['expense'])){
     $amount = mysqli_real_escape_string($conn, $_POST['amount']);
     $comments = mysqli_real_escape_string($conn, $_POST['comments']);
     $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
-    $category = mysqli_real_escape_string($conn, $_POST['category']);
+    $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
     $card = mysqli_real_escape_string($conn, $_POST['card']);
     $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
     $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
@@ -79,7 +79,7 @@ if(isset($_POST['expense'])){
        $error[] = 'expense already exist!';
   
     }else {
-          $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, category, person_fn, person_ln, card, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$category', '$person_fn', '$person_ln', '$card', '$date_spent')";
+          $insert = "INSERT INTO expenses (idno, description, amount, comments, person_idno, cat_idno, person_fn, person_ln, card, date_spent) VALUES ('$idno', '$description','$amount','$comments','$person_idno','$cat_idno', '$person_fn', '$person_ln', '$card', '$date_spent')";
           mysqli_query($conn, $insert);
         //   header('location: all_posts.php');
        }
@@ -270,19 +270,42 @@ if(isset($_POST['expense'])){
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
-                    <input type="text" class="form-control" id="desc">
+                    <input type="text" name="description" class="form-control" id="desc">
                 </div>
                 <div class="mb-3">
                     <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
-                    <input type="number" class="form-control" id="amount">
+                    <input type="number" name="amount" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label text-white">Date Spent</label>
-                    <input type="date" class="form-control" id="amount">
+                    <input type="date" name="date_spent" class="form-control" id="amount">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label text-white">Date Spent</label>
+                    <select style="width: 99%;" name="cat_idno" class="form-control">
+                        <option value="">Select one...</option>
+                        <!-- <option value="none">None</option> -->
+                        <?php
+                        $query ="SELECT * FROM categories";
+                        $result = $conn->query($query);
+                        if($result->num_rows> 0){
+                          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        }
+                        ?>
+                <?php 
+                    foreach ($options as $option) {
+                ?>
+                <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
+                <?php } ?>
+            </select>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label text-white">Date Spent</label>
+                    <input type="date" name="date_spent" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
-                    <textarea class="form-control" id="comment"></textarea>
+                    <textarea class="form-control" name="comments" id="comment"></textarea>
                 </div>
                 <button type="submit" name="exp" class="btn btn-secondary">Submit</button>
             </form>
