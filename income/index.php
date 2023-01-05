@@ -44,10 +44,10 @@ session_start();
             <table class="table table-bordered">
   <thead style="background-color: white;">
     <tr>
-      <th scope="col-1">ID #</th>
-      <th scope="col">Title</th>
+      <th class="text-center" scope="col-1">ID #</th>
+      <th class="text-center" scope="col">Title</th>
       <!-- <th scope="col"></th> -->
-      <th scope="col">Actions</th>
+      <th class="text-center" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody class="table-group-divider" style="background-color: #f0f0f0;">
