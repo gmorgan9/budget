@@ -76,7 +76,7 @@ session_start();
 
         echo "not empty";
 
-        } elseif(!isset($_POST['password'])) {
+        } elseif(isempty($_POST['password'])) {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
         //header("location: /");
