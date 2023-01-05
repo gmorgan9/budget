@@ -18,11 +18,55 @@
     <link rel="stylesheet" href="style.css">
 
     
+    <?php if(!isset($_SESSION['username'])) {?>
+        <style>
+            .login {
+                display: none;
+            }
+            .container {
+                display: block;
+            }
+        </style>
+    <?php } else { ?>
+        <style>
+            .login {
+                display: none;
+            }
+            .container {
+                display: block;
+            }
+        </style>
+    <?php } ?>
 
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
+
+    <div class="login">
+
+        <div class="mt-4"></div>
+            <h2 class="text-white">
+                Login
+            </h2>
+            <div class="d-flex justify-content-center align-items-lg-center">
+
+                <form action="" class="" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label text-white">Username </label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-white">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" name="exp" class="btn btn-secondary">Submit</button>
+                </form>
+
+    </div>
+    
+    
     <div class="container">
+
 
         <section class="active" data-page="home">
             <div class="mt-4"></div>
