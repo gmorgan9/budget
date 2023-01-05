@@ -58,16 +58,18 @@ session_start();
 // update user
     if(isset($_POST['update_user'])){
         $idno  = rand(10000, 99999);
-        $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
-        $person_ln = mysqli_real_escape_string($conn, $_POST['person_ln']);
-        $person_idno = mysqli_real_escape_string($conn, $_POST['person_idno']);
+        $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+        $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
         $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $password = md5($_POST['password']);
     
     
         date_default_timezone_set('America/Denver');
         $date = date('F d, Y, g:i a', time());
     
-        $insert = "UPDATE users SET description = '$description', amount = '$amount', comments = '$comments', date_gained = '$date_gained', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE user_id = '".$_POST['user_id']."'";
+        $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', password = '$password' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
         header("location: /");
     
@@ -145,8 +147,6 @@ session_start();
 
             <form action="" class="" method="POST">
                 <input type="hidden" class="form-control" name="user_id" value="<?php echo $user_id;?>">
-                <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
-
                 <div class="row">
                     <div class="mb-3 w-50">
                         <label for="fn" class="form-label text-white">First Name</label>
