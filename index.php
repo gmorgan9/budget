@@ -3,6 +3,56 @@ require_once "database/connection.php";
 // require_once "path.php";
 session_start();
 ?>
+<?php
+
+if(isset($_POST['login'])){
+// $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
+$user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
+$firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+$lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+$username = mysqli_real_escape_string($conn, $_POST['username']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$password = md5($_POST['password']);
+$cpassword = md5($_POST['cpassword']);
+$isadmin = $_POST['isadmin'];
+$loggedin = $_POST['loggedin'];
+
+$select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
+
+$result = mysqli_query($conn, $select);
+
+if(mysqli_num_rows($result) > 0){
+
+   $row = mysqli_fetch_array($result);
+   $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
+   if (mysqli_query($conn, $sql)) {
+      echo "Record updated successfully";
+    } else {
+      echo "Error updating record: " . mysqli_error($conn);
+    }
+    $_SESSION['firstname']         = $row['firstname'];
+    $_SESSION['user_id']          = $row['user_id'];
+    $_SESSION['loggedin']         = $row['loggedin'];
+    $_SESSION['user_idno']        = $row['idno'];
+    $_SESSION['lastname']         = $row['lastname'];
+    $_SESSION['username']         = $row['username'];
+    $_SESSION['email']            = $row['email'];
+    $_SESSION['pass']             = $row['password'];
+    $_SESSION['cpass']            = $row['cpassword'];
+    header('location:' . BASE_URL . '/cu-admin/');
+  
+}else{
+   $error = '
+   <div class="pt-3"></div>
+   <div class="login_error">
+   <strong>Error:</strong> 
+   The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
+   </div>
+   ';
+}
+
+};
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,17 +106,21 @@ session_start();
             </h2>
             <div class="d-flex justify-content-center align-items-lg-center">
 
-                <form action="" class="" method="POST">
-                    <div class="mb-3">
-                        <label for="username" class="form-label text-white">Username </label>
-                        <input type="text" class="form-control" id="username">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label text-white">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <button type="submit" name="exp" class="btn btn-secondary">Submit</button>
-                </form>
+            <form class="form" action="" method="POST">
+            <div class="username">
+                <label for="user_login">Username</label>
+                <input type="text" id="user_login" name="username" class="form-control" autocapitalize="off">
+            </div>
+            <br>
+            <div class="password">
+                <label for="user_pass">Password</label>
+                <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
+            </div>
+            <br>
+            <div class="button text-end">
+                <input type="submit" name="login" class="btn btn-primary" value="Log In">
+            </div>
+        </form>
 
     </div>
     
