@@ -246,8 +246,8 @@ session_start();
 
                     <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Yearly</h5>
-                            <p class="card-text fs-1 text-center">
+                            <h3 class="card-title text-center">Yearly</h3>
+                            <p class="card-text fs-5 text-center">
                                 <?php
                                     $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
