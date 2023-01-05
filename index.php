@@ -122,6 +122,7 @@ session_start();
             $lastname     = $row['lastname'];
             $loggedin     = $row['loggedin'];
             $role         = $row['isadmin'];
+            $profile_pic  = $row['profile_picture'];
     }}
 
     ?>
@@ -288,7 +289,9 @@ session_start();
             </h2>
             <hr>
             <div class="d-flex justify-content-center">
-                <span class="profile-img"></span>
+                <span class="profile-img">
+                    <img src="<?php echo $profile_pic?>" alt="">
+                </span>
             </div>
             <div class="mt-3"></div>
             <div class="name">
