@@ -120,7 +120,7 @@ session_start();
             $lastname     = $row['lastname'];
             $email         = $row['email'];
             $username    = $row['username'];
-            $password       = md5($row['password']);
+            $password       = $row['password'];
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
             // $account_link   = $row['account_link'];
