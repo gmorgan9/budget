@@ -62,7 +62,8 @@ session_start();
                 <p class="text-white">
                     <?php 
 
-                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day'";
+                    // $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day'";
+                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '2023-02-01' AND '2023-02-28'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "Records: $rowtotal[0]";
