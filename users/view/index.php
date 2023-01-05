@@ -69,14 +69,14 @@ session_start();
         date_default_timezone_set('America/Denver');
         $date = date('F d, Y, g:i a', time());
     
-        if(isset($_POST['password'])) {
+        if(!empty($_POST['password'])) {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', password = '$password' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
         //header("location: /");
 
         echo "not empty";
 
-        } elseif(empty($_POST['password'])) {
+        } else {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
         //header("location: /");
