@@ -69,9 +69,15 @@ session_start();
         date_default_timezone_set('America/Denver');
         $date = date('F d, Y, g:i a', time());
     
+        if(isset($_POST['password'])) {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', password = '$password' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
         header("location: /");
+        } else {
+        $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email' WHERE user_id = '".$_POST['user_id']."'";
+        mysqli_query($conn, $insert);
+        header("location: /");
+        }
     
       };
 // end update income
@@ -175,7 +181,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Password</label>
-                    <input type="password" name="password" class="form-control" id="password" value="<?php echo $password; ?>">
+                    <input type="password" name="password" class="form-control" id="password">
                 </div>
                 <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
             </form>
