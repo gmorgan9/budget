@@ -78,19 +78,19 @@ if(mysqli_num_rows($result) > 0){
     <?php if(isset($_SESSION['username'])) {?>
         <style>
             .login {
-                display: none;
+                visibility: hidden;
             }
             .container {
-                display: block;
+                visibility: visible;
             }
         </style>
     <?php } else { ?>
         <style>
             .login {
-                display: block;
+                visibility: visible;
             }
             .container {
-                display: none;
+                visibility: hidden;
             }
         </style>
     <?php } ?>
