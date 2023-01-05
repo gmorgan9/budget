@@ -145,10 +145,19 @@ session_start();
 
             <form action="" class="" method="POST">
                 <input type="hidden" class="form-control" name="user_id" value="<?php echo $user_id;?>">
-                <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
+
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="fn" class="form-label text-white">First Name</label>
+                        <input type="text" name="firstname" class="form-control" id="fn" value="<?php echo $firstname; ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ln" class="form-label text-white">Last Name</label>
+                        <input type="text" name="lastname" class="form-control" id="ln" value="<?php echo $lastname; ?>">
+                    </div>
+                </div>
+
                 <div class="mb-3">
                     <label for="fn" class="form-label text-white">First Name</label>
                     <input type="text" name="firstname" class="form-control" id="fn" value="<?php echo $firstname; ?>">
