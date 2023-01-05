@@ -45,8 +45,8 @@ session_start();
   <thead style="background-color: white;">
     <tr>
       <th scope="col-1">ID #</th>
-      <th scope="col">Title</th>
-      <th scope="col"></th>
+      <th scope="col" colspan="2">Title</th>
+      <!-- <th scope="col"></th> -->
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -80,8 +80,8 @@ session_start();
   <thead class="table-group-divider" style="background-color: white;">
     <tr>
       <th scope="col">ID #</th>
-      <th scope="col">Title</th>
-      <th scope="col"></th>
+      <th scope="col" colspan="2">Title</th>
+      <!-- <th scope="col"></th> -->
       <th scope="col">Actions</th>
     </tr>
   </thead>
