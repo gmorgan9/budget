@@ -240,7 +240,7 @@ session_start();
                 <div class="mb-3 w-50">
 
                     <?php 
-                        $select4 = " SELECT * FROM card WHERE idno = '$card_idno'";
+                        $select4 = " SELECT * FROM cards WHERE idno = '$card_idno'";
                         $result4 = mysqli_query($conn, $select4);
                         if (mysqli_num_rows($result4) > 0) {
                             while($row3 = mysqli_fetch_assoc($result4)) {
