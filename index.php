@@ -221,9 +221,18 @@ session_start();
                         <div class="card-body">
                           <h5 class="card-title text-center">Monthly</h5>
                           <p class="card-text fs-1 text-center">
+                            <?php 
+                            $month_year = date('F Y');
+                            $firstday = strtotime("first day of ". $month_year);
+                            $first_day = date('Y-m-d', $firstday);
+                            $month_year = date('F Y');
+                            $lastday = strtotime("last day of ". $month_year);
+                            $last_day = date('Y-m-d', $lastday);
+
+                            ?>
                             <?php
 
-                                $select = " SELECT SUM(amount) as total FROM income";
+                                $select = " SELECT SUM(amount) as total FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' ";
                                 $result = mysqli_query($conn, $select);
 
                                 echo $result;
