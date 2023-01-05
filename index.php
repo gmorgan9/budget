@@ -233,6 +233,7 @@ session_start();
                                 $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
                                 $month_income=mysqli_fetch_array($result); 
+                                $m_income = $month_income[0];
                                 echo "$$month_income[0]";
                             ?>
                           </p>
@@ -306,7 +307,7 @@ session_start();
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
                             <?php 
-                                    $month_total = $month_income - $month_expenses;
+                                    $month_total = $m_income;
                                 ?>
                                 <?php echo $month_total; ?>
 
