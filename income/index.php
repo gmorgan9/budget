@@ -107,7 +107,7 @@ session_start();
                     Records:  <?php echo $last_date; ?>
                     <?php 
 
-                    $sql="SELECT count('1') FROM income WHERE status = 'published'";
+                    $sql="SELECT count('1') FROM income";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "Records: $rowtotal[0]";
