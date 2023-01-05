@@ -175,7 +175,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Password</label>
-                    <input type="text" name="password" class="form-control" id="password" value="<?php echo $password ?>">
+                    <input type="text" name="password" class="form-control" id="password">
                 </div>
                 <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
             </form>
