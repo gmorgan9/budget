@@ -368,7 +368,7 @@ session_start();
                                 <?php 
                                     $year_total = $y_income - $y_expenses;
                                     if($year_total < 0) {
-                                        echo "<div style='color: red !important;'>$$year_total</div>";
+                                        echo "<span class='text-danger'>$$year_total</span>";
                                     } else {
                                         echo "$$year_total";
                                     }
