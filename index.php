@@ -281,7 +281,7 @@ if(isset($_POST['expense'])){
                     <input type="date" name="date_spent" class="form-control" id="amount">
                 </div>
                 <div class="row">
-                <div class="mb-3">
+                <div class="mb-3 w-50">
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
                         <option value="">Select one...</option>
@@ -299,7 +299,7 @@ if(isset($_POST['expense'])){
                         <?php } ?>
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 w-50">
                     <label for="date" class="form-label text-white">Card</label>
                     <select name="card_idno" id="card" class="form-control">
                         <option value="">Select one...</option>
