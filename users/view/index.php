@@ -118,9 +118,9 @@ session_start();
         while($row = mysqli_fetch_assoc($result)) {
             $firstname    = $row['firstname'];
             $lastname     = $row['lastname'];
-            $amount         = $row['amount'];
-            $date_gained    = $row['date_gained'];
-            $cat_idno       = $row['cat_idno'];
+            $email         = $row['email'];
+            $username    = $row['username'];
+            $password       = md5($row['password']);
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
             // $account_link   = $row['account_link'];
@@ -158,23 +158,24 @@ session_start();
                         <input type="text" name="lastname" class="form-control" id="ln" value="<?php echo $lastname; ?>">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="mb-3 w-50">
+                        <label for="username" class="form-label text-white">Username</label>
+                        <input type="text" name="username" class="form-control" id="username" value="<?php echo $username; ?>">
+                    </div>
+                    <div class="mb-3 w-50">
+                        <label for="account_link" class="form-label text-white">Account Link</label>
+                        <input type="text" name="account_link" class="form-control" id="account_link" value="<?php echo $account_link; ?>">
+                    </div>
+                </div>
 
                 <div class="mb-3">
-                    <label for="fn" class="form-label text-white">First Name</label>
-                    <input type="text" name="firstname" class="form-control" id="fn" value="<?php echo $firstname; ?>">
-                </div>
-                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
-                <div class="mb-3 input-group">
-                    <span class="input-group-text" id="basic-addon1">$</span>
-                    <input type="text" name="amount" class="form-control" id="amount" value="<?php echo $amount ?>">
+                    <label for="email" class="form-label text-white">Email</label>
+                    <input type="text" name="email" class="form-control" id="email" value="<?php echo $email; ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Gained</label>
-                    <input type="date" name="date_gained" class="form-control" id="date" value="<?php echo $date_gained ?>">
-                </div>
-                <div class="mb-3">
-                    <label for="comment" class="form-label text-white">Comments</label>
-                    <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
+                    <label for="password" class="form-label text-white">Password</label>
+                    <input type="text" name="password" class="form-control" id="password" value="<?php echo $password ?>">
                 </div>
                 <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
             </form>
