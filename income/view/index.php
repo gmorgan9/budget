@@ -149,8 +149,8 @@ session_start();
 
 
     <?php 
-    $person_idno = $_SESSION['idno'];
-    $select2 = " SELECT * FROM users WHERE idno = '$person_idno' ";
+    $id = $_SESSION['user_id'];
+    $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
     $result2 = mysqli_query($conn, $select2);
     if (mysqli_num_rows($result2) > 0) {
         while($row1 = mysqli_fetch_assoc($result2)) {
