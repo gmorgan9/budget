@@ -56,7 +56,7 @@ session_start();
 // end login
 
 // add expense
-if(isset($_POST['expense'])){
+if(isset($_POST['exp'])){
     $idno  = rand(10000, 99999); // figure how to not allow duplicates
     $description = mysqli_real_escape_string($conn, $_POST['description']);
     $amount = mysqli_real_escape_string($conn, $_POST['amount']);
