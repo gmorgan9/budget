@@ -101,6 +101,13 @@ section {
     
 }
 
+.profile-img {
+    background-color: #777 !important; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 100px;
+}
+
 section.active {
     height: auto;
     display: block;
