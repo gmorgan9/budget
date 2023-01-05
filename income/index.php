@@ -63,7 +63,7 @@ session_start();
 
                 <?php
 
-                    $sql = "SELECT * FROM income ORDER BY date_gained DESC AND date_gained";
+                    $sql = "SELECT * FROM income ORDER BY date_gained DESC";
                     $all = mysqli_query($conn, $sql);
                     if($all) {
                         while ($row = mysqli_fetch_assoc($all)) {
@@ -96,7 +96,24 @@ session_start();
                     <th class="text-center" scope="col">Actions</th>
                   </tr>
                 </thead>
+                <tfoot>
 
+                <?php 
+
+                $last_date = strtotime($last_date);
+                
+                ?>
+                    
+                    Records:  <?php echo $last_date; ?>
+                    <?php 
+
+                    $sql="SELECT count('1') FROM income";
+                    $result=mysqli_query($conn,$sql);
+                    $rowtotal=mysqli_fetch_array($result); 
+                    echo "Records: $rowtotal[0]";
+
+                    ?>
+                </tfoot>
             </table>
 
 
