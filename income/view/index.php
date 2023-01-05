@@ -216,6 +216,7 @@ session_start();
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
+                <input type="hidden" class="form-control" name="inc_id" value="<?php echo $inc_id;?>">
                 <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
                 <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
                 <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
