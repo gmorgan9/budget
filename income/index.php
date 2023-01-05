@@ -52,7 +52,7 @@ session_start();
 
             <?php 
                 $date = date('m/d/Y');
-                $last_date = strtotime($date);
+                $last_date = strtotime('m/d/Y',$date);
                 
                 ?>
                     
