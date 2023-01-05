@@ -52,7 +52,8 @@ session_start();
 
             <?php 
                 $date = date('m/Y');
-                $some_time = strtotime("last day of current month and year");
+                echo $date;
+                $some_time = strtotime("last day of ");
                 echo date('F d, Y', $some_time);
                 
                 ?>
