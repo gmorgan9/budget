@@ -52,7 +52,7 @@ session_start();
             </div>
             <div class="mt-4"></div>
 
-            <table id="dtBasicExample" class=" table table-bordered" style="top: 25;">
+            <table id="dtBasicExample" class=" table table-bordered" style="margin-top: 50px;">
                 <thead style="background-color: white;">
                   <tr>
                     <th class="text-center" scope="col-1">ID #</th>
