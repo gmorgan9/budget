@@ -44,7 +44,7 @@ session_start();
             <table class="table table-bordered">
   <thead style="background-color: white;">
     <tr>
-      <th scope="col">ID #</th>
+      <th scope="col-1">ID #</th>
       <th scope="col">Title</th>
       <!-- <th scope="col">Status</th> -->
       <th scope="col">Actions</th>
