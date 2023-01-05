@@ -62,7 +62,8 @@ session_start();
                 <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
                 <?php
-                    $sql = "SELECT * FROM income ORDER BY date_gained DESC";
+
+                    $sql = "SELECT * FROM income ORDER BY date_gained DESC AND date_gained";
                     $all = mysqli_query($conn, $sql);
                     if($all) {
                         while ($row = mysqli_fetch_assoc($all)) {
@@ -95,7 +96,26 @@ session_start();
                     <th class="text-center" scope="col">Actions</th>
                   </tr>
                 </thead>
+                <tfoot>
+
+                <?php 
+
+                $last_date = strtotime($last_date);
+                
+                ?>
+                    
+                    Records:  <?php echo $last_date; ?>
+                    <?php 
+
+                    $sql="SELECT count('1') FROM income WHERE status = 'published'";
+                    $result=mysqli_query($conn,$sql);
+                    $rowtotal=mysqli_fetch_array($result); 
+                    echo "Records: $rowtotal[0]";
+
+                    ?>
+                </tfoot>
             </table>
+
 
     </div> 
 
