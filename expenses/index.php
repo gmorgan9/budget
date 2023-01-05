@@ -38,6 +38,20 @@ session_start();
 
 </head>
 <body style="background-color: rgb(78, 78, 78);">
+
+<?php
+
+    $id = $_SESSION['user_id'];
+    $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
+    $result2 = mysqli_query($conn, $select2);
+    if (mysqli_num_rows($result2) > 0) {
+        while($row2 = mysqli_fetch_assoc($result2)) {
+            $account_link    = $row2['account_link'];
+    }}
+
+?>
+
+
     <div class="container">
 
             <div class="mt-4"></div>
@@ -67,7 +81,7 @@ session_start();
                 <p class="text-white">
                     <?php 
 
-                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day'";
+                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "<b>Expense Records:</b> $rowtotal[0]";
@@ -89,7 +103,7 @@ session_start();
 
                 <?php
 
-                    $sql = "SELECT * FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' ORDER BY date_spent DESC ";
+                    $sql = "SELECT * FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link' ORDER BY date_spent DESC ";
                     $all = mysqli_query($conn, $sql);
                     if($all) {
                         while ($row = mysqli_fetch_assoc($all)) {
