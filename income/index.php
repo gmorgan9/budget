@@ -53,7 +53,7 @@ session_start();
             <?php 
                 $date = date('F Y');
                 echo $date;
-                $some_time = strtotime("last day of ");
+                $some_time = strtotime("last day of ". $date);
                 echo date('F d, Y', $some_time);
                 
                 ?>
