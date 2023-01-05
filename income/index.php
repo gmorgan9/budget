@@ -59,8 +59,7 @@ session_start();
                 $last_day = date('Y-m-d', $lastday);
                 
                 ?>
-                    
-                    Records:  <?php echo $last_date; ?>
+                <p class="text-white">
                     <?php 
 
                     $sql="SELECT count('1') FROM income where date_gained BETWEEN '$first_day' AND '$last_day'";
@@ -69,6 +68,7 @@ session_start();
                     echo "Records: $rowtotal[0]";
 
                     ?>
+                </p>
 
 
             <table class=" table table-bordered">
