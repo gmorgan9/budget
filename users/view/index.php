@@ -122,7 +122,7 @@ session_start();
             $username    = $row['username'];
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
-            // $account_link   = $row['account_link'];
+            $account_link   = $row['account_link'];
     }}
 
     ?>
