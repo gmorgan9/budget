@@ -72,13 +72,12 @@ session_start();
         if(!empty($_POST['password'])) {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', password = '$password' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
-        //header("location: /");
+        header("location: /");
 
         } else {
         $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email' WHERE user_id = '".$_POST['user_id']."'";
         mysqli_query($conn, $insert);
-        //header("location: /");
-        echo "empty";
+        header("location: /");
         }
     
       };
