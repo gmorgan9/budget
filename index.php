@@ -79,7 +79,7 @@ if(mysqli_num_rows($result) > 0){
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
-<?php if(isset($_SESSION['username'])) {?>
+<?php if(!isset($_SESSION['username'])) {?>
 
     <div class="login">
 
