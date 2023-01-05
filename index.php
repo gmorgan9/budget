@@ -232,7 +232,7 @@ session_start();
                             ?>
                             <?php
 
-                                $select = " SELECT SUM(CONVERT(amount, int)) as total FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' ";
+                                $select = " SELECT SUM(amount) as total FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' ";
                                 $result = mysqli_query($conn, $select);
 
                                 echo $result;
