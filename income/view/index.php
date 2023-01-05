@@ -215,14 +215,15 @@ session_start();
                         $put = mysqli_query($conn, $grab);
                         if (mysqli_num_rows($put) > 0) {
                             while($cap = mysqli_fetch_assoc($put)) {
-                                $cat_name    = $cap['name'];
-                        }}
+                                
+                        
 
                     ?>
 
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
-                        <option value="<?php echo $cat_idno; ?>"><?php echo $cat_name; ?></option>
+                        <option value="<?php echo $cat_idno; ?>"><?php echo $cap['name']; ?></option>
+                        <?php }}?>
                         <?php
                         $query ="SELECT * FROM categories";
                         $result = $conn->query($query);
