@@ -280,6 +280,7 @@ if(isset($_POST['expense'])){
                     <label for="date" class="form-label text-white">Date Spent</label>
                     <input type="date" name="date_spent" class="form-control" id="amount">
                 </div>
+                <div class="row">
                 <div class="mb-3">
                     <label for="category" class="form-label text-white">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
@@ -315,6 +316,7 @@ if(isset($_POST['expense'])){
                             <option value="<?php echo $option['idno']; ?>"><?php echo $option['name']; ?></option>
                         <?php } ?>
                     </select>
+                </div>
                 </div>
                 <div class="mb-3">
                     <label for="comment" class="form-label text-white">Comments</label>
