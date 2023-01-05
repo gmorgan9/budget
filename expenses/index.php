@@ -58,7 +58,7 @@ session_start();
             <?php 
                 $month_year = date('F Y');
                 
-                ?>
+            ?>
             <h2 class="text-white">
                 <?php echo $month_year; ?> Expenses
             </h2>

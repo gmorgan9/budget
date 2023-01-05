@@ -54,11 +54,14 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
+            <?php 
+                $month_year = date('F Y');
+            ?>
             <h2 class="text-white">
-                Income
+            <?php echo $month_year; ?> Income
             </h2>
             <p class="text-muted">
-                Enter an income to keep track of.
+                Compliled list of Income for <?php echo $month_year; ?>.
             </p>
             <hr>
             <div class="mt-4"></div>
