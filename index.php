@@ -310,7 +310,7 @@ session_start();
                             <?php 
                                     $month_total = $m_income - $m_expenses;
                                 ?>
-                                <?php echo $month_total; ?>
+                                <?php echo "$$month_total"; ?>
 
 
                             </p>
