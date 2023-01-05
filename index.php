@@ -221,7 +221,7 @@ session_start();
                         <div class="card-body">
                           <h3 class="card-title text-center">Monthly</h3>
                           <p class="card-text fs-5 text-center">
-                            <?php 
+                          <?php 
                                 $month_year = date('F Y');
                                 $firstday = strtotime("first day of ". $month_year);
                                 $first_day = date('Y-m-d', $firstday);
@@ -229,12 +229,27 @@ session_start();
                                 $lastday = strtotime("last day of ". $month_year);
                                 $last_day = date('Y-m-d', $lastday);
                             ?>
+
+                          <?php
+
+                            $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                            $result=mysqli_query($conn,$sql);
+                            $rowtotal=mysqli_fetch_array($result); 
+                            $count_m_income = $rowtotal[0];
+
+
+                          ?>
+                            
                             <?php
                                 $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                 $result=mysqli_query($conn,$sql);
                                 $month_income=mysqli_fetch_array($result); 
                                 $m_income = $month_income[0];
-                                echo "$$month_income[0]";
+                                if($count_m_income == 0){
+                                    echo "$0";
+                                } else {
+                                    echo "$$month_income[0]";
+                                }
                             ?>
                           </p>
                         </div>
