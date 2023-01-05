@@ -51,9 +51,8 @@ session_start();
             <div class="mt-4"></div>
 
             <?php 
-                $date = date('F Y');
-                echo $date;
-                $some_time = strtotime("last day of ". $date);
+                $month_year = date('F Y');
+                $some_time = strtotime("last day of ". $month_year);
                 echo date('F d, Y', $some_time);
                 
                 ?>
