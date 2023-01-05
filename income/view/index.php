@@ -1,6 +1,6 @@
 <?php
-require_once "database/connection.php";
-require_once "path.php";
+require_once "../../database/connection.php";
+require_once "../../path.php";
 session_start();
 ?>
 <?php
