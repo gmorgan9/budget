@@ -41,7 +41,7 @@ session_start();
             <hr>
             <div class="mt-4"></div>
 
-            <table class="table table-bordered" style="margin-left: -30px;">
+            <table class="table table-bordered">
   <thead style="background-color: white;">
     <tr>
       <th scope="col">ID #</th>
