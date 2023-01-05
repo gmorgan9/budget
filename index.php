@@ -272,8 +272,8 @@ if(isset($_POST['exp'])){
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
                 </div>
+                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
                 <div class="mb-3 input-group">
-                    <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
                     <span class="input-group-text" id="basic-addon1">@</span>
                     <input type="text" name="amount" class="form-control" id="amount">
                 </div>
