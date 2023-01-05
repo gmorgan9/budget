@@ -61,7 +61,7 @@ session_start();
         $description = mysqli_real_escape_string($conn, $_POST['description']);
         $amount = mysqli_real_escape_string($conn, $_POST['amount']);
         $comments = mysqli_real_escape_string($conn, $_POST['comments']);
-        $date_gained = mysqli_real_escape_string($conn, $_POST['date_spent']);
+        $date_spent = mysqli_real_escape_string($conn, $_POST['date_spent']);
         $cat_idno = mysqli_real_escape_string($conn, $_POST['cat_idno']);
         $card_idno = mysqli_real_escape_string($conn, $_POST['card_idno']);
         $person_fn = mysqli_real_escape_string($conn, $_POST['person_fn']);
@@ -73,7 +73,7 @@ session_start();
         date_default_timezone_set('America/Denver');
         $date = date('F d, Y, g:i a', time());
     
-        $insert = "UPDATE expenses SET description = '$description', amount = '$amount', comments = '$comments', date_gained = '$date_gained', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE exp_id = '".$_POST['exp_id']."'";
+        $insert = "UPDATE expenses SET description = '$description', amount = '$amount', comments = '$comments', date_spent = '$date_spent', cat_idno = '$cat_idno', card_idno = '$card_idno' WHERE exp_id = '".$_POST['exp_id']."'";
         mysqli_query($conn, $insert);
         header("location: /");
     
@@ -165,8 +165,8 @@ session_start();
                     <input type="text" name="amount" class="form-control" id="amount" value="<?php echo $amount ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Gained</label>
-                    <input type="date" name="date_gained" class="form-control" id="date" value="<?php echo $date_gained ?>">
+                    <label for="date" class="form-label text-white">Date Spent</label>
+                    <input type="date" name="date_spent" class="form-control" id="date" value="<?php echo $date_spent ?>">
                 </div>
                 <div class="row">
                 <div class="mb-3 w-50">
