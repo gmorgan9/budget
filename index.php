@@ -226,6 +226,7 @@ session_start();
                                 $sql = mysql_query("SELECT SUM(amount) as total FROM income");
                                 $row = mysql_fetch_array($sql);
                                 $sum = $row['total'];
+                                echo $sum;
 
                             ?>
                           </p>
