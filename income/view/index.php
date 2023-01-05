@@ -166,7 +166,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../style.css">
     <!-- end custom styles -->
 
 </head>
