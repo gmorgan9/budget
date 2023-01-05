@@ -231,13 +231,10 @@ session_start();
                             ?>
 
                           <?php
-
                             $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                             $result=mysqli_query($conn,$sql);
                             $rowtotal=mysqli_fetch_array($result); 
                             $count_m_income = $rowtotal[0];
-
-
                           ?>
                             
                             <?php
@@ -259,12 +256,24 @@ session_start();
                         <div class="card-body">
                             <h3 class="card-title text-center">Yearly</h3>
                             <p class="card-text fs-5 text-center">
+
+                                <?php
+                                $sql="SELECT count('1') FROM income WHERE account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_y_income = $rowtotal[0];
+                                ?>
+
                                 <?php
                                     $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $year_income=mysqli_fetch_array($result);
                                     $y_income = $year_income[0]; 
-                                    echo "$$year_income[0]";
+                                    if($count_y_income == 0){
+                                        echo "$0";
+                                    } else {
+                                        echo "$$year_income[0]";
+                                    }
                                 ?>
                             </p>
                         </div>
