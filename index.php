@@ -1,3 +1,9 @@
+<?php
+require_once "database/connection.php";
+// require_once "path.php";
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
