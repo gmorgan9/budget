@@ -41,7 +41,7 @@ session_start();
     <div class="container">
 
             <div class="mt-4"></div>
-            <div class="header position-sticky">
+            <div class="header position-fixed">
             <h2 class="text-white">
                 Income
             </h2>
