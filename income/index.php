@@ -51,8 +51,8 @@ session_start();
             <div class="mt-4"></div>
 
             <?php 
-                $some_time = strtotime("last day of November 2021");
-                echo 'Last day of November 2021 will be '.date('F d, Y', $some_time).'.';
+                $some_time = strtotime("last day of January 2023");
+                echo date('F d, Y', $some_time);
                 
                 ?>
                     
