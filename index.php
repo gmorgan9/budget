@@ -157,7 +157,7 @@ session_start();
             <h2 class="text-white">
                 Login
             </h2>
-            <div class="d-flex justify-content-center align-items-lg-center">
+            <div style="background-color: gray;" class="d-flex justify-content-center align-items-lg-center">
 
             <form class="form" action="" method="POST">
             <div class="username">
