@@ -158,9 +158,12 @@ if(isset($_GET['success'])) {
 <style>
 
             .login_error {
+                width: 70%;
                 border-left: 4px solid #72aee6;
                 padding: 12px;
-                margin-left: 0;
+                /* margin-left: 0; */
+                margin-left: auto;
+                margin-right: auto;
                 margin-bottom: 20px;
                 background-color: #fff;
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
