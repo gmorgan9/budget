@@ -170,7 +170,7 @@ session_start();
                 word-wrap:break-word
             }
             .background {
-                width: 90%;
+                width: 85%;
                 height: 80%;
                 margin-left: auto;
                 margin-right: auto;
