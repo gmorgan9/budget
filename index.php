@@ -161,12 +161,12 @@ session_start();
             <div  class="">
 
             <form class="form" action="" method="POST">
+            <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             <div style="background-color: rgb(100, 100, 100); padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
-                <label class="text-white fw-bold fs-2" for="user_login">Account ID</label>
-                <p class="fs-5" style="color: rgb(25, 25, 25);">
+                <label class="text-white fw-bold fs-3" for="user_login">Account ID</label>
+                <p class="fs-6" style="color: rgb(25, 25, 25);">
                 94768
                 </p>
-                <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             </div>
             <br>
             <div class="pin">
