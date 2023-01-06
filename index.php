@@ -171,7 +171,7 @@ session_start();
             }
             .background {
                 width: 85%;
-                height: 80%;
+                /* height: 80%; */
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 15px;
