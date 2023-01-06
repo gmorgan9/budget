@@ -167,7 +167,7 @@ session_start();
                 <p class="text-muted fs-6" style="color: rgb(25, 25, 25); margin-bottom: -1px;">94768</p>
             </div>
             <br>
-            <div style="background-color: rgb(255, 255, 255); padding: 15px; padding-bottom: -10px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
+            <div style="background-color: rgb(255, 255, 255);  padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
                 <label class="fw-bold fs-2" for="user_pass">PIN</label>
                 <!-- <input type="password" name="pin" inputmode="numeric" class="form-control"> -->
                 <!-- <label for="staticEmail" class="col-sm-2 col-form-label">Email</label> -->
