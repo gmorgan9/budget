@@ -76,7 +76,7 @@ session_start();
            <div class="pt-3"></div>
            <div class="login_success">
            <strong>Success:</strong> 
-           Update success!
+           Updated successfully!
            </div>
            ';
     
