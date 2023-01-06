@@ -230,7 +230,7 @@ session_start();
                     <label for="comment" class="form-label text-white">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"><?php echo $comments; ?></textarea>
                 </div>
-                <button type="submit" name="update_inc" class="btn btn-secondary">Update</button>
+                <button type="submit" name="update_inc" class="mt-3 btn" style="background-color: rgb(242, 247, 253);">Update</button>
             </form>
         </section>
 
