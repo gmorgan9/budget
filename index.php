@@ -163,7 +163,7 @@ session_start();
             <form class="form" action="" method="POST">
             <div class="username">
                 <label class="text-white fw-bold" for="user_login">Account ID</label>
-                <p class="text-secondary">
+                <p class="text-info">
                 94768
                 </p>
                 <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
