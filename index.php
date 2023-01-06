@@ -156,7 +156,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css?v=1.22">
+        <link rel="stylesheet" href="style.css?v=1.23">
         <style>
             .success {
                 width: 70%;
@@ -718,17 +718,6 @@ session_start();
 <?php } ?>
 
 <!-- custom script -->
-    <script>
-        $(function()
-{
-    window.onorientationchange = OrientationChanged;
-    window.setTimeout(OrientationChanged, 0);
-}
-function OrientationChanged(e)
-{
-    $('body').css('-webkit-transform', window.orientation % 180 == 0 ? '' : 'rotate(-90deg)');
-})
-    </script>
     <script src="script.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
