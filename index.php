@@ -162,15 +162,15 @@ session_start();
 
             <form class="form" action="" method="POST">
             <div class="username">
-                <label class="text-white fw-bold fs-1" for="user_login">Account ID</label>
-                <p class="text-info">
+                <label class="text-white fw-bold fs-2" for="user_login">Account ID</label>
+                <p class="text-info fs-4">
                 94768
                 </p>
                 <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             </div>
             <br>
             <div class="pin">
-                <label class="text-white fw-bold" for="user_pass">Pin</label>
+                <label class="text-white fw-bold fs-2" for="user_pass">Pin</label>
                 <input type="password" id="user_pass" name="pin" inputmode="numeric" class="form-control" autocapitalize="off">
             </div>
             <br>
