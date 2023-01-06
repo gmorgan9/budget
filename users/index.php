@@ -46,7 +46,7 @@ date_default_timezone_set('America/Denver');
             <h2 class="text-white">
                 Users
             </h2>
-            <p class="text-muted">
+            <p class="" style="color: rgb(242, 247, 253);">
                 Compliled list of users.
             </p>
             <hr>
