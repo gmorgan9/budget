@@ -179,7 +179,7 @@ session_start();
             </div>
             <br>
             <div class="button text-end d-flex justify-content-center">
-                <input style="background-color: #3e4881 !improtant; border-radius: 15px !important; width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn btn" value="Log In">
+                <input style="background-color: #3e4881 !important; border-radius: 15px !important; width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn" value="Log In">
             </div>
         </form>
 
