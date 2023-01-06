@@ -171,8 +171,8 @@ session_start();
             }
             .background {
                 height: 80%;
-                display: flex;
-                align-items: center;
+                margin-top: auto;
+                margin-bottom: auto;
             }
         </style>
     <!-- end custom styles -->
