@@ -126,9 +126,9 @@ session_start();
 if(isset($_GET['success'])) {
     $success = '
            <div class="pt-3"></div>
-           <div class="login_error">
-           <strong>Error:</strong> 
-           Your email has been sent
+           <div class="login_success">
+           <strong>Success:</strong> 
+           Your request has been sent! We will get back to you as soon as possible!
            </div>
            ';
 }
@@ -157,9 +157,9 @@ if(isset($_GET['success'])) {
 
 <style>
 
-            .login_error {
+            .login_success {
                 width: 70%;
-                border-left: 4px solid #72aee6;
+                /* border-left: 4px solid #72aee6; */
                 padding: 12px;
                 /* margin-left: 0; */
                 margin-left: auto;
@@ -172,8 +172,8 @@ if(isset($_GET['success'])) {
             /* .login .success {
                 border-left-color:#00a32a
             } */
-            .login_error {
-                border-left-color:#d63638
+            .login_success {
+                border-left-color:#36d639;
             }
 </style>
 
