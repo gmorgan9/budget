@@ -192,7 +192,10 @@ if(isset($_POST['forgot'])) {
             
             <div class="mt-2"></div>
             <div  class="">
-            <?php echo $_SESSION['success']; ?>
+            <?php 
+            if(isset($_SESSION['success'])) { ?>
+            <p>success</p>
+            <?php } ?>
             <form class="form" action="" method="POST">
             <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             <div style="background-color: rgb(255, 255, 255); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
