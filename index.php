@@ -2,6 +2,7 @@
 require_once "database/connection.php";
 require_once "path.php";
 session_start();
+date_default_timezone_set('America/Denver');
 ?>
 <?php
 // login
@@ -306,7 +307,7 @@ if(isset($_GET['success'])) {
                 Welcome, <?php echo $firstname; ?>!
             </h2>
             <p class="date text-muted">
-                <?php echo date("l, F j, Y"); ?>
+                <?php echo date("l, F j, Y, h:m A"); ?>
             </p>
             <hr>
             <div class="mt-3"></div>

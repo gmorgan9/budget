@@ -3,6 +3,7 @@
 session_start();
 require_once "database/connection.php";
 require_once "path.php";
+date_default_timezone_set('America/Denver');
 
 $user_id = $_SESSION['user_id'];
 $sql = "UPDATE users SET loggedin='0' WHERE user_id='$user_id'";
