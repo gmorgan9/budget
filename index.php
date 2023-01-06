@@ -247,7 +247,9 @@ if(isset($_GET['success'])) {
                                 <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
                                 <input type="hidden" name="_next" value="https://budget.morganserver.com?success=sent">
                                 <input type="hidden" name="_template" value="box">
-
+                                <p class="text-muted">
+                                    Enter your name and email address for the request of a pin reset.
+                                </p>
                                 <div class="input-wrapper">
                                     <input type="hidden" name="Account&nbsp;ID" value="94768">
                                     <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required>
