@@ -250,14 +250,15 @@ session_start();
                                     <input type="text" name="Full&nbsp;Name" class="form-control" placeholder="Full name" required>
                                     <div class="pt-3"></div>
                                     <input type="email" name="Email" class="form-control" placeholder="Email address" required>
-                                </div>                           
+                                </div>  
+                                
+                                </form>
 
                           </div>
                           <div class="modal-footer">
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <input name="forgot" type="submit" class="btn btn-primary" value="Send">
+                            <button type="submit" class="btn btn-primary">Send</button>
                           </div>
-                          </form>
                         </div>
                       </div>
                     </div>
