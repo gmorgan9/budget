@@ -146,12 +146,13 @@ session_start();
 
 
 </head>
-<body style="background-color: rgb(78, 78, 78);">
+
 
 <?php if(!isset($_SESSION['username'])) {?>
+    <body style="background-color: rgb(125, 125, 125);">
 
 <!-- login -->
-    <div class="login" style="background-color: rgb(175,175,175);">
+    <div class="login">
 
         <div class="mt-4"></div>
             <h2 class="text-white ps-3">
@@ -185,6 +186,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
+    <body style="background-color: rgb(78, 78, 78);">
 
     <!-- php code -->
         <?php 
