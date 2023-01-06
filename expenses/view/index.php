@@ -106,7 +106,7 @@ session_start();
 </head>
 <body style="background-color: #3e4881;">
 
-      <!-- php code -->
+    <!-- php code -->
         <?php 
         $id = $_SESSION['user_id'];
         $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
@@ -122,6 +122,7 @@ session_start();
         $result = mysqli_query($conn, $select);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
+                $exp_idno       = $row['idno'];
                 $description    = $row['description'];
                 $amount         = $row['amount'];
                 $date_spent    = $row['date_spent'];
@@ -141,10 +142,10 @@ session_start();
         <!-- <section class="" data-page="income"> -->
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Expenses
+                View/Edit Expense Record
             </h2>
             <p style="color: rgb(242, 247, 253);">
-                Enter an expenses to keep track of.
+                Edit the expense record details (<?php echo $exp_idno; ?>).
             </p>
             <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
