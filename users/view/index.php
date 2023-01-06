@@ -106,7 +106,7 @@ date_default_timezone_set('America/Denver');
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../style.css?v=1.25">
         <style>
             .success {
                 width: 95%;
