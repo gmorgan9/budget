@@ -197,7 +197,7 @@ session_start();
                 </div>
                 <div class="mb-3">
                     <label for="pin" class="form-label text-white">Pin</label>
-                    <input type="password" name="pin" class="form-control" id="pin" value>
+                    <input type="password" name="pin" class="form-control" id="pin" value="<?php echo $pin; ?>">
                 </div>
                 <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
             </form>
