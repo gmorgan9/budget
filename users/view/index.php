@@ -24,7 +24,7 @@ session_start();
         if(mysqli_num_rows($result) > 0){
         
            $row = mysqli_fetch_array($result);
-           $sql = "UPDATE users SET loggedin='1' WHERE account_link='$account_link'";
+           $sql = "UPDATE users SET loggedin='1' WHERE pin='$pin'";
            if (mysqli_query($conn, $sql)) {
               echo "Record updated successfully";
             } else {
