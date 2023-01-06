@@ -123,15 +123,15 @@ session_start();
 // end add income
 
 // success message
-if(isset($_GET['success'])) {
-    $success = '
+    if(isset($_GET['success'])) {
+        $success = '
            <div class="pt-3"></div>
-           <div class="login_success">
+           <div class="success">
            <strong>Success:</strong> 
            Your request has been sent!
            </div>
            ';
-}
+    }
 // end success message
 ?>
 
@@ -141,7 +141,7 @@ if(isset($_GET['success'])) {
     <!-- APPLE HOME SCREEN META TAGS -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="apple-touch-icon" href="fav.png">
+        <link rel="apple-touch-icon" href="logo.png">
     <!-- end APPLE -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -153,15 +153,12 @@ if(isset($_GET['success'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="style.css">
-
-<style>
-
-            .login_success {
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .success {
                 width: 70%;
                 border-left: 4px solid #00a32a;
                 padding: 12px;
-                /* margin-left: 0; */
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 20px;
@@ -169,13 +166,8 @@ if(isset($_GET['success'])) {
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                 word-wrap:break-word
             }
-            /* .login .success {
-                border-left-color:#00a32a
-            } 
-            .login_success {
-                border-left-color:#36d639;
-            } */
-</style>
+        </style>
+    <!-- end custom styles -->
 
 </head>
 
