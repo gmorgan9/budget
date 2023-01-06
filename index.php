@@ -166,7 +166,7 @@ session_start();
             <br>
             <div class="password">
                 <label for="user_pass">Password</label>
-                <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
+                <input type="password" id="user_pass" name="password" inputmode="numeric" class="form-control" autocapitalize="off">
             </div>
             <br>
             <div class="button text-end">
