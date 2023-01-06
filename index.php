@@ -149,7 +149,7 @@ session_start();
 
 
 <?php if(!isset($_SESSION['username'])) {?>
-    <body style="background-color: rgb(125, 125, 125);">
+    <body style="background-color: rgb(242, 247, 253);">
 
 <!-- login -->
     <div class="login">
