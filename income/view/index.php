@@ -143,7 +143,7 @@ session_start();
                 View/Edit Income Record
             </h2>
             <p style="color: rgb(242, 247, 253);">
-                Edit the income record details for <?php echo $description; ?>(<?php echo $inc_idno; ?>).
+                Edit the income record details.
             </p>
             <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
