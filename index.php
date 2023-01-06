@@ -158,10 +158,10 @@ session_start();
                 Login
             </h2>
             <div class="mt-5"></div>
-            <div style="background-color: rgb(100, 100, 100); padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="">
+            <div  class="">
 
             <form class="form" action="" method="POST">
-            <div class="username">
+            <div style="background-color: rgb(100, 100, 100); padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
                 <label class="text-white fw-bold fs-2" for="user_login">Account ID</label>
                 <p class="fs-5" style="color: rgb(25, 25, 25);">
                 94768
