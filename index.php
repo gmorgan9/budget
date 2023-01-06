@@ -12,8 +12,8 @@ session_start();
         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = md5($_POST['password']);
-        $cpassword = md5($_POST['cpassword']);
+        $password = $_POST['password'];
+        // $cpassword = $_POST['cpassword'];
         $isadmin = $_POST['isadmin'];
         $loggedin = $_POST['loggedin'];
         
@@ -38,7 +38,7 @@ session_start();
             $_SESSION['username']         = $row['username'];
             $_SESSION['email']            = $row['email'];
             $_SESSION['pass']             = $row['password'];
-            $_SESSION['cpass']            = $row['cpassword'];
+            // $_SESSION['cpass']            = $row['cpassword'];
             // header('location:' . BASE_URL . '/');
             header('location: /');
         
