@@ -156,7 +156,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css?v=1.24">
+        <link media="all and (orientation:portrait)" rel="stylesheet" href="style.css?v=1.25">
         <style>
             .success {
                 width: 70%;

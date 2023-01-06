@@ -1,4 +1,4 @@
-@media screen and (orientation: portrait) {
+
 :root {
 
     /**
@@ -164,4 +164,3 @@ li { list-style: none; }
     padding-bottom: unset !important;
     padding-bottom: 5px !important;
     }
-}
