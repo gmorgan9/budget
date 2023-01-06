@@ -195,7 +195,7 @@ if(isset($_POST['forgot'])) {
             
             <?php
             if(isset($_GET['success'])) {
-                echo $success;
+                echo "it was a success";
             }
             ?>
               
