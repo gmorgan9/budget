@@ -162,13 +162,13 @@ session_start();
 
             <form class="form" action="" method="POST">
             <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
-            <div style="background-color: rgb(100, 100, 100); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
-                <label class="text-white fw-bold fs-3" for="user_login">Account ID</label>
+            <div style="background-color: rgb(255, 255, 255); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
+                <label class="fw-bold fs-3" for="user_login">Account ID</label>
                 <p class="fs-6" style="color: rgb(25, 25, 25); margin-bottom: -1px;">94768</p>
             </div>
             <br>
             <div style="background-color: rgb(100, 100, 100); padding: 15px; padding-bottom: -10px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
-                <label class="text-white fw-bold fs-2" for="user_pass">PIN</label>
+                <label class="fw-bold fs-2" for="user_pass">PIN</label>
                 <!-- <input type="password" name="pin" inputmode="numeric" class="form-control"> -->
                 <!-- <label for="staticEmail" class="col-sm-2 col-form-label">Email</label> -->
                     <div class="col-sm-10">
