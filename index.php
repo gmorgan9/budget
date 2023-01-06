@@ -218,13 +218,14 @@ session_start();
                                     <span>Send Message</span>
                                 </button>
 
-                            </form>
+                            
 
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="submit" class="btn btn-primary">Send</button>
                           </div>
+                          </form>
                         </div>
                       </div>
                     </div>
