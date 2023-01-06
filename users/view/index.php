@@ -152,7 +152,7 @@ date_default_timezone_set('America/Denver');
 
             <div class="mt-4"></div>
             <h2 class="text-white">
-                View User
+                View/Edit User
             </h2>
             <p class="" style="color: rgb(242, 247, 253);">
                 Edit the account details for <?php echo $firstname ?> <?php echo $lastname; ?>. 
