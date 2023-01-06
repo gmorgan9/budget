@@ -161,7 +161,7 @@ session_start();
 
             <form class="form" action="" method="POST">
             <div class="username">
-                <label for="user_login">Account ID</label>
+                <label class="text-white" for="user_login">Account ID</label>
                 <p>
                 94768
                 </p>
@@ -169,7 +169,7 @@ session_start();
             </div>
             <br>
             <div class="pin">
-                <label for="user_pass">Pin</label>
+                <label class="text-white" for="user_pass">Pin</label>
                 <input type="password" id="user_pass" name="pin" inputmode="numeric" class="form-control" autocapitalize="off">
             </div>
             <br>
