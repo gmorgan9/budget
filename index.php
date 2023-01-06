@@ -308,7 +308,8 @@ if(isset($_GET['success'])) {
             <p class="date text-muted">
                 <?php 
                 date_default_timezone_set('America/Denver');
-                echo date("l, F j, Y, h:m A");
+                $date = date('Y-m-d H:i:s');
+                echo $date;
                 ?>
             </p>
             <hr>
