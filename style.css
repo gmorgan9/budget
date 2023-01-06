@@ -145,7 +145,7 @@ li { list-style: none; }
   }
   
   .navbar-link {
-    color: var(--light-gray);
+    color: #000;
     font-size: var(--fs-5);
     padding: 20px 7px;
     transition: color var(--transition-1);
@@ -157,5 +157,5 @@ li { list-style: none; }
   .navbar-link:hover,
   .navbar-link:focus { color: var(--light-gray-70); }
   
-  .navbar-link.active{ color: var(--orange-yellow-crayola); }
+  .navbar-link.active{ color: #3e4881; }
   
