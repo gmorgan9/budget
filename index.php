@@ -163,7 +163,7 @@ session_start();
             <form class="form" action="" method="POST">
             <div class="username">
                 <label class="text-white fw-bold" for="user_login">Account ID</label>
-                <p class="text-muted">
+                <p class="text-secondary">
                 94768
                 </p>
                 <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
@@ -175,7 +175,7 @@ session_start();
             </div>
             <br>
             <div class="button text-end">
-                <input type="submit" name="login" class="btn btn-primary" value="Log In">
+                <input type="submit" name="login" class="btn btn-secondary" value="Log In">
             </div>
         </form>
 
