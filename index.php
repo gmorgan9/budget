@@ -208,14 +208,14 @@ session_start();
                                 <input type="hidden" name="_template" value="box">
 
                                 <div class="input-wrapper">
-                                    <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required data-form-input>
-
-                                    <input type="email" name="Email" class="form-input" placeholder="Email address" required data-form-input>
+                                    <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required>
+                                    <div class="pt-2"></div>
+                                    <input type="email" name="Email" class="form-input" placeholder="Email address" required>
                                 </div>
 
-                                <button class="form-btn" type="submit"  data-form-btn>
-                                  <ion-icon name="paper-plane"></ion-icon>
-                                  <span>Send Message</span>
+                                <button type="submit">
+                                    <i class="bi bi-send"></i>
+                                    <span>Send Message</span>
                                 </button>
 
                             </form>
