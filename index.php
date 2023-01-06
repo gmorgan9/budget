@@ -16,6 +16,7 @@ session_start();
         // $cpassword = $_POST['cpassword'];
         $isadmin = $_POST['isadmin'];
         $loggedin = $_POST['loggedin'];
+        $account_link = $_POST['account_link'];
         
         $select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
         
@@ -24,7 +25,7 @@ session_start();
         if(mysqli_num_rows($result) > 0){
         
            $row = mysqli_fetch_array($result);
-           $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
+           $sql = "UPDATE users SET loggedin='1' WHERE account_link='$account_link'";
            if (mysqli_query($conn, $sql)) {
               echo "Record updated successfully";
             } else {
@@ -160,8 +161,8 @@ session_start();
 
             <form class="form" action="" method="POST">
             <div class="username">
-                <label for="user_login">Username</label>
-                <input type="text" id="user_login" name="username" class="form-control" autocapitalize="off">
+                <label for="user_login">Account ID</label>
+                <input type="text" id="user_login" name="account_link" value="94768" class="form-control" readonly>
             </div>
             <br>
             <div class="password">
