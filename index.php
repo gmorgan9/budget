@@ -672,11 +672,13 @@ session_start();
             </div>
             <div class="mt-5"></div>
             <div class="d-flex justify-content-center">
-                <ul class="list-group list-group-flush w-75" style="border-radius:15px;">
+                <ul class="list-group list-group-flush w-75">
                     <?php if($role == 1) { ?>
-                        <a style="text-decoration: none;" href="users/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Users</li></a>
-                    <?php } else {}?>
-                    <a style="text-decoration: none;" href="expenses/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Expenses</li></a>
+                        <a style="text-decoration: none;" href="users/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important; border-radius: 15px 15px 0 0;">Users</li></a>
+                        <a style="text-decoration: none;" href="expenses/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Expenses</li></a>
+                    <?php } else { ?>
+                        <a style="text-decoration: none;" href="expenses/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important; border-radius: 15px 15px 0 0;">Expenses</li></a>
+                    <?php } ?>
                     <a style="text-decoration: none;" href="income/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Income</li></a>
                     <a style="text-decoration: none;" href="account/index.php?id=<?php echo $user_id; ?>"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Edit Account</li></a>
                     <a style="text-decoration: none;" href="logout.php"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Logout</li></a>
