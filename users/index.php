@@ -40,55 +40,18 @@ date_default_timezone_set('America/Denver');
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
-<?php
-
-    // $id = $_SESSION['user_id'];
-    // $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
-    // $result2 = mysqli_query($conn, $select2);
-    // if (mysqli_num_rows($result2) > 0) {
-    //     while($row2 = mysqli_fetch_assoc($result2)) {
-    //         $account_link    = $row2['account_link'];
-    // }}
-
-?>
-
     <div class="container">
 
             <div class="mt-4"></div>
-            <?php 
-                //$month_year = date('F Y');
-            ?>
             <h2 class="text-white">
                 Users
             </h2>
             <p class="text-muted">
                 Compliled list of users.
-                <!-- Compliled list of Income for <?php //echo $month_year; ?>. -->
             </p>
             <hr>
             <div class="mt-4"></div>
-
-            <?php 
-                // $month_year = date('F Y');
-                // $firstday = strtotime("first day of ". $month_year);
-                // $first_day = date('Y-m-d', $firstday);
-                // $month_year = date('F Y');
-                // $lastday = strtotime("last day of ". $month_year);
-                // $last_day = date('Y-m-d', $lastday);
-                
-                ?>
-                <p class="text-white">
-                    <?php 
-
-                    // $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                    // $result=mysqli_query($conn,$sql);
-                    // $rowtotal=mysqli_fetch_array($result); 
-                    // echo "<b>Income Records:</b> $rowtotal[0]";
-
-                    ?>
-                </p>
-
-
+            
             <table class=" table table-bordered">
                 <thead style="background-color: white;">
                   <tr>
