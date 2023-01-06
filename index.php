@@ -156,7 +156,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css?v=1.23">
+        <link rel="stylesheet" href="style.css?v=1.24">
         <style>
             .success {
                 width: 70%;
