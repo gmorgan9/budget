@@ -53,7 +53,7 @@ date_default_timezone_set('America/Denver');
             <div class="mt-4"></div>
 
             <table class=" table table-bordered">
-                <thead style="background-color: white;">
+                <thead style="background-color: white; border-radius: 15px 15px 0 0;">
                   <tr>
                   <th class="text-center" scope="col">ID #</th>
                     <th scope="col">Name</th>
