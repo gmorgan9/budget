@@ -171,7 +171,11 @@ session_start();
             <br>
             <div style="background-color: rgb(100, 100, 100); padding: 15px; padding-bottom: -10px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
                 <label class="text-white fw-bold fs-2" for="user_pass">PIN</label>
-                <input type="password" id="user_pass" name="pin" inputmode="numeric" class="form-control" autocapitalize="off">
+                <input type="password" name="pin" inputmode="numeric" class="form-control">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control-plaintext" name="pin"inputmode="numeric" id="staticEmail">
+                    </div>
             </div>
             <br>
             <div class="button text-end">
