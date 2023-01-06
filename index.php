@@ -162,7 +162,7 @@ session_start();
 
             <form class="form" action="" method="POST">
             <div class="username">
-                <label class="text-white fw-bold" for="user_login">Account ID</label>
+                <label class="text-white fw-bold fs-1" for="user_login">Account ID</label>
                 <p class="text-info">
                 94768
                 </p>
