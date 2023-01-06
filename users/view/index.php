@@ -154,10 +154,10 @@ date_default_timezone_set('America/Denver');
             <h2 class="text-white">
                 View User
             </h2>
-            <p class="text-muted">
-                Enter an income to keep track of.
+            <p class="" style="color: rgb(242, 247, 253);">
+                Edit the account details for <?php echo $firstname ?> <?php echo $lastname; ?>. 
             </p>
-            <hr>
+            <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
             <?php echo $success; ?>
 
@@ -192,7 +192,7 @@ date_default_timezone_set('America/Denver');
                     <label for="pin" class="form-label text-white">Pin</label>
                     <input type="password" name="pin" class="form-control" id="pin" inputmode="numeric" value="<?php echo $pin; ?>">
                 </div>
-                <button type="submit" name="update_user" class="btn btn-secondary">Update</button>
+                <button type="submit" name="update_user" class="mt-3 btn" style="background-color: rgb(242, 247, 253);">Update</button>
             </form>
         </section>
 

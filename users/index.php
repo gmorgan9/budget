@@ -54,7 +54,7 @@ date_default_timezone_set('America/Denver');
 
             <table class=" table table-bordered">
                 <thead style="background-color: white;">
-                  <tr style="border-radius: 15px 15px 0 0;">
+                  <tr>
                   <th class="text-center" scope="col">ID #</th>
                     <th scope="col">Name</th>
                     <th scope="col">Account</th>
