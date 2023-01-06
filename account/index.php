@@ -76,7 +76,7 @@ if(isset($_POST['update_user'])){
        <div class="pt-3"></div>
        <div class="login_success">
        <strong>Success:</strong> 
-       Your request has been sent! We will get back to you as soon as possible!
+       Your account hass successfully been updated!
        </div>
        ';
 

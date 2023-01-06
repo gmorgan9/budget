@@ -76,7 +76,7 @@ session_start();
            <div class="pt-3"></div>
            <div class="login_success">
            <strong>Success:</strong> 
-           Your request has been sent! We will get back to you as soon as possible!
+           Update success!
            </div>
            ';
     
@@ -109,7 +109,7 @@ session_start();
     <style>
 
             .login_success {
-                width: 70%;
+                width: 95%;
                 border-left: 4px solid #00a32a;
                 padding: 12px;
                 /* margin-left: 0; */
