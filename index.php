@@ -228,7 +228,7 @@ if(isset($_GET['success'])) {
             <p class="text-muted text-end" style="width: 70%;">
                 
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Forgot Pin?
                 </button>
 
@@ -260,7 +260,7 @@ if(isset($_GET['success'])) {
                           </div>
                           <div class="modal-footer">
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <input name="forgot" type="submit" class="" value="Send">
+                            <input name="forgot" type="submit" class="btn btn-primary" value="Send">
                           </div>
                           </form>
                         </div>
