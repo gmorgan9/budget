@@ -39,8 +39,8 @@ session_start();
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
-<?php
-
+<!-- php code -->
+    <?php
     $id = $_SESSION['user_id'];
     $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
     $result2 = mysqli_query($conn, $select2);
@@ -48,8 +48,8 @@ session_start();
         while($row2 = mysqli_fetch_assoc($result2)) {
             $account_link    = $row2['account_link'];
     }}
-
-?>
+    ?>
+<!-- end php code -->
 
     <div class="container">
 

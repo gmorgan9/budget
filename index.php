@@ -283,7 +283,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: rgb(78, 78, 78);">
+    <body style="background-color: #3e4881;">
 
     <!-- php code -->
         <?php 
@@ -595,16 +595,16 @@ session_start();
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
-                    <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
+                    <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "Paycheck"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
                 </div>
-                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
+                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 630.40</span></label>
                 <div class="mb-3 input-group">
                     <span class="input-group-text" id="basic-addon1">$</span>
                     <input type="text" name="amount" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Spent</label>
+                    <label for="date" class="form-label text-white">Date Gained</label>
                     <input type="date" name="date_gained" class="form-control" id="amount">
                 </div>
                 <div class="row">
