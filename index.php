@@ -159,7 +159,7 @@ session_start();
                 Login
             </h2>
             <div class="mt-5"></div>
-            <img src="logo.png" alt="">
+            <img src="logo.png" alt="" width="150">
             <div  class="">
 
             <form class="form" action="" method="POST">
