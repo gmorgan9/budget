@@ -151,7 +151,7 @@ session_start();
 <?php if(!isset($_SESSION['username'])) {?>
 
 <!-- login -->
-    <div class="login">
+    <div class="login" style="background-color: rgb(175,175,175);">
 
         <div class="mt-4"></div>
             <h2 class="text-white ps-3">
