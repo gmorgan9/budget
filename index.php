@@ -182,11 +182,11 @@ session_start();
 
 
 <?php if(!isset($_SESSION['username'])) {?>
-    <body style="background-color: rgb(242, 247, 253);">
+    <body style="background-color: #3e4881;">
 
 <!-- login -->
     <div class="login">
-        <div class="background" style="background-color: pink;">
+        <div class="background" style="background-color: rgb(242, 247, 253);">
 
         
             <div class="mt-4"></div>
