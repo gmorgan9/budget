@@ -154,8 +154,8 @@ session_start();
     <div class="login">
 
         <div class="mt-4"></div>
-            <h2 class="text-white">
-                <div class="ps-5"></div> Login
+            <h2 class="text-white ps-3">
+                Login
             </h2>
             <div class="mt-5"></div>
             <div style="background-color: gray;padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="">
