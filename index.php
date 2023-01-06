@@ -260,7 +260,7 @@ if(isset($_GET['success'])) {
                           </div>
                           <div class="modal-footer">
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <input name="forgot" type="submit" class="btn btn-primary" value="Send">
+                            <input name="forgot" type="submit" class="" value="Send">
                           </div>
                           </form>
                         </div>
