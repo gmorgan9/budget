@@ -574,8 +574,7 @@ session_start();
                     <label for="comment" class="form-label text-white">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"></textarea>
                 </div>
-                <div class="mt-3"></div>
-                <button type="submit" name="exp" class="btn" style="background-color: rgb(242, 247, 253);">Submit</button>
+                <button type="submit" name="exp" class="mt-3 btn" style="background-color: rgb(242, 247, 253);">Submit</button>
             </form>
         </section>
 
