@@ -145,6 +145,7 @@ session_start();
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <link rel="apple-touch-icon" href="logo.png">
     <!-- end APPLE -->
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
@@ -718,9 +719,6 @@ session_start();
 <?php } ?>
 
 <!-- custom script -->
-    <script>
-        screen.lockOrientation('portrait');
-    </script>
     <script src="script.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
