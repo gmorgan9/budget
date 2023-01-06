@@ -185,7 +185,12 @@ session_start();
         <div class="mt-3"></div>
         <div class="d-flex justify-content-center" >
             <p class="text-muted text-end" style="width: 70%;">
-                Forgot Pin?
+                
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Forgot Pin?
+                </button>
+
             </p>
         </div>
 
