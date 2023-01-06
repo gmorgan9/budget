@@ -179,7 +179,7 @@ session_start();
             </div>
             <br>
             <div class="button text-end">
-                <input style="width: 70%;" type="submit" name="login" class="btn btn-secondary" value="Log In">
+                <input style="width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn btn-secondary" value="Log In">
             </div>
         </form>
 
