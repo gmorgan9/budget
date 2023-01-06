@@ -669,11 +669,12 @@ session_start();
                 <h4 class="text-center text-white">
                     <?php echo $firstname; ?> <?php echo $lastname; ?>
                 </h4>
-                <p>
-                    <?php echo $user_idno; ?>
+                <p class="text-center" class="color: rgb(242, 247, 253) !important;">
+                    <?php echo $user_idno; ?> <br>
+                    <?php echo $account_link; ?>
                 </p>
                 <p>
-                    <?php echo $account_link; ?>
+                    
                 </p>
             </div>
             <div class="mt-5"></div>
