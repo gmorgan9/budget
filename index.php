@@ -681,7 +681,7 @@ session_start();
                     <?php } ?>
                     <a style="text-decoration: none;" href="income/"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Income</li></a>
                     <a style="text-decoration: none;" href="account/index.php?id=<?php echo $user_id; ?>"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Edit Account</li></a>
-                    <a style="text-decoration: none;" href="logout.php"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;">Logout</li></a>
+                    <a style="text-decoration: none;" href="logout.php"><li class="list-group-item text-center" style="background-color: rgb(242, 247, 253) !important;border-radius: 0 0 15px 15px;">Logout</li></a>
                 </ul>
             </div>
         </section>
