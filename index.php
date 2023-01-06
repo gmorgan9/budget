@@ -126,7 +126,7 @@ session_start();
 if(isset($_GET['success'])) {
     $success = '
            <div class="pt-3"></div>
-           <div class="login_error">
+           <div class="login_success">
            <strong>Success:</strong> 
            Your request has been sent! We will get back to you as soon as possible!
            </div>
