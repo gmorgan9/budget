@@ -669,7 +669,7 @@ session_start();
                 <h4 class="text-center text-white">
                     <b><?php echo $firstname; ?> <?php echo $lastname; ?></b>
                 </h4>
-                <p class="text-center" class="font-size: 12px; color: rgb(242, 247, 253) !important;">
+                <p class="text-center" class="font-size: 10px !important; color: rgb(242, 247, 253) !important;">
                     <b>User ID: </b><?php echo $user_idno; ?>
                 </p>
                 <p>
