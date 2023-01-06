@@ -121,6 +121,18 @@ session_start();
 
     };
 // end add income
+
+// success message
+if(isset($_POST['forgot'])) {
+    $success = '
+           <div class="pt-3"></div>
+           <div class="login_error">
+           <strong>Error:</strong> 
+           Your email has been sent
+           </div>
+           ';
+}
+// end success message
 ?>
 
 <!DOCTYPE html>
@@ -143,7 +155,24 @@ session_start();
     <!-- custom styles -->
     <link rel="stylesheet" href="style.css">
 
+<style>
 
+            .login_error {
+                border-left: 4px solid #72aee6;
+                padding: 12px;
+                margin-left: 0;
+                margin-bottom: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                word-wrap:break-word
+            }
+            /* .login .success {
+                border-left-color:#00a32a
+            } */
+            .login_error {
+                border-left-color:#d63638
+            }
+</style>
 
 </head>
 
@@ -159,6 +188,8 @@ session_start();
             <div class="d-flex justify-content-center">
                 <img class="" src="logo.png" alt="" width="175">
             </div>
+            <div class="mt-2"></div>
+            <?php echo $success; ?>
             <div class="mt-2"></div>
             <div  class="">
 
@@ -212,19 +243,12 @@ session_start();
                                     <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required>
                                     <div class="pt-2"></div>
                                     <input type="email" name="Email" class="form-input" placeholder="Email address" required>
-                                </div>
-
-                                <button type="submit">
-                                    <i class="bi bi-send"></i>
-                                    <span>Send Message</span>
-                                </button>
-
-                            
+                                </div>                           
 
                           </div>
                           <div class="modal-footer">
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <input name="forgot" type="submit" class="btn btn-primary" value="Send">
                           </div>
                           </form>
                         </div>
