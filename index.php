@@ -314,7 +314,7 @@ session_start();
             <h2 class="text-white">
                 Welcome, <?php echo $firstname; ?>!
             </h2>
-            <p class="date text-muted">
+            <p class="date" style="color: rgb(242, 247, 253);">
                 <?php 
                 date_default_timezone_set('America/Denver');
                 $date = date('l, F j, Y');
@@ -364,7 +364,7 @@ session_start();
                         </div>
                     </div>
 
-                    <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
+                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <h3 class="card-title text-center">Yearly</h3>
                             <p class="card-text fs-5 text-center">
@@ -397,7 +397,7 @@ session_start();
                     <h3 class="text-white">
                         Expenses
                     </h3>
-                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
+                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
@@ -430,7 +430,7 @@ session_start();
                         </div>
                     </div>
 
-                    <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
+                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <h3 class="card-title text-center">Yearly</h3>
                             <p class="card-text fs-5 text-center">
@@ -461,7 +461,7 @@ session_start();
                     <h3 class="text-white">
                         Total
                     </h3>
-                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
+                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <h3 class="card-title text-center">Monthly</h3>
                             <p class="card-text fs-5 text-center">
@@ -477,7 +477,7 @@ session_start();
                         </div>
                     </div>
 
-                    <div class="card" style="width: 40%; background-color: rgb(100, 100, 100) !important; color: white;">
+                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <h3 class="card-title text-center">Yearly</h3>
                             <p class="card-text fs-5 text-center">
