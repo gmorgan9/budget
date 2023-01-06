@@ -170,11 +170,12 @@ session_start();
                 word-wrap:break-word
             }
             .background {
+                background-color: rgb(242, 247, 253);
                 width: 85%;
-                /* height: 80%; */
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 15px;
+                margin-top: 50px;
             }
         </style>
     <!-- end custom styles -->
@@ -187,7 +188,7 @@ session_start();
 
 <!-- login -->
     <div class="login">
-        <div class="background" style="background-color: rgb(242, 247, 253);">
+        <div class="background">
 
         
             <div class="mt-4"></div>
