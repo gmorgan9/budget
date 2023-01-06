@@ -161,6 +161,6 @@ li { list-style: none; }
     color: #3e4881;
     font-weight: 700; 
     border-bottom: 5px solid #3e4881;
-    bottom: -30px !important;
+    border-bottom: -30px !important;
     }
   
