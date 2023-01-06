@@ -204,7 +204,7 @@ if(isset($_POST['update_user'])){
                 </div>
                 <div class="mb-3">
                     <label for="pin" class="form-label text-white">Pin</label>
-                    <input type="password" name="pin" class="form-control" id="pin" value="<?php echo $pin; ?>">
+                    <input type="password" name="pin" class="form-control" inputmode="numeric" id="pin" value="<?php echo $pin; ?>">
                 </div>
                 <button type="submit" name="update_acc" class="btn btn-secondary">Update</button>
             </form>
