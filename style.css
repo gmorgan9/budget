@@ -160,7 +160,6 @@ li { list-style: none; }
   .navbar-link.active{ 
     color: #3e4881;
     font-weight: 700; 
-    text-decoration: underline;
-      text-decoration-thickness: 3px; 
+    border-bottom: 2px solid #3e4881;
     }
   
