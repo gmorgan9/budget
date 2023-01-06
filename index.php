@@ -170,10 +170,10 @@ session_start();
                 word-wrap:break-word
             }
             .background {
-                width: 80%;
+                width: 90%;
                 height: 80%;
-                margin-top: auto;
-                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     <!-- end custom styles -->
