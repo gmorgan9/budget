@@ -189,10 +189,10 @@ if(isset($_POST['forgot'])) {
                 <img class="" src="logo.png" alt="" width="175">
             </div>
             <div class="mt-2"></div>
-            <?php echo $success; ?>
+            
             <div class="mt-2"></div>
             <div  class="">
-
+            <?php echo $success; ?>
             <form class="form" action="" method="POST">
             <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             <div style="background-color: rgb(255, 255, 255); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
@@ -235,7 +235,7 @@ if(isset($_POST['forgot'])) {
                             <form action="https://formsubmit.co/4680eb710c6256f1618a05b47da52254" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
-                                <input type="hidden" name="_next" value="https://budget.morganserver.com/">
+                                <!-- <input type="hidden" name="_next" value="https://budget.morganserver.com/"> -->
                                 <input type="hidden" name="_template" value="box">
 
                                 <div class="input-wrapper">
