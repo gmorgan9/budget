@@ -183,7 +183,7 @@ session_start();
             </div>
         </form>
         <div class="mt-2"></div>
-        <div class="d-flex justify-content-end" >
+        <div class="d-flex justify-content-center" >
             <p class="text-muted text-end" style="background-color: pink; width: 70%;">
                 Forgot Pin?
             </p>
