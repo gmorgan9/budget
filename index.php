@@ -252,13 +252,14 @@ session_start();
                                     <input type="email" name="Email" class="form-control" placeholder="Email address" required>
                                 </div>  
                                 
-                                </form>
+                                
 
                           </div>
                           <div class="modal-footer">
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                             <button type="submit" class="btn btn-primary">Send</button>
                           </div>
+                          </form>
                         </div>
                       </div>
                     </div>
