@@ -76,7 +76,7 @@ if(isset($_POST['update_acc'])){
        <div class="pt-3"></div>
        <div class="login_success">
        <strong>Success:</strong> 
-       Your account hass successfully been updated!
+       Your account has successfully been updated!
        </div>
        ';
 
