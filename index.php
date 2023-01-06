@@ -727,7 +727,7 @@ session_start();
 function OrientationChanged(e)
 {
     $('body').css('-webkit-transform', window.orientation % 180 == 0 ? '' : 'rotate(-90deg)');
-}
+})
     </script>
     <script src="script.js"></script>
     <!-- bootstrap -->
