@@ -162,7 +162,10 @@ session_start();
             <form class="form" action="" method="POST">
             <div class="username">
                 <label for="user_login">Account ID</label>
-                <input type="text" id="user_login" name="account_link" value="94768" class="form-control" readonly>
+                <p>
+                94768
+                </p>
+                <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
             </div>
             <br>
             <div class="pin">
