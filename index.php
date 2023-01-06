@@ -159,7 +159,9 @@ session_start();
                 Login
             </h2>
             <div class="mt-5"></div>
-            <img class="text-center" src="logo.png" alt="" width="175">
+            <div class="d-flex justify-content-center">
+                <img class="" src="logo.png" alt="" width="175">
+            </div>
             <div  class="">
 
             <form class="form" action="" method="POST">
