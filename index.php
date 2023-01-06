@@ -228,7 +228,7 @@ if(isset($_GET['success'])) {
             <p class="text-muted text-end" style="width: 70%;">
                 
 
-                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Forgot Pin?
                 </button>
 
