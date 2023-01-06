@@ -200,7 +200,26 @@ session_start();
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            
+
+                            <form action="https://formsubmit.co/garrett.morgan.pro@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
+                                <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                                <input type="hidden" name="_template" value="box">
+
+                                <div class="input-wrapper">
+                                    <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required data-form-input>
+
+                                    <input type="email" name="Email" class="form-input" placeholder="Email address" required data-form-input>
+                                </div>
+
+                                <button class="form-btn" type="submit"  data-form-btn>
+                                  <ion-icon name="paper-plane"></ion-icon>
+                                  <span>Send Message</span>
+                                </button>
+
+                            </form>
+
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
