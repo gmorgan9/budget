@@ -155,9 +155,6 @@ session_start();
     <div class="login">
 
         <div class="mt-4"></div>
-            <h2 class="ps-3">
-                Login
-            </h2>
             <div class="mt-5"></div>
             <div class="d-flex justify-content-center">
                 <img class="" src="logo.png" alt="" width="175">
