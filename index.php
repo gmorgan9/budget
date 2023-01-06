@@ -672,9 +672,6 @@ session_start();
                 <p class="text-center" class="font-size: 10px !important; color: rgb(242, 247, 253) !important;">
                     <b>User ID: </b><?php echo $user_idno; ?>
                 </p>
-                <p>
-                    
-                </p>
             </div>
             <div class="mt-5"></div>
             <div class="d-flex justify-content-center">
