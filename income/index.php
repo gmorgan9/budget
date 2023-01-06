@@ -33,11 +33,11 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../style.css?v=1.25">
     <!-- end custome styles -->
 
 </head>
-<body style="background-color: rgb(78, 78, 78);">
+<body style="background-color: #3e4881;">
 
 <!-- php code -->
     <?php
@@ -60,10 +60,10 @@ session_start();
             <h2 class="text-white">
             <?php echo $month_year; ?> Income
             </h2>
-            <p class="text-muted">
+            <p style="color: rgb(242, 247, 253);">
                 Compliled list of Income for <?php echo $month_year; ?>.
             </p>
-            <hr>
+            <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
 
             <?php 

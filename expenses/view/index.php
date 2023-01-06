@@ -100,38 +100,38 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../style.css?v=1.25">
     <!-- end custom styles -->
 
 </head>
 <body style="background-color: #3e4881;">
 
+      <!-- php code -->
+        <?php 
+        $id = $_SESSION['user_id'];
+        $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
+        $result2 = mysqli_query($conn, $select2);
+        if (mysqli_num_rows($result2) > 0) {
+            while($row2 = mysqli_fetch_assoc($result2)) {
+                $account_link    = $row2['account_link'];
+        }}
 
-    <?php 
-    $id = $_SESSION['user_id'];
-    $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
-    $result2 = mysqli_query($conn, $select2);
-    if (mysqli_num_rows($result2) > 0) {
-        while($row2 = mysqli_fetch_assoc($result2)) {
-            $account_link    = $row2['account_link'];
-    }}
 
+        $exp_id = $_GET['id'];
+        $select = " SELECT * FROM expenses WHERE exp_id = '$exp_id' AND account_link = '$account_link'";
+        $result = mysqli_query($conn, $select);
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                $description    = $row['description'];
+                $amount         = $row['amount'];
+                $date_spent    = $row['date_spent'];
+                $cat_idno       = $row['cat_idno'];
+                $card_idno      = $row['card_idno'];
+                $comments       = $row['comments'];
+                // $account_link   = $row['account_link'];
+        }}
 
-    $exp_id = $_GET['id'];
-    $select = " SELECT * FROM expenses WHERE exp_id = '$exp_id' AND account_link = '$account_link'";
-    $result = mysqli_query($conn, $select);
-    if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {
-            $description    = $row['description'];
-            $amount         = $row['amount'];
-            $date_spent    = $row['date_spent'];
-            $cat_idno       = $row['cat_idno'];
-            $card_idno      = $row['card_idno'];
-            $comments       = $row['comments'];
-            // $account_link   = $row['account_link'];
-    }}
-
-    ?>
+        ?>
 
     <!-- end php code -->
 
@@ -151,9 +151,6 @@ session_start();
 
             <form action="" class="" method="POST">
                 <input type="hidden" class="form-control" name="exp_id" value="<?php echo $exp_id;?>">
-                <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
@@ -177,7 +174,6 @@ session_start();
                             while($cap = mysqli_fetch_assoc($put)) {
                                 $cat_name    = $cap['category'];
                         }}
-
                     ?>
 
                     <label for="category" class="form-label text-white">Category</label>

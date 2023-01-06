@@ -100,60 +100,55 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../style.css?v=1.25">
     <!-- end custom styles -->
 
 </head>
-<body style="background-color: rgb(78, 78, 78);">
+<body style="background-color: #3e4881;">
+    
+    <!-- php code -->
+        <?php 
+        $id = $_SESSION['user_id'];
+        $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
+        $result2 = mysqli_query($conn, $select2);
+        if (mysqli_num_rows($result2) > 0) {
+            while($row2 = mysqli_fetch_assoc($result2)) {
+                $account_link    = $row2['account_link'];
+        }}
 
 
-    <?php 
-    $id = $_SESSION['user_id'];
-    $select2 = " SELECT * FROM users WHERE user_id = '$id' ";
-    $result2 = mysqli_query($conn, $select2);
-    if (mysqli_num_rows($result2) > 0) {
-        while($row2 = mysqli_fetch_assoc($result2)) {
-            $account_link    = $row2['account_link'];
-    }}
+        $inc_id = $_GET['id'];
+        $select = " SELECT * FROM income WHERE inc_id = '$inc_id' AND account_link = '$account_link'";
+        $result = mysqli_query($conn, $select);
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                $description    = $row['description'];
+                $amount         = $row['amount'];
+                $date_gained    = $row['date_gained'];
+                $cat_idno       = $row['cat_idno'];
+                $card_idno      = $row['card_idno'];
+                $comments       = $row['comments'];
+                // $account_link   = $row['account_link'];
+        }}
 
-
-    $inc_id = $_GET['id'];
-    $select = " SELECT * FROM income WHERE inc_id = '$inc_id' AND account_link = '$account_link'";
-    $result = mysqli_query($conn, $select);
-    if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {
-            $description    = $row['description'];
-            $amount         = $row['amount'];
-            $date_gained    = $row['date_gained'];
-            $cat_idno       = $row['cat_idno'];
-            $card_idno      = $row['card_idno'];
-            $comments       = $row['comments'];
-            // $account_link   = $row['account_link'];
-    }}
-
-    ?>
+        ?>
 
     <!-- end php code -->
 
 
     <div class="container">
-
-        <!-- <section class="" data-page="income"> -->
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Income
             </h2>
-            <p class="text-muted">
+            <p style="color: rgb(242, 247, 253);">
                 Enter an income to keep track of.
             </p>
-            <hr>
+            <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
                 <input type="hidden" class="form-control" name="inc_id" value="<?php echo $inc_id;?>">
-                <!-- <input type="hidden" class="form-control" name="person_fn" value="<?php //echo $firstname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_ln" value="<?php //echo $lastname;?>"> -->
-                <!-- <input type="hidden" class="form-control" name="person_idno" value="<?php //echo $user_idno;?>"> -->
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
                     <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
