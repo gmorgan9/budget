@@ -145,7 +145,7 @@ session_start();
                 View/Edit Expense Record
             </h2>
             <p style="color: rgb(242, 247, 253);">
-                Edit the expense record details (<?php echo $exp_idno; ?>).
+                Edit the expense record details.
             </p>
             <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
