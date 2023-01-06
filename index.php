@@ -123,8 +123,8 @@ session_start();
 // end add income
 
 // success message
-if(isset($_POST['forgot'])) {
-    $_SESSION['success'] = '
+if(isset($_GET['success'])) {
+    $success = '
            <div class="pt-3"></div>
            <div class="login_error">
            <strong>Error:</strong> 
@@ -193,10 +193,10 @@ if(isset($_POST['forgot'])) {
             <div class="mt-2"></div>
             <div  class="">
             
-            <?php
-            if(isset($_GET['success'])) {
-                echo "it was a success";
-            }
+            <?php echo $success;
+            // if(isset($_GET['success'])) {
+            //     echo "it was a success";
+            // }
             ?>
               
             
@@ -242,7 +242,7 @@ if(isset($_POST['forgot'])) {
                             <form action="https://formsubmit.co/4680eb710c6256f1618a05b47da52254" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
-                                <input type="hidden" name="_next" value="https://budget.morganserver.com?success='thankyou'">
+                                <input type="hidden" name="_next" value="https://budget.morganserver.com?success=sent">
                                 <input type="hidden" name="_template" value="box">
 
                                 <div class="input-wrapper">
