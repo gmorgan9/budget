@@ -182,6 +182,11 @@ session_start();
                 <input style="background-color: #3e4881 !important; border-radius: 15px !important; width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn text-white fw-bold" value="Log In">
             </div>
         </form>
+        <div>
+            <p class="text-muted text-end">
+                Forgot Pin?
+            </p>
+        </div>
 
     </div>
 <!-- end login -->
