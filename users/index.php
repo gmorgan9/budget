@@ -49,7 +49,7 @@ date_default_timezone_set('America/Denver');
             <p class="" style="color: rgb(242, 247, 253);">
                 Compliled list of users.
             </p>
-            <hr>
+            <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
 
             <table class=" table table-bordered">
