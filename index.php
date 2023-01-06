@@ -175,7 +175,7 @@ session_start();
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 15px;
-                margin-top: 50px;
+                margin-top: 150px;
             }
         </style>
     <!-- end custom styles -->
