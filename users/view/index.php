@@ -124,7 +124,7 @@ date_default_timezone_set('America/Denver');
     <!-- end custom styles -->
 
 </head>
-<body style="background-color: rgb(78, 78, 78);">
+<body style="background-color: #3e4881;">
 
 
 <!-- php code -->
