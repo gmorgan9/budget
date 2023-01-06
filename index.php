@@ -670,7 +670,7 @@ session_start();
                     <?php echo $firstname; ?> <?php echo $lastname; ?>
                 </h4>
                 <p class="text-center" class="color: rgb(242, 247, 253) !important;">
-                    <?php echo $user_idno; ?> <br>
+                    <b>User ID: </b><?php echo $user_idno; ?> <br>
                     <?php echo $account_link; ?>
                 </p>
                 <p>
