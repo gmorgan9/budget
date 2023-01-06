@@ -252,9 +252,9 @@ if(isset($_GET['success'])) {
                                 </p>
                                 <div class="input-wrapper">
                                     <input type="hidden" name="Account&nbsp;ID" value="94768">
-                                    <input type="text" name="Full&nbsp;Name" class="form-input" placeholder="Full name" required>
+                                    <input type="text" name="Full&nbsp;Name" class="form-control" placeholder="Full name" required>
                                     <div class="pt-2"></div>
-                                    <input type="email" name="Email" class="form-input" placeholder="Email address" required>
+                                    <input type="email" name="Email" class="form-control" placeholder="Email address" required>
                                 </div>                           
 
                           </div>
