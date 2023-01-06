@@ -147,7 +147,7 @@ li { list-style: none; }
   .navbar-link {
     color: #000;
     font-size: var(--fs-5);
-    /* padding: 20px 7px; */
+    padding: 20px 7px;
     transition: color var(--transition-1);
   }
   .nav-icon {
@@ -161,6 +161,6 @@ li { list-style: none; }
     color: #3e4881;
     font-weight: 700; 
     border-bottom: 5px solid #3e4881;
-    margin-bottom: -30px;
+    padding: unset !important;
     }
   
