@@ -180,95 +180,97 @@ session_start();
 
 <!-- login -->
     <div class="login">
+        <div class="background" style="background-color: pink;">
 
-        <div class="mt-4"></div>
-            <div class="mt-5"></div>
-            <div class="d-flex justify-content-center">
-                <img class="" src="logo.png" alt="" width="175">
-            </div>
-            <div class="mt-2"></div>
-            
-            <div class="mt-2"></div>
-            <div  class="">
-            
-            <?php echo $success;
-            // if(isset($_GET['success'])) {
-            //     echo "it was a success";
-            // }
-            ?>
-              
-            
-            <form class="form" action="" method="POST">
-            <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
-            <div style="background-color: rgb(255, 255, 255); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
-                <label class="fw-bold fs-3" for="user_login">Account ID</label>
-                <p class="text-muted fs-6" style="color: rgb(25, 25, 25);">94768</p>
-            </div>
-            <br>
-            <div style="background-color: rgb(255, 255, 255);  padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
-                <label class="fw-bold fs-2" for="user_pass">PIN</label>
-                <!-- <input type="password" name="pin" inputmode="numeric" class="form-control"> -->
-                <!-- <label for="staticEmail" class="col-sm-2 col-form-label">Email</label> -->
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control-plaintext" placeholder="****" name="pin"inputmode="numeric" id="staticEmail">
-                    </div>
-            </div>
-            <br>
-            <div class="button text-end d-flex justify-content-center">
-                <input style="background-color: #3e4881 !important; border-radius: 15px !important; width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn text-white fw-bold" value="Log In">
-            </div>
-        </form>
-        <div class="mt-3"></div>
-        <div class="d-flex justify-content-center" >
-            <p class="text-muted text-end" style="width: 70%;">
+        
+            <div class="mt-4"></div>
+                <div class="mt-5"></div>
+                <div class="d-flex justify-content-center">
+                    <img class="" src="logo.png" alt="" width="175">
+                </div>
+                <div class="mt-2"></div>
+
+                <div class="mt-2"></div>
+                <div  class="">
+
+                <?php echo $success;
+                // if(isset($_GET['success'])) {
+                //     echo "it was a success";
+                // }
+                ?>
+
                 
-
-                <button type="button" class="text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Forgot Pin?
-                </button>
-
-                <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Forgot Pin?</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-
-                            <form action="https://formsubmit.co/4680eb710c6256f1618a05b47da52254" method="POST">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
-                                <input type="hidden" name="_next" value="https://budget.morganserver.com?success=sent">
-                                <input type="hidden" name="_template" value="box">
-                                <p class="text-muted">
-                                    Enter your name and email address for the request of a pin reset.
-                                </p>
-                                <div class="input-wrapper">
-                                    <input type="hidden" name="Account&nbsp;ID" value="94768">
-                                    <input type="text" name="Full&nbsp;Name" class="form-control" placeholder="Full name" required>
-                                    <div class="pt-3"></div>
-                                    <input type="email" name="Email" class="form-control" placeholder="Email address" required>
-                                </div>  
-                                
-                                
-
-                          </div>
-                          <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <button type="submit" class="btn btn-primary">Send</button>
-                          </div>
-                          </form>
+                <form class="form" action="" method="POST">
+                <input type="hidden" id="user_login" name="account_link" value="94768" class="form-control">
+                <div style="background-color: rgb(255, 255, 255); padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="username">
+                    <label class="fw-bold fs-3" for="user_login">Account ID</label>
+                    <p class="text-muted fs-6" style="color: rgb(25, 25, 25);">94768</p>
+                </div>
+                <br>
+                <div style="background-color: rgb(255, 255, 255);  padding-left: 10px; padding-top: 5px; padding-bottom: 5px; width: 70%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="pin">
+                    <label class="fw-bold fs-2" for="user_pass">PIN</label>
+                    <!-- <input type="password" name="pin" inputmode="numeric" class="form-control"> -->
+                    <!-- <label for="staticEmail" class="col-sm-2 col-form-label">Email</label> -->
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control-plaintext" placeholder="****" name="pin"inputmode="numeric" id="staticEmail">
                         </div>
-                      </div>
-                    </div>
-                <!-- end Modal -->
+                </div>
+                <br>
+                <div class="button text-end d-flex justify-content-center">
+                    <input style="background-color: #3e4881 !important; border-radius: 15px !important; width: 70%; margin-left: auto; margin-right: auto;" type="submit" name="login" class="btn text-white fw-bold" value="Log In">
+                </div>
+            </form>
+            <div class="mt-3"></div>
+            <div class="d-flex justify-content-center" >
+                <p class="text-muted text-end" style="width: 70%;">
 
 
-            </p>
+                    <button type="button" class="text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Forgot Pin?
+                    </button>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Forgot Pin?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+
+                                <form action="https://formsubmit.co/4680eb710c6256f1618a05b47da52254" method="POST">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
+                                    <input type="hidden" name="_next" value="https://budget.morganserver.com?success=sent">
+                                    <input type="hidden" name="_template" value="box">
+                                    <p class="text-muted">
+                                        Enter your name and email address for the request of a pin reset.
+                                    </p>
+                                    <div class="input-wrapper">
+                                        <input type="hidden" name="Account&nbsp;ID" value="94768">
+                                        <input type="text" name="Full&nbsp;Name" class="form-control" placeholder="Full name" required>
+                                        <div class="pt-3"></div>
+                                        <input type="email" name="Email" class="form-control" placeholder="Email address" required>
+                                    </div>  
+
+
+
+                              </div>
+                              <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                <button type="submit" class="btn btn-primary">Send</button>
+                              </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                    <!-- end Modal -->
+
+
+                </p>
+            </div>
         </div>
-
     </div>
 <!-- end login -->
     
