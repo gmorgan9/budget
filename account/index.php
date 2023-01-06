@@ -56,7 +56,7 @@ if(isset($_POST['login'])){
 // end login
 
 // update user
-if(isset($_POST['update_user'])){
+if(isset($_POST['update_acc'])){
     $idno  = rand(10000, 99999);
     $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -170,7 +170,7 @@ if(isset($_POST['update_user'])){
                 Edit Account
             </h2>
             <p class="text-muted">
-                Enter an income to keep track of.
+                Account details.
             </p>
             <hr>
             <div class="mt-4"></div>
