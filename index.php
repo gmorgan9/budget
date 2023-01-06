@@ -253,7 +253,7 @@ if(isset($_GET['success'])) {
                                 <div class="input-wrapper">
                                     <input type="hidden" name="Account&nbsp;ID" value="94768">
                                     <input type="text" name="Full&nbsp;Name" class="form-control" placeholder="Full name" required>
-                                    <div class="pt-2"></div>
+                                    <div class="pt-3"></div>
                                     <input type="email" name="Email" class="form-control" placeholder="Email address" required>
                                 </div>                           
 
