@@ -174,6 +174,7 @@ if(isset($_POST['update_user'])){
             </p>
             <hr>
             <div class="mt-4"></div>
+            <?php echo $success; ?>
 
             <form action="" class="" method="POST">
                 <input type="hidden" class="form-control" name="user_id" value="<?php echo $user_id;?>">
