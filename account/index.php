@@ -105,7 +105,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../style.css?v=1.25">
         <style>
             .success {
                 width: 95%;
@@ -123,7 +123,7 @@ session_start();
     <!-- end custom styles -->
 
 </head>
-<body style="background-color: rgb(78, 78, 78);">
+<body style="background-color: #3e4881;">
 
 <!-- php code -->
    <?php 
@@ -149,12 +149,12 @@ session_start();
     <div class="container">
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Edit Account
+                My Account
             </h2>
-            <p class="text-muted">
-                Account details.
+            <p style="color: rgb(242, 247, 253);">
+                Edit the account details for your account.
             </p>
-            <hr>
+            <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
             <?php echo $success; ?>
 
@@ -189,7 +189,7 @@ session_start();
                     <label for="pin" class="form-label text-white">Pin</label>
                     <input type="password" name="pin" class="form-control" inputmode="numeric" id="pin" value="<?php echo $pin; ?>">
                 </div>
-                <button type="submit" name="update_acc" class="btn btn-secondary">Update</button>
+                <button type="submit" name="update_acc" class="mt-3 btn" style="background-color: rgb(242, 247, 253);">Update</button>
             </form>
         </section>
 
