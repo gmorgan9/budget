@@ -667,11 +667,10 @@ session_start();
             <div class="mt-3"></div>
             <div class="name">
                 <h4 class="text-center text-white">
-                    <?php echo $firstname; ?> <?php echo $lastname; ?>
+                    <b><?php echo $firstname; ?> <?php echo $lastname; ?></b>
                 </h4>
-                <p class="text-center" class="color: rgb(242, 247, 253) !important;">
-                    <b>User ID: </b><?php echo $user_idno; ?> <br>
-                    <?php echo $account_link; ?>
+                <p class="text-center fs-6" class="color: rgb(242, 247, 253) !important;">
+                    <b>User ID: </b><?php echo $user_idno; ?>
                 </p>
                 <p>
                     
