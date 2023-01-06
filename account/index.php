@@ -5,82 +5,82 @@ session_start();
 ?>
 <?php
 // login
-    if(isset($_POST['login'])){
-        // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
-        $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
-        $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-        $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-        $username = mysqli_real_escape_string($conn, $_POST['username']);
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = md5($_POST['password']);
-        $cpassword = md5($_POST['cpassword']);
-        $isadmin = $_POST['isadmin'];
-        $loggedin = $_POST['loggedin'];
-        
-        $select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
-        
-        $result = mysqli_query($conn, $select);
-        
-        if(mysqli_num_rows($result) > 0){
-        
-           $row = mysqli_fetch_array($result);
-           $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
-           if (mysqli_query($conn, $sql)) {
-              echo "Record updated successfully";
-            } else {
-              echo "Error updating record: " . mysqli_error($conn);
-            }
-            $_SESSION['firstname']        = $row['firstname'];
-            $_SESSION['user_id']          = $row['user_id'];
-            $_SESSION['loggedin']         = $row['loggedin'];
-            $_SESSION['user_idno']        = $row['idno'];
-            $_SESSION['lastname']         = $row['lastname'];
-            $_SESSION['username']         = $row['username'];
-            $_SESSION['email']            = $row['email'];
-            $_SESSION['pass']             = $row['password'];
-            $_SESSION['cpass']            = $row['cpassword'];
-            // header('location:' . BASE_URL . '/');
-            header('location: /');
-        
-        }else{
-           $error = '
-           <div class="pt-3"></div>
-           <div class="login_error">
-           <strong>Error:</strong> 
-           The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
-           </div>
-           ';
+if(isset($_POST['login'])){
+    // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
+    $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
+    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+    $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pin = $_POST['pin'];
+    $isadmin = $_POST['isadmin'];
+    $loggedin = $_POST['loggedin'];
+    $account_link = $_POST['account_link'];
+    
+    $select = " SELECT * FROM users WHERE account_link = '$account_link' && pin = '$pin' ";
+    
+    $result = mysqli_query($conn, $select);
+    
+    if(mysqli_num_rows($result) > 0){
+    
+       $row = mysqli_fetch_array($result);
+       $sql = "UPDATE users SET loggedin='1' WHERE account_link='$account_link'";
+       if (mysqli_query($conn, $sql)) {
+          echo "Record updated successfully";
+        } else {
+          echo "Error updating record: " . mysqli_error($conn);
         }
+        $_SESSION['firstname']        = $row['firstname'];
+        $_SESSION['user_id']          = $row['user_id'];
+        $_SESSION['loggedin']         = $row['loggedin'];
+        $_SESSION['user_idno']        = $row['idno'];
+        $_SESSION['lastname']         = $row['lastname'];
+        $_SESSION['username']         = $row['username'];
+        $_SESSION['email']            = $row['email'];
+        $_SESSION['pin']             = $row['pin'];
+        // $_SESSION['cpass']            = $row['cpassword'];
+        // header('location:' . BASE_URL . '/');
+        header('location: /');
+    
+    }else{
+       $error = '
+       <div class="pt-3"></div>
+       <div class="login_error">
+       <strong>Error:</strong> 
+       The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
+       </div>
+       ';
+    }
 
-    };
+};
 // end login
 
 // update user
-    if(isset($_POST['update_acc'])){
-        $idno  = rand(10000, 99999);
-        $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-        $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-        $username = mysqli_real_escape_string($conn, $_POST['username']);
-        $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = md5($_POST['password']);
-    
-    
-        date_default_timezone_set('America/Denver');
-        $date = date('F d, Y, g:i a', time());
-    
-        if(!empty($_POST['password'])) {
-        $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', password = '$password' WHERE user_id = '".$_POST['user_id']."'";
-        mysqli_query($conn, $insert);
-        header("location: /");
+if(isset($_POST['update_user'])){
+    $idno  = rand(10000, 99999);
+    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+    $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $account_link = mysqli_real_escape_string($conn, $_POST['account_link']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pin = $_POST['pin'];
 
-        } else {
-        $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email' WHERE user_id = '".$_POST['user_id']."'";
-        mysqli_query($conn, $insert);
-        header("location: /");
-        }
-    
-      };
+
+    date_default_timezone_set('America/Denver');
+    $date = date('F d, Y, g:i a', time());
+
+    $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', username = '$username', account_link = '$account_link', email = '$email', pin = '$pin' WHERE user_id = '".$_POST['user_id']."'";
+    mysqli_query($conn, $insert);
+    //header("location: /");
+    $success = '
+       <div class="pt-3"></div>
+       <div class="login_success">
+       <strong>Success:</strong> 
+       Your request has been sent! We will get back to you as soon as possible!
+       </div>
+       ';
+
+  };
 // end update income
 ?>
 
@@ -132,7 +132,7 @@ session_start();
             $card_idno      = $row['card_idno'];
             $comments       = $row['comments'];
             $account_link   = $row['account_link'];
-            $password       = $row['password'];
+            $pin       = $row['pin'];
     }}
 
     ?>
@@ -181,8 +181,8 @@ session_start();
                     <input type="text" name="email" class="form-control" id="email" value="<?php echo $email; ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label text-white">Password</label>
-                    <input type="password" name="password" class="form-control" id="password">
+                    <label for="pin" class="form-label text-white">Pin</label>
+                    <input type="password" name="pin" class="form-control" id="pin">
                 </div>
                 <button type="submit" name="update_acc" class="btn btn-secondary">Update</button>
             </form>
