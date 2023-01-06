@@ -122,6 +122,7 @@ session_start();
         $result = mysqli_query($conn, $select);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
+                $inc_idno       = $row['idno'];
                 $description    = $row['description'];
                 $amount         = $row['amount'];
                 $date_gained    = $row['date_gained'];
@@ -139,10 +140,10 @@ session_start();
     <div class="container">
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Income
+                View/Edit Income Record
             </h2>
             <p style="color: rgb(242, 247, 253);">
-                Enter an income to keep track of.
+                Edit the income record details for <?php echo $description; ?>(<?php echo $inc_idno; ?>).
             </p>
             <hr style="color: rgb(242, 247, 253);">
             <div class="mt-4"></div>
