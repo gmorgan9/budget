@@ -158,7 +158,7 @@ session_start();
                 Login
             </h2>
             <div class="mt-5"></div>
-            <div style="background-color: gray;padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="">
+            <div style="background-color: rgb(100, 100, 100); padding: 30px; width: 80%; margin-left: auto; margin-right: auto; border-radius: 15px;" class="">
 
             <form class="form" action="" method="POST">
             <div class="username">
