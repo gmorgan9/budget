@@ -106,6 +106,28 @@ if(isset($_POST['update_user'])){
         <link rel="stylesheet" href="../style.css">
     <!-- end custom styles -->
 
+    <style>
+
+            .login_success {
+                width: 95%;
+                border-left: 4px solid #00a32a;
+                padding: 12px;
+                /* margin-left: 0; */
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                word-wrap:break-word
+            }
+            /* .login .success {
+                border-left-color:#00a32a
+            } 
+            .login_success {
+                border-left-color:#36d639;
+            } */
+</style>
+
 </head>
 <body style="background-color: rgb(78, 78, 78);">
 
