@@ -238,7 +238,7 @@ if(isset($_POST['forgot'])) {
                             <form action="https://formsubmit.co/4680eb710c6256f1618a05b47da52254" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_subject" value="Forgotten Pin on Budget">
-                                <!-- <input type="hidden" name="_next" value="https://budget.morganserver.com/"> -->
+                                <input type="hidden" name="_next" value="https://budget.morganserver.com/">
                                 <input type="hidden" name="_template" value="box">
 
                                 <div class="input-wrapper">
