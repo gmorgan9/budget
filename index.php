@@ -12,13 +12,13 @@ session_start();
         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = $_POST['password'];
+        $pin = $_POST['pin'];
         // $cpassword = $_POST['cpassword'];
         $isadmin = $_POST['isadmin'];
         $loggedin = $_POST['loggedin'];
         $account_link = $_POST['account_link'];
         
-        $select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
+        $select = " SELECT * FROM users WHERE account_link = '$account_link' && pin = '$pin' ";
         
         $result = mysqli_query($conn, $select);
         
@@ -38,7 +38,7 @@ session_start();
             $_SESSION['lastname']         = $row['lastname'];
             $_SESSION['username']         = $row['username'];
             $_SESSION['email']            = $row['email'];
-            $_SESSION['pass']             = $row['password'];
+            $_SESSION['pin']             = $row['pin'];
             // $_SESSION['cpass']            = $row['cpassword'];
             // header('location:' . BASE_URL . '/');
             header('location: /');
@@ -165,9 +165,9 @@ session_start();
                 <input type="text" id="user_login" name="account_link" value="94768" class="form-control" readonly>
             </div>
             <br>
-            <div class="password">
-                <label for="user_pass">Password</label>
-                <input type="password" id="user_pass" name="password" inputmode="numeric" class="form-control" autocapitalize="off">
+            <div class="pin">
+                <label for="user_pass">Pin</label>
+                <input type="password" id="user_pass" name="pin" inputmode="numeric" class="form-control" autocapitalize="off">
             </div>
             <br>
             <div class="button text-end">
