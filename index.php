@@ -318,7 +318,7 @@ session_start();
                 $month_budget = date('F Y');
                 echo $month_budget;
                 ?>
-                <i class="float-end bi bi-plus"></i>
+                <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
             </h2>
             <p class="date" style="color: rgb(242, 247, 253);">
                 <?php 
