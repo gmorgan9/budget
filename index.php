@@ -287,7 +287,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: #3e4881;">
+    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
 
     <!-- php code -->
         <?php 
@@ -314,23 +314,26 @@ session_start();
     <div class="container">
 
         <section class="active" data-page="home">
-            <div class="mt-4"></div>
-            <h2 class="text-white">
-            <?php 
-                date_default_timezone_set('America/Denver');
-                $month_budget = date('F Y');
-                echo $month_budget;
-                ?>
-                <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
-            </h2>
-            <hr>
+            <!-- header -->
+                <div class="mt-4"></div>
+                <h2 class="text-white">
+                <?php 
+                    date_default_timezone_set('America/Denver');
+                    $month_budget = date('F Y');
+                    echo $month_budget;
+                    ?>
+                    <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
+                </h2>
+                <hr>
+            <!-- end header -->
+        
             <div class="mt-3"></div>
 
-            <div class="content" style="width: 100%; background-color: rgb(215,215,215); margin: 0; padding:0;">
+            <div class="main" style="background-color: rgb(215,215,215); margin: 0; padding:0;">
 
             <!-- top -->
                 <div class="row d-flex justify-content-center">
-                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
+                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
                           <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
