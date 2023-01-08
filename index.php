@@ -326,7 +326,7 @@ session_start();
             <hr>
             <div class="mt-3"></div>
 
-            <div class="content d-flex" style="background-color: rgb(215,215,215); margin: 0; padding:0;">
+            <div class="content d-flex flex-column" style="background-color: rgb(215,215,215); margin: 0; padding:0;">
 
             <!-- top -->
                 <div class="ms-1 row justify-content-center">
