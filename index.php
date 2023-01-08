@@ -349,7 +349,7 @@ session_start();
             <!-- income -->
 
                 <div class="mt-3"></div>
-                <div class="ms-1 row d-flex justify-content-center" style="background-color: white;">
+                <div class="row d-flex justify-content-center" style="background-color: white;">
                     <div class="card" style="background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
