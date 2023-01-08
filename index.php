@@ -329,7 +329,7 @@ session_start();
             <div class="content" style="width: 100%; background-color: rgb(215,215,215); margin: 0; padding:0;">
 
             <!-- top -->
-                <div class="ms-1 row justify-content-center">
+                <div class="row justify-content-center">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
