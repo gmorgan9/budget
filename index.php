@@ -355,10 +355,10 @@ session_start();
 
                             <div class="row">
                                 <div class="col">
-                                    <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95; margin-top: -15px;">Income</p>
+                                    <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px;line-height: .95; margin-top: -15px;">Income</p>
                                 </div>
                                 <div class="col">
-                                    <p class="card-title text-muted fw-bold text-end" style="width: 50%; line-height: .95; margin-top: -15px;">Received</p>
+                                    <p class="card-title text-muted fw-bold text-end" style="line-height: .95; margin-top: -15px;">Received</p>
                                 </div>
                             </div>
 
