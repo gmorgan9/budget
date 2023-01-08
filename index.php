@@ -323,6 +323,8 @@ session_start();
             <hr>
             <div class="mt-3"></div>
 
+            <div class="content">
+
             <!-- top -->
                 <div class="ms-1 row justify-content-center">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
@@ -349,6 +351,7 @@ session_start();
             <!-- income -->
 
                 <div class="mt-3"></div>
+                
                 <div class="row d-flex justify-content-center" style="background-color: white;">
                     <div class="card" style="width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
@@ -478,6 +481,9 @@ session_start();
                         </div>
                     </div>
                 </div>
+
+                
+            </div>
 
             
 
