@@ -355,7 +355,7 @@ session_start();
 
                 <div class="mt-3"></div>
                 
-                <div class="row justify-content-center" style="background-color: white;">
+                <div class="row justify-content-center">
                     <div class="card" style="width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
