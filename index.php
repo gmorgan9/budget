@@ -323,7 +323,7 @@ session_start();
             <hr>
             <div class="mt-3"></div>
 
-            <div class="content" style="background-color: rgb(215,215,215);">
+            <div class="content" style="background-color: rgb(215,215,215); margin: 0;">
 
             <!-- top -->
                 <div class="ms-1 row justify-content-center">
