@@ -494,7 +494,7 @@ session_start();
             <!-- end total -->
 
 
-            <!-- </div> -->
+            </div></div>
 
             
 
