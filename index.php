@@ -312,8 +312,8 @@ session_start();
 
         <section class="active" data-page="home">
             <div class="header" style="background-color: #3e4881;">
-            
-            <div class="mt-4"></div>
+
+            <!-- <div class="mt-4"></div> -->
             <h2 class="text-white">
             <?php 
                 date_default_timezone_set('America/Denver');
