@@ -353,7 +353,7 @@ session_start();
                     <div class="card" style="margin-right: 20px; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <!-- <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i> -->
-                          <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95; margin-top: -20px;">Income</p>
+                          <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95; margin-top: -15px;">Income</p>
                           <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
                           $14
                           </p>
