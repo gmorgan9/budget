@@ -365,8 +365,6 @@ session_start();
 
 
                           <!-- <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i> -->
-                          <p class="card-title float-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95; margin-top: -15px;"><span>Income</span> <span>Recived</span></p>
-                          <p class="card-title text-muted fw-bold float-end" style="width: 50%; line-height: .95; margin-top: -15px;">Received</p>
                           <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
                           $14
                           </p>
