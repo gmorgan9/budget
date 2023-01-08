@@ -348,8 +348,9 @@ session_start();
 
             <!-- income -->
 
+                <div class="mt-3"></div>
                 <div class="ms-1 row justify-content-center">
-                    <div class="card" style="margin-right: 20px; width: 90%; background-color: rgb(255, 255, 255) !important; color: black;">
+                    <div class="card" style="margin-right: 20px; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
                           <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
