@@ -284,7 +284,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: ">
+    <body style="background-color: #3e4881;">
 
     <!-- php code -->
         <?php 
@@ -311,9 +311,7 @@ session_start();
     <div class="container">
 
         <section class="active" data-page="home">
-            <div class="header" style="background-color: #3e4881;">
-
-            <!-- <div class="mt-4"></div> -->
+            <div class="mt-4"></div>
             <h2 class="text-white">
             <?php 
                 date_default_timezone_set('America/Denver');
@@ -323,9 +321,6 @@ session_start();
                 <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
             </h2>
             <hr>
-
-            </div>
-            
             <div class="mt-3"></div>
 
             <!-- top -->
@@ -354,7 +349,7 @@ session_start();
             <!-- income -->
 
                 <div class="mt-3"></div>
-                <div class="ms-1 row justify-content-center">
+                <div class="ms-1 row justify-content-center" style="background-color: white;">
                     <div class="card" style="margin-right: 20px; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
