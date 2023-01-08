@@ -326,7 +326,7 @@ session_start();
             <hr>
             <div class="mt-3"></div>
 
-            <div class="row content" style="background-color: rgb(215,215,215); margin: 0; padding:0;">
+            <div class="content" style="width: 100%; background-color: rgb(215,215,215); margin: 0; padding:0;">
 
             <!-- top -->
                 <div class="ms-1 row justify-content-center">
@@ -355,7 +355,7 @@ session_start();
 
                 <div class="mt-3"></div>
                 
-                <div class="row  justify-content-center" style="background-color: white;">
+                <div class="row justify-content-center" style="background-color: white;">
                     <div class="card" style="width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
