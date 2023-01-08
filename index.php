@@ -321,9 +321,9 @@ session_start();
             </h2>
             <p class="date" style="color: rgb(242, 247, 253);">
                 <?php 
-                date_default_timezone_set('America/Denver');
-                $date = date('l, F j, Y');
-                echo $date;
+                // date_default_timezone_set('America/Denver');
+                // $date = date('l, F j, Y');
+                // echo $date;
                 ?>
             </p>
             <hr>
