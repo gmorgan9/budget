@@ -327,6 +327,24 @@ session_start();
             <div class="d-fle flex-row justify-content-center">
 
                 <div class="row justify-content-center">
+
+                <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                          <h3 class="card-title text-center">Spent So Far</h3>
+                          <p class="card-text fs-5 text-center">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
                     <h3 class="text-white">
                         Income
                     </h3>
