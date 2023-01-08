@@ -332,7 +332,7 @@ session_start();
                         <div class="card-body">
                           <i class="text-muted fs-1 bi bi-coin" style="margin-left: -20px;"></i>
                           <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%;">Spent So Far</p>
-                          <p class="card-text fs-5 text-start fw-bold">
+                          <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
                           $14
                           </p>
                         </div>
