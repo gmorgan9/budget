@@ -350,7 +350,7 @@ session_start();
 
                 <div class="mt-3"></div>
                 <div class="row d-flex justify-content-center" style="background-color: white;">
-                    <div class="card" style="background-color: rgb(255, 255, 255) !important; color: black;">
+                    <div class="card" style="width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
                             <div class="row">
