@@ -284,7 +284,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: #3e4881;">
+    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
 
     <!-- php code -->
         <?php 
