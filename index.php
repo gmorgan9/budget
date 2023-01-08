@@ -320,16 +320,9 @@ session_start();
                 ?>
                 <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
             </h2>
-            <p class="date" style="color: rgb(242, 247, 253);">
-                <?php 
-                // date_default_timezone_set('America/Denver');
-                // $date = date('l, F j, Y');
-                // echo $date;
-                ?>
-            </p>
             <hr>
             <div class="mt-3"></div>
-            <div class="d-fle flex-row justify-content-center">
+            <div class="d-flex flex-row justify-content-center">
 
                 <div class="ms-1 row justify-content-center">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
@@ -352,78 +345,6 @@ session_start();
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
-                    <!-- <h3 class="text-white">
-                        Income
-                    </h3>
-                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                          <h3 class="card-title text-center">Monthly</h3>
-                          <p class="card-text fs-5 text-center">
-                          <?php 
-                                // $month_year = date('F Y');
-                                // $firstday = strtotime("first day of ". $month_year);
-                                // $first_day = date('Y-m-d', $firstday);
-                                // $month_year = date('F Y');
-                                // $lastday = strtotime("last day of ". $month_year);
-                                // $last_day = date('Y-m-d', $lastday);
-                            ?>
-
-                          <?php
-                            // $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                            // $result=mysqli_query($conn,$sql);
-                            // $rowtotal=mysqli_fetch_array($result); 
-                            // $count_m_income = $rowtotal[0];
-                          ?>
-                            
-                            <?php
-                                // $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                // $result=mysqli_query($conn,$sql);
-                                // $month_income=mysqli_fetch_array($result); 
-                                // $m_income = $month_income[0];
-                                // if($count_m_income == 0){
-                                //     echo "$0";
-                                // } else {
-                                //     echo "$$month_income[0]";
-                                // }
-                            ?>
-                          </p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Yearly</h3>
-                            <p class="card-text fs-5 text-center">
-
-                                <?php
-                                // $sql="SELECT count('1') FROM income WHERE account_link = '$account_link'";
-                                // $result=mysqli_query($conn,$sql);
-                                // $rowtotal=mysqli_fetch_array($result); 
-                                // $count_y_income = $rowtotal[0];
-                                ?>
-
-                                <?php
-                                    // $sql="SELECT sum(amount) FROM income WHERE account_link = '$account_link'";
-                                    // $result=mysqli_query($conn,$sql);
-                                    // $year_income=mysqli_fetch_array($result);
-                                    // $y_income = $year_income[0]; 
-                                    // if($count_y_income == 0){
-                                    //     echo "$0";
-                                    // } else {
-                                    //     echo "$$year_income[0]";
-                                    // }
-                                ?>
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="mt-3"></div>
