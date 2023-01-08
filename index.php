@@ -313,7 +313,11 @@ session_start();
         <section class="active" data-page="home">
             <div class="mt-4"></div>
             <h2 class="text-white">
-                Welcome, <?php echo $firstname; ?>!
+            <?php 
+                date_default_timezone_set('America/Denver');
+                $month_budget = date('F Y');
+                echo $month_budget;
+                ?>
             </h2>
             <p class="date" style="color: rgb(242, 247, 253);">
                 <?php 
@@ -323,13 +327,6 @@ session_start();
                 ?>
             </p>
             <hr>
-            <h3 class="month_budget" style="color: rgb(242, 247, 253);">
-                <?php 
-                date_default_timezone_set('America/Denver');
-                $month_budget = date('F Y');
-                echo $month_budget;
-                ?>
-            </h3>
             <div class="mt-3"></div>
             <div class="d-fle flex-row justify-content-center">
 
