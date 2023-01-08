@@ -312,7 +312,7 @@ session_start();
 
         <section class="active" data-page="home">
             <div class="mt-4"></div>
-            <h2 class="text-white">
+            <h2 class=" float-start text-white">
             <?php 
                 date_default_timezone_set('America/Denver');
                 $month_budget = date('F Y');
