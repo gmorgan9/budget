@@ -185,7 +185,7 @@ session_start();
 
 
 <?php if(!isset($_SESSION['username'])) {?>
-    <body style="background-color: #3e4881; margin: 0; padding: 0;">
+    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
 
 <!-- login -->
     <div class="login">
