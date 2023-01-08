@@ -185,7 +185,7 @@ session_start();
 
 
 <?php if(!isset($_SESSION['username'])) {?>
-    <body style="background-color: #3e4881;">
+    <body style="background-color: #3e4881; margin: 0; padding: 0;">
 
 <!-- login -->
     <div class="login">
@@ -323,7 +323,7 @@ session_start();
             <hr>
             <div class="mt-3"></div>
 
-            <div class="content" style="background-color: rgb(215,215,215); margin: 0;padding: 0;">
+            <div class="content" style="background-color: rgb(215,215,215);">
 
             <!-- top -->
                 <div class="ms-1 row justify-content-center">
