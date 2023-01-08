@@ -323,6 +323,13 @@ session_start();
                 ?>
             </p>
             <hr>
+            <p class="month_budget" style="color: rgb(242, 247, 253);">
+                <?php 
+                date_default_timezone_set('America/Denver');
+                $month_budget = date('F Y');
+                echo $month_budget;
+                ?>
+            </p>
             <div class="mt-3"></div>
             <div class="d-fle flex-row justify-content-center">
 
