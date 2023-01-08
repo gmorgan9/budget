@@ -322,8 +322,8 @@ session_start();
             </h2>
             <hr>
             <div class="mt-3"></div>
-            <div class="">
 
+            <!-- top -->
                 <div class="ms-1 row justify-content-center">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
@@ -334,7 +334,6 @@ session_start();
                           </p>
                         </div>
                     </div>
-
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-cash-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
@@ -344,8 +343,8 @@ session_start();
                           </p>
                         </div>
                     </div>
-
                 </div>
+            <!-- end top -->
 
                 <div class="mt-3"></div>
                 <div class="row justify-content-center">
@@ -450,9 +449,6 @@ session_start();
                     </div>
                 </div>
 
-
-
-            </div>
             
 
 
