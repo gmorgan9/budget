@@ -322,7 +322,7 @@ session_start();
             </h2>
             <hr>
             <div class="mt-3"></div>
-            <div class="d-flex flex-row justify-content-center">
+            <div class="">
 
                 <div class="ms-1 row justify-content-center">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
