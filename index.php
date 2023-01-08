@@ -329,7 +329,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div class="main" style="background-color: rgb(215,215,215); margin: 0; padding:0;">
+            <div class="main" style="background-color: rgb(215,215,215);">
 
             <!-- top -->
                 <div class="row">
@@ -385,6 +385,7 @@ session_start();
 
             <!-- end income -->
 
+            <!-- expense -->
                 <div class="mt-3"></div>
                 <div class="row justify-content-center">
                     <h3 class="text-white">
@@ -448,6 +449,9 @@ session_start();
                         </div>
                     </div>
                 </div>
+            <!-- end expense -->
+
+            <!-- total -->
 
                 <div class="mt-3"></div>
                 <div class="row justify-content-center">
@@ -487,9 +491,10 @@ session_start();
                         </div>
                     </div>
                 </div>
+            <!-- end total -->
 
 
-            </div>
+            <!-- </div> -->
 
             
 
