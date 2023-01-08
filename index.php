@@ -159,6 +159,9 @@ session_start();
     <!-- custom styles -->
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
+            * {
+                margin: 0; padding: 0; box-sizing: border-box;
+            }
             .success {
                 width: 70%;
                 border-left: 4px solid #00a32a;
@@ -284,7 +287,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
+    <body style="background-color: #3e4881;">
 
     <!-- php code -->
         <?php 
