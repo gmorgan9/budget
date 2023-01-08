@@ -330,8 +330,8 @@ session_start();
 
                 <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
-                          <p class="card-title text-start text-muted" style="padding-left: -60px; width: 50%;">Spent So Far</p>
-                          <p class="card-text fs-5 text-center fw-bold">
+                          <p class="card-title text-start text-muted fw-bold" style="padding-left: -60px; width: 50%;">Spent So Far</p>
+                          <p class="card-text fs-5 text-start fw-bold">
                           $14
                           </p>
                         </div>
