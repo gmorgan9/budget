@@ -331,7 +331,7 @@ session_start();
         <section class="active" data-page="home">
             <!-- header -->
                 <div class="header">
-                    <div class="mt-4"></div>
+                    <!-- <div class="mt-4"></div> -->
                     <h2 class="text-white">
                     <?php 
                         date_default_timezone_set('America/Denver');
@@ -340,7 +340,6 @@ session_start();
                     ?>
                         <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
                     </h2>
-                    <hr>
             
         
                     <div class="mt-3"></div>
