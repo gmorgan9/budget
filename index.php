@@ -321,19 +321,22 @@ session_start();
 
         <section class="active" data-page="home">
             <!-- header -->
-                <div class="mt-4"></div>
-                <h2 class="text-white">
-                <?php 
-                    date_default_timezone_set('America/Denver');
-                    $month_budget = date('F Y');
-                    echo $month_budget;
+                <div class="header" stlye="position: fixed;">
+                    <div class="mt-4"></div>
+                    <h2 class="text-white">
+                    <?php 
+                        date_default_timezone_set('America/Denver');
+                        $month_budget = date('F Y');
+                        echo $month_budget;
                     ?>
-                    <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
-                </h2>
-                <hr>
-            <!-- end header -->
+                        <a style="text-decoration: none; color: white;" href="#"><i class="float-end bi bi-plus"></i></a>
+                    </h2>
+                    <hr>
+            
         
-            <div class="mt-3"></div>
+                    <div class="mt-3"></div>
+                </div>
+            <!-- end header -->
 
             <!-- top -->
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
@@ -380,7 +383,7 @@ session_start();
 
             <!-- giving -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -399,7 +402,7 @@ session_start();
 
             <!-- housing -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -418,7 +421,7 @@ session_start();
 
             <!-- transportation -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -437,7 +440,7 @@ session_start();
 
             <!-- food -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -456,7 +459,7 @@ session_start();
 
             <!-- personal -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -475,7 +478,7 @@ session_start();
 
             <!-- lifestyle -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -494,7 +497,7 @@ session_start();
 
             <!-- health -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -513,7 +516,7 @@ session_start();
 
             <!-- insurance -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -532,7 +535,7 @@ session_start();
 
             <!-- debt -->
                 
-            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -552,8 +555,8 @@ session_start();
 
 
 
-
-            <!-- expense -->
+            <!-- not using -->
+                <!-- expense -->
                 <!-- <div class="mt-3"></div>
                 <div class="row justify-content-center">
                     <h3 class="text-white">
@@ -617,9 +620,9 @@ session_start();
                         </div>
                     </div>
                 </div> -->
-            <!-- end expense -->
+                <!-- end expense -->
 
-            <!-- total -->
+                <!-- total -->
 
                 <!-- <div class="mt-3"></div>
                 <div class="row justify-content-center">
@@ -659,7 +662,8 @@ session_start();
                         </div>
                     </div>
                 </div> -->
-            <!-- end total -->
+                <!-- end total -->
+            <!-- not using -->
 
 
 
