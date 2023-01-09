@@ -167,7 +167,7 @@ session_start();
                 top: 0 !important; 
                 margin-top: 0 !important;
                 width: 100%;
-                height: 50px;
+                height: 75px;
             }
             .home_page {
                 background-color: #c0c0c0;
@@ -331,9 +331,9 @@ session_start();
 
         <section class="active" data-page="home">
             <!-- header -->
-                <div class="header">
+                <div class="header ">
                     <!-- <div class="mt-4"></div> -->
-                    <h2 class="text-white">
+                    <h2 class="text-white pt-4">
                     <?php 
                         date_default_timezone_set('America/Denver');
                         $month_budget = date('F Y');
