@@ -161,8 +161,9 @@ session_start();
         <style>
             .home_page {
                 margin-left: -12px !important; 
-                margin-right: 12px !important;
-                padding: 0 !important;
+                margin-right: -12px !important;
+                padding-right: -12px !important;
+                /* padding: 0 !important; */
                 background-color: #c0c0c0;
                 box-sizing: border-box;
             }
