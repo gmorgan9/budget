@@ -329,7 +329,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div style="background-color: rgb(215,215,215); width: 110%;">
+            <div style="background-color: rgb(215,215,215); width: 100%;">
 
             <!-- top -->
                 <div class="row">
