@@ -160,10 +160,9 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .home_page {
-                margin-left: -11px !important; 
-                margin-right: -11px !important;
+                margin-left: -12px !important; 
+                margin-right: -12px !important;
                 padding: 0 !important;
-                margin: 0 !important;
                 background-color: #c0c0c0;
                 box-sizing: border-box;
             }
