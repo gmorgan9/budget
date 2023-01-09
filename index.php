@@ -624,7 +624,7 @@ session_start();
                         <p class="card-text fs-5 text-start fw-bold">
                             <div class="row" style="margin-top: -25px !important;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
-                                  <?php echo $g['category']; ?>
+                                  <?php echo $t['category']; ?>
                               </div>
                               <div class="col text-end pb-1" style="">
                                 <!-- php code -->
