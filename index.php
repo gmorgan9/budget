@@ -186,7 +186,7 @@ session_start();
             }
             .background {
                 background-color: rgb(242, 247, 253);
-                width: 100%;
+                width: 70%;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 15px;
@@ -340,7 +340,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <main class="home_page background" style="">
+            <main class="home_page" style="">
             test
             </main>
 
