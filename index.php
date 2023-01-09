@@ -342,9 +342,8 @@ session_start();
             <div class="home_page container-fluid" style="background-color: rgb(215,215,215);">
 
             <!-- top -->
-                <div class="row">
-                    test
-                    <!-- <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
+                <!-- <div class="row"> -->
+                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
                             <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
@@ -361,8 +360,7 @@ session_start();
                           $25
                           </p>
                         </div>
-                    </div> -->
-                </div>
+                    </div>
             <!-- end top -->
 
             </div>
