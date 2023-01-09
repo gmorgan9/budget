@@ -458,7 +458,7 @@ session_start();
                                 $lastday = strtotime("last day of ". $month_year);
                                 $last_day = date('Y-m-d', $lastday);
 
-                                $query ="SELECT * FROM categories where parent = 'income'";
+                                $query ="SELECT * FROM categories where parent = 'giving'";
                                 $result = $conn->query($query);
                                 if($result->num_rows> 0){
                                   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
