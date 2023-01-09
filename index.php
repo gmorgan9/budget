@@ -383,12 +383,12 @@ session_start();
                         <!-- php code -->
                             <?php
 
-$month_year = date('F Y');
-$firstday = strtotime("first day of ". $month_year);
-$first_day = date('Y-m-d', $firstday);
-$month_year = date('F Y');
-$lastday = strtotime("last day of ". $month_year);
-$last_day = date('Y-m-d', $lastday);
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
                                 
                                 $query ="SELECT * FROM categories where parent = 'income'";
                                 $result = $conn->query($query);
@@ -429,11 +429,11 @@ $last_day = date('Y-m-d', $lastday);
                               </div>
                               <div class="col text-end pb-1" style="">
                                 <?php
-                                    if($count_m_expenses == 0){
-                                        echo "$0.00";
-                                    } else {
+                                    // if($count_m_expenses == 0){
+                                    //     echo "$0.00";
+                                    // } else {
                                         echo "$$month_expenses[0]";
-                                    }
+                                    // }
                                 ?>
                               </div>
                               <hr>
