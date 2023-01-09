@@ -176,7 +176,7 @@ session_start();
                 box-sizing: border-box;
             }
             body {
-                top: 15px !important;
+                top: -15 !important;
             }
             * {
                 margin: 0; 
@@ -337,7 +337,6 @@ session_start();
         <section class="active" data-page="home">
             <!-- header -->
                 <div class="header ">
-                    <!-- <div class="mt-4"></div> -->
                     <h2 class="text-white pt-4">
                     <?php 
                         date_default_timezone_set('America/Denver');
@@ -374,7 +373,6 @@ session_start();
                     </div>
                 </div>
             <!-- end top -->
-
 
             <!-- income -->
                 
