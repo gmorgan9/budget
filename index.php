@@ -164,8 +164,8 @@ session_start();
                 padding:0;
             }
             .home_page { 
-                background-color: rgb(215,215,215);
-                width: 100%;
+                /* background-color: rgb(215,215,215); */
+                /* width: 100%; */
                 margin: 0;
                 padding: 0;
                 background-color: #c0c0c0;
@@ -721,7 +721,7 @@ session_start();
             </nav>
         </div>
 
-    <!-- </div> -->
+    </div>
 <!-- end Container -->
 
 
