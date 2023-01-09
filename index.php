@@ -552,7 +552,7 @@ session_start();
 
             <!-- end debt -->
 
-            <div class="mb-5"></div>
+            <div style="margin-bottom: 50px;"></div>
 
 
             <!-- not using -->
