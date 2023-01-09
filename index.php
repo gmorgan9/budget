@@ -159,6 +159,16 @@ session_start();
     <!-- custom styles -->
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
+            body, html{
+                margin:0;
+                padding:0;
+            }
+            .home_page { 
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #c0c0c0;
+            }
             * {
                 margin: 0; padding: 0; box-sizing: border-box;
             }
@@ -329,7 +339,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <article style="background-color: rgb(215,215,215); margin-right: -15px !important;">
+            <div class="home_page" style="background-color: rgb(215,215,215); margin-right: -15px !important;">
 
             <!-- top -->
                 <div class="row">
@@ -496,7 +506,7 @@ session_start();
             <!-- end total -->
 
 
-                                    </article>
+                                    </div>
 
             
 
