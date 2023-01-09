@@ -402,7 +402,7 @@ session_start();
 
 
 
-                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND category = '$cat_idno'";
+                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno'";
                                     $result=mysqli_query($conn,$sql);
                                     $month_expenses=mysqli_fetch_array($result); 
                                     $m_expenses = $month_expenses[0];
