@@ -160,13 +160,13 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
-                top: 100 !important;
+                margin-top: 100 !important;
                 padding-top: -55px !important;
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
                 position: fixed; 
-                /* top: 0 !important;  */
+                top: 0 !important; 
                 margin-top: 0 !important;
                 width: 100%;
                 height: 75px !important;
