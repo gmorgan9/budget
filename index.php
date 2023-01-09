@@ -321,7 +321,7 @@ session_start();
 
         <section class="active" data-page="home">
             <!-- header -->
-                <div class="header" stlye="position: fixed;">
+                <div class="header" stlye="position: sticky;">
                     <div class="mt-4"></div>
                     <h2 class="text-white">
                     <?php 
