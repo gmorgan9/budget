@@ -339,9 +339,9 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div class="container-fluid" style="width: 100% !important; background-color: rgb(215,215,215);">
+            <span class="container-fluid" style="width: 100% !important; background-color: rgb(215,215,215);">
             test
-            </div>
+            </span>
 
             <!-- top -->
                 <!-- <div class="row">
