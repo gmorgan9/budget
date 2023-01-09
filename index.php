@@ -161,6 +161,7 @@ session_start();
         <style>
             .header {
                 margin-top: -55px !important;
+                padding-top: -55px !important;
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
