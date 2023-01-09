@@ -160,8 +160,8 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .home_page {
-                margin: 0;
-                padding: 0;
+                margin: 0 !important;
+                padding: 0 !important;
                 background-color: #c0c0c0;
                 box-sizing: border-box;
             }
