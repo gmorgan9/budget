@@ -166,7 +166,7 @@ session_start();
                 position: fixed; 
                 top: 0 !important; 
                 margin-top: 0 !important;
-                /* width: 100%; */
+                width: 100%;
             }
             .home_page {
                 background-color: #c0c0c0;
