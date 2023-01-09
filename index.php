@@ -656,9 +656,60 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Food</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'food'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $food= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($food as $f) {
+                                
+                                    $cat_idno = $f['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_food = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_food=mysqli_fetch_array($result); 
+                                    $m_food = $month_food[0];
+
+                            ?>
+                        <!-- end php code -->
+
+
+                        <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $f['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_food == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_food";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
@@ -675,9 +726,58 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Personal</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'personal'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $personal= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($personal as $p) {
+                                
+                                    $cat_idno = $p['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_personal = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_personal=mysqli_fetch_array($result); 
+                                    $m_personal = $month_personal[0];
+
+                            ?>
+                        <!-- end php code -->
+                            
+                        <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $p['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_personal == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_personal";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
@@ -694,9 +794,59 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Lifestyle</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'lifestyle'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $lifestyle= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($lifestyle as $l) {
+                                
+                                    $cat_idno = $l['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_life = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_life=mysqli_fetch_array($result); 
+                                    $m_life = $month_life[0];
+
+                            ?>
+                        <!-- end php code -->
+                            
+                          
+                            <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $l['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_life == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_life";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
@@ -713,9 +863,60 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Health</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'health'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $health= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($health as $he) {
+                                
+                                    $cat_idno = $he['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_health = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_health=mysqli_fetch_array($result); 
+                                    $m_health = $month_health[0];
+
+                            ?>
+                        <!-- end php code -->
+
+                            
+                        <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $he['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_health == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_health";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
@@ -732,9 +933,60 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Insurance</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'insurance'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $insurance= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($insurance as $in) {
+                                
+                                    $cat_idno = $in['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_insure = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_insure=mysqli_fetch_array($result); 
+                                    $m_insure = $month_insure[0];
+
+                            ?>
+                        <!-- end php code -->
+
+                            
+                        <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $in['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_insure == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_insure";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
@@ -751,10 +1003,62 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Debt</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
-                          <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'debt'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $debt= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($debt as $d) {
+                                
+                                    $cat_idno = $d['idno'];
+                                
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_debt = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_debt=mysqli_fetch_array($result); 
+                                    $m_debt = $month_debt[0];
+
+                            ?>
+                        <!-- end php code -->
+
+                            
+                        <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $d['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_debt == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_debt";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
+                            
                         </div>
                     </div>
                     <div style="margin-bottom: 100px !important;"></div>
