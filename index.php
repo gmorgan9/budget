@@ -548,11 +548,11 @@ session_start();
                           </p>
                         </div>
                     </div>
+                    <div style="margin-bottom: 100px !important;"></div>
                 </div>
 
             <!-- end debt -->
 
-            <div style="margin-bottom: 100px !important;"></div>
 
 
             <!-- not using -->
