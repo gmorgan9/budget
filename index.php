@@ -160,7 +160,7 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
-                margin-left: 0 !important;
+                margin-left: -10px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
                 position: fixed; /* Set the navbar to fixed position */
