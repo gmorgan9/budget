@@ -381,7 +381,7 @@ session_start();
                             </div>
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
                           <p class="card-text fs-5 text-start fw-bold">
-                          <div class="row">
+                          <div class="row" style="margin-left: -10px;">
                             <div class="col-8 text-start">
                                 Paycheck 1
                             </div>
