@@ -167,7 +167,7 @@ session_start();
                 top: 0 !important; 
                 margin-top: 0 !important;
                 width: 100%;
-                height: 75px;
+                height: 75px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
