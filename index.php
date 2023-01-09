@@ -163,9 +163,10 @@ session_start();
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
-                position: fixed; /* Set the navbar to fixed position */
-                top: 0; /* Position the navbar at the top of the page */
-                width: 100%; /* Full width */
+                position: fixed; 
+                top: 0 !important; 
+                margin-top: 0 !important;
+                /* width: 100%; */
             }
             .home_page {
                 background-color: #c0c0c0;
@@ -347,7 +348,7 @@ session_start();
             <!-- end header -->
 
             <!-- top -->
-                <div class="row d-flex justify-content-center" style="margin-top: 30px !important; background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="margin-top: 50px !important; background-color: rgb(245, 245, 245);">
                     <div class="card mt-5 mb-3" style="border: none; margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
