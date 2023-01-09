@@ -382,6 +382,13 @@ session_start();
 
                         <!-- php code -->
                             <?php
+
+$month_year = date('F Y');
+$firstday = strtotime("first day of ". $month_year);
+$first_day = date('Y-m-d', $firstday);
+$month_year = date('F Y');
+$lastday = strtotime("last day of ". $month_year);
+$last_day = date('Y-m-d', $lastday);
                                 
                                 $query ="SELECT * FROM categories where parent = 'income'";
                                 $result = $conn->query($query);
@@ -391,12 +398,7 @@ session_start();
                                 foreach ($options as $option) {
 
                                     $cat_idno = $option['idno'];
-                                    $month_year = date('F Y');
-                                    $firstday = strtotime("first day of ". $month_year);
-                                    $first_day = date('Y-m-d', $firstday);
-                                    $month_year = date('F Y');
-                                    $lastday = strtotime("last day of ". $month_year);
-                                    $last_day = date('Y-m-d', $lastday);
+                                    
 
 
 
