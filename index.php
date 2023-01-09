@@ -390,15 +390,6 @@ session_start();
                               </div>
                               <hr>
                             </div>
-                            <div class="row">
-                            <div class="col-8 text-start" style="margin-left: -10px;">
-                                Paycheck 1
-                            </div>
-                            <div class="col text-end pb-2" style="">
-                                $0.00
-                            </div>
-                            <hr>
-                          </div>
                           </p>
                         </div>
                     </div>
