@@ -420,9 +420,9 @@ session_start();
                               <div class="col text-end pb-1" style="">
                                 <?php
                                     if($count_m_expenses == 0){
-                                        echo "$ 0.00";
+                                        echo "$0.00";
                                     } else {
-                                         echo "$ $m_expenses";
+                                         echo "$$m_expenses";
                                     }
                                 ?>
                               </div>
