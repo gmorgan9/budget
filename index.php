@@ -461,11 +461,11 @@ session_start();
                                 $query ="SELECT * FROM categories where parent = 'giving'";
                                 $result = $conn->query($query);
                                 if($result->num_rows> 0){
-                                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                  $giving= mysqli_fetch_all($result, MYSQLI_ASSOC);
                                 }
-                                foreach ($options as $option) {
+                                foreach ($giving as $g) {
                                 
-                                    $cat_idno = $option['idno'];
+                                    $cat_idno = $g['idno'];
                                 
                                     $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
@@ -484,7 +484,7 @@ session_start();
                           <p class="card-text fs-5 text-start fw-bold">
                             <div class="row" style="margin-top: -25px !important;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
-                                  <?php echo $option['category']; ?>
+                                  <?php echo $g['category']; ?>
                               </div>
                               <div class="col text-end pb-1" style="">
                                 <!-- php code -->
