@@ -329,7 +329,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <span class="main" style="background-color: rgb(215,215,215);">
+            <section class="main" style="background-color: rgb(215,215,215);">
 
             <!-- top -->
                 <div class="row">
@@ -494,7 +494,7 @@ session_start();
             <!-- end total -->
 
 
-                                    </span>
+                                    </section>
 
             
 
