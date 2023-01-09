@@ -159,6 +159,11 @@ session_start();
     <!-- custom styles -->
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
+            .header {
+                position: fixed; /* Set the navbar to fixed position */
+                top: 0; /* Position the navbar at the top of the page */
+                width: 100%; /* Full width */
+            }
             .home_page {
                 background-color: #c0c0c0;
                 box-sizing: border-box;
