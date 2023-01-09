@@ -172,8 +172,10 @@ session_start();
                 background-color: #c0c0c0;
                 box-sizing: border-box;
             }
-            * {
+            body {
                 top: 15px !important;
+            }
+            * {
                 margin: 0; 
                 padding: 0; 
                 box-sizing: border-box;
