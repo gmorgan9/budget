@@ -385,7 +385,7 @@ session_start();
                             <div class="col-8 text-start" style="margin-left: -10px;">
                                 Paycheck 1
                             </div>
-                            <div class="col text-end" style="">
+                            <div class="col text-end pb-1" style="">
                                 $0.00
                             </div>
                             <hr>
