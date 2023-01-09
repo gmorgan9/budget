@@ -164,7 +164,7 @@ session_start();
                 z-index: 1;
                 background-color: #3e4881 !important;
                 position: fixed; /* Set the navbar to fixed position */
-                top: 30; /* Position the navbar at the top of the page */
+                top: 0; /* Position the navbar at the top of the page */
                 width: 100%; /* Full width */
             }
             .home_page {
