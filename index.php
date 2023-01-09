@@ -366,7 +366,7 @@ session_start();
                         <div class="card-body">
                             <p class="card-title text-muted fw-bold float-start" style="margin-left: -20px;line-height: .95; margin-top: -10px;">Income</p>
                             <p class="card-title text-muted float-end" style="line-height: .95; margin-top: -10px;">Received</p>
-                            <hr style="width: 110%; margin-left: -10px;">
+                            <hr style="width: 110%; margin-left: -20px;">
 
 
 
