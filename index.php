@@ -552,7 +552,7 @@ session_start();
 
             <!-- end debt -->
 
-            <div style="margin-bottom: 50px;"></div>
+            <div style="margin-bottom: 50px !important;"></div>
 
 
             <!-- not using -->
