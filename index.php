@@ -173,6 +173,7 @@ session_start();
                 box-sizing: border-box;
             }
             * {
+                top: 15;
                 margin: 0; 
                 padding: 0; 
                 box-sizing: border-box;
