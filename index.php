@@ -163,6 +163,7 @@ session_start();
                 margin-left: -11px !important; 
                 margin-right: -11px !important;
                 padding: 0 !important;
+                margin: 0 !important;
                 background-color: #c0c0c0;
                 box-sizing: border-box;
             }
