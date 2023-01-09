@@ -398,7 +398,7 @@ session_start();
                         <!-- end php code -->
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
                           <p class="card-text fs-5 text-start fw-bold">
-                            <div class="row" style="padding-top: -15px !important;">
+                            <div class="row" style="margin-top: -25px !important;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
                                   <?php echo $option['category']; ?>
                               </div>
