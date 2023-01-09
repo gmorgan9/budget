@@ -398,6 +398,12 @@ session_start();
                                 foreach ($options as $option) {
 
                                     $cat_idno = $option['idno'];
+
+                                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_m_expenses = $rowtotal[0];
+
                                     $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $month_expenses=mysqli_fetch_array($result); 
@@ -413,11 +419,11 @@ session_start();
                               </div>
                               <div class="col text-end pb-1" style="">
                                 <?php
-                                    // if($count_m_expenses == 0){
-                                    //     echo "$0.00";
-                                    // } else {
+                                    if($count_m_expenses == 0){
+                                        echo "$0.00";
+                                    } else {
                                          echo "$$m_expenses";
-                                    // }
+                                    }
                                 ?>
                               </div>
                               <hr>
