@@ -379,17 +379,35 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Income</p>
                                 <p class="card-title text-muted float-end">Received</p>
                             </div>
+
+                        <!-- php code -->
+                            <?php
+                                $grab = " SELECT * FROM categories WHERE parent = 'income' ";
+                                $put = mysqli_query($conn, $grab);
+                                if (mysqli_num_rows($put) > 0) {
+                                    while($cap = mysqli_fetch_assoc($put)) {
+                                        $cat_name    = $cap['category'];
+                                }}
+                                $query ="SELECT * FROM categories";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($options as $option) {
+                            ?>
+                        <!-- end php code -->
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
                           <p class="card-text fs-5 text-start fw-bold">
                             <div class="row">
                               <div class="col-8 text-start" style="margin-left: -10px;">
-                                  Paycheck 1
+                                  <?php $option['category']; ?>
                               </div>
                               <div class="col text-end pb-2" style="">
                                   $0.00
                               </div>
                               <hr>
                             </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
