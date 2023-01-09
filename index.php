@@ -332,7 +332,7 @@ session_start();
         <section class="active" data-page="home">
             <!-- header -->
                 <div class="header">
-                    <h2 class="text-white" style="padding-left: 10px; padding-top: 100px;">
+                    <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
                     <?php 
                         date_default_timezone_set('America/Denver');
                         $month_budget = date('F Y');
@@ -347,7 +347,7 @@ session_start();
             <!-- end header -->
 
             <!-- top -->
-                <div class="row d-flex justify-content-center" style="margin-top: 70px !important; background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="margin-top: 80px !important; background-color: rgb(245, 245, 245);">
                     <div class="card mt-5 mb-3" style="border: none; margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
