@@ -362,10 +362,12 @@ session_start();
             <!-- income -->
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
-                    <div class="card mt-3 mb-3" style="border: none;width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
-                            <p class="card-title text-muted fw-bold float-start">Income</p>
-                            <p class="card-title text-muted float-end">Received</p>
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start">Income</p>
+                                <p class="card-title text-muted float-end">Received</p>
+                            </div>
                             <hr>
                           <p class="card-text fs-5 text-start fw-bold">
                           $14
