@@ -330,6 +330,7 @@ session_start();
     <div class="container-fluid">
 
         <section class="active" data-page="home">
+
             <!-- header -->
                 <div class="header">
                     <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
@@ -380,7 +381,15 @@ session_start();
                             </div>
                             <hr style="width: 105%; margin-left: -10px;">
                           <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                          <div class="row">
+                            <div class="col">
+                                Paycheck 1
+                            </div>
+                            <div class="col">
+                                $0.00
+                            </div>
+                            <hr>
+                          </div>
                           </p>
                         </div>
                     </div>
@@ -559,124 +568,6 @@ session_start();
                 </div>
 
             <!-- end debt -->
-
-
-
-            <!-- not using -->
-                <!-- expense -->
-                <!-- <div class="mt-3"></div>
-                <div class="row justify-content-center">
-                    <h3 class="text-white">
-                        Expenses
-                    </h3>
-                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Monthly</h3>
-                            <p class="card-text fs-5 text-center">
-                                <?php 
-                                    // $month_year = date('F Y');
-                                    // $firstday = strtotime("first day of ". $month_year);
-                                    // $first_day = date('Y-m-d', $firstday);
-                                    // $month_year = date('F Y');
-                                    // $lastday = strtotime("last day of ". $month_year);
-                                    // $last_day = date('Y-m-d', $lastday);
-                                ?>
-                                <?php
-                                // $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                // $result=mysqli_query($conn,$sql);
-                                // $rowtotal=mysqli_fetch_array($result); 
-                                // $count_m_expenses = $rowtotal[0];
-                                ?>
-                                <?php
-                                    // $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                    // $result=mysqli_query($conn,$sql);
-                                    // $month_expenses=mysqli_fetch_array($result); 
-                                    // $m_expenses = $month_expenses[0];
-                                    // if($count_m_expenses == 0){
-                                    //     echo "$0";
-                                    // } else {
-                                    //     echo "$$month_expenses[0]";
-                                    // }
-                                ?>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Yearly</h3>
-                            <p class="card-text fs-5 text-center">
-                                <?php
-                                // $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                // $result=mysqli_query($conn,$sql);
-                                // $rowtotal=mysqli_fetch_array($result); 
-                                // $count_y_expenses = $rowtotal[0];
-                                ?>
-                                <?php
-                                    // $sql="SELECT sum(amount) FROM expenses WHERE account_link = '$account_link'";
-                                    // $result=mysqli_query($conn,$sql);
-                                    // $year_expenses=mysqli_fetch_array($result); 
-                                    // $y_expenses = $year_expenses[0];
-                                    // if($count_m_expenses == 0){
-                                    //     echo "$0";
-                                    // } else {
-                                    //     echo "$$year_expenses[0]";
-                                    // }
-                                ?>
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- end expense -->
-
-                <!-- total -->
-
-                <!-- <div class="mt-3"></div>
-                <div class="row justify-content-center">
-                    <h3 class="text-white">
-                        Total
-                    </h3>
-                    <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Monthly</h3>
-                            <p class="card-text fs-5 text-center">
-                                <?php 
-                                    // $month_total = $m_income - $m_expenses;
-                                    // if($month_total < 0) {
-                                    //     echo "<span class='text-danger'>$$month_total</span>";
-                                    // } else {
-                                    //     echo "$$month_total";
-                                    // } 
-                                ?>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Yearly</h3>
-                            <p class="card-text fs-5 text-center">
-                                <?php 
-                                    // $year_total = $y_income - $y_expenses;
-                                    // if($year_total < 0) {
-                                    //     echo "<span class='text-danger'>$$year_total</span>";
-                                    // } else {
-                                    //     echo "$$year_total";
-                                    // }
-                                     
-                                ?>
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- end total -->
-            <!-- not using -->
-
-
-
-
-            
-
 
         </section>
 
