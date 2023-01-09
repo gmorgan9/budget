@@ -382,18 +382,41 @@ session_start();
 
                         <!-- php code -->
                             <?php
-                                $grab = " SELECT * FROM categories WHERE parent = 'income' ";
-                                $put = mysqli_query($conn, $grab);
-                                if (mysqli_num_rows($put) > 0) {
-                                    while($cap = mysqli_fetch_assoc($put)) {
-                                        $cat_name    = $cap['category'];
-                                }}
+                                
                                 $query ="SELECT * FROM categories where parent = 'income'";
                                 $result = $conn->query($query);
                                 if($result->num_rows> 0){
                                   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
                                 }
                                 foreach ($options as $option) {
+
+                                    $cat_idno = $option['idno'];
+                                    $month_year = date('F Y');
+                                    $firstday = strtotime("first day of ". $month_year);
+                                    $first_day = date('Y-m-d', $firstday);
+                                    $month_year = date('F Y');
+                                    $lastday = strtotime("last day of ". $month_year);
+                                    $last_day = date('Y-m-d', $lastday);
+
+
+
+                                    $sql="SELECT sum(amount) FROM income WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND category = '$cat_idno'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_expenses=mysqli_fetch_array($result); 
+                                    $m_expenses = $month_expenses[0];
+                                    
+
+
+
+
+                                    // $cat = $option['category'];
+                                    // $select = " SELECT * FROM income WHERE category = '$cat' ";
+                                    // $r = mysqli_query($conn, $select);
+                                    // if (mysqli_num_rows($r) > 0) {
+                                    //     while($row = mysqli_fetch_assoc($r)) {
+                                    //         $cat_name    = $row['category'];
+                                    //     }
+                                    // }
                             ?>
                         <!-- end php code -->
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
@@ -403,7 +426,13 @@ session_start();
                                   <?php echo $option['category']; ?>
                               </div>
                               <div class="col text-end pb-1" style="">
-                                  $0.00
+                                <?php
+                                    if($count_m_expenses == 0){
+                                        echo "$0.00";
+                                    } else {
+                                        echo "$$month_expenses[0]";
+                                    }
+                                ?>
                               </div>
                               <hr>
                             </div>
