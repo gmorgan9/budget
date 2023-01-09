@@ -378,6 +378,181 @@ session_start();
 
             <!-- end income -->
 
+            <!-- giving -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Giving</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end giving -->
+
+            <!-- housing -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Housing</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end housing -->
+
+            <!-- transportation -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Transportation</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end transportation -->
+
+            <!-- food -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Food</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end food -->
+
+            <!-- personal -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Personal</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end personal -->
+
+            <!-- lifestyle -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Lifestyle</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end lifestyle -->
+
+            <!-- health -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Health</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end health -->
+
+            <!-- insurance -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Insurance</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end insurance -->
+
+            <!-- debt -->
+                
+            <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Debt</p>
+                                <p class="card-title text-muted float-end">Spent</p>
+                            </div>
+                            <hr style="width: 105%; margin-left: -10px;">
+                          <p class="card-text fs-5 text-start fw-bold">
+                          $14
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end debt -->
+
+
+
+
+
             <!-- expense -->
                 <!-- <div class="mt-3"></div>
                 <div class="row justify-content-center">
