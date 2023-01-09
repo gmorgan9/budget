@@ -175,7 +175,7 @@ session_start();
             }
             .background {
                 background-color: rgb(242, 247, 253);
-                width: 85%;
+                /* width: 85%; */
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 15px;
@@ -332,7 +332,7 @@ session_start();
             <div style="background-color: rgb(215,215,215);">
 
             <!-- top -->
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
