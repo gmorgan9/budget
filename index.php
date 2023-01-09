@@ -167,7 +167,7 @@ session_start();
                 top: 0 !important; 
                 margin-top: 0 !important;
                 width: 100%;
-                height: 75px !important;
+                height: 100px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
@@ -332,7 +332,7 @@ session_start();
         <section class="active" data-page="home">
             <!-- header -->
                 <div class="header ">
-                    <h2 class="text-white pt-5">
+                    <h2 class="text-white" style="padding-top: 60px;">
                     <?php 
                         date_default_timezone_set('America/Denver');
                         $month_budget = date('F Y');
@@ -347,7 +347,7 @@ session_start();
             <!-- end header -->
 
             <!-- top -->
-                <div class="row d-flex justify-content-center" style="margin-top: 50px !important; background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="margin-top: 70px !important; background-color: rgb(245, 245, 245);">
                     <div class="card mt-5 mb-3" style="border: none; margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
