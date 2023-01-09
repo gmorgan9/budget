@@ -337,7 +337,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div class="home_page" style="margin-left: -10px !important;">
+            <div class="home_page" style="margin-left: -11px !important;">
                 test
             </div>
 
