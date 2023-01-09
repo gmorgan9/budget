@@ -354,7 +354,48 @@ session_start();
                             <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
                             <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
                             <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
-                                $14
+
+                            <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+                                
+                                $query ="SELECT * FROM categories";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $spent= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($spent as $sp) {
+
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_spent = $rowtotal[0];
+
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_spent=mysqli_fetch_array($result); 
+                                    $m_spent = $month_spent[0];
+                                    
+                            ?>
+                        <!-- end php code -->
+                                
+                        <!-- php code -->
+                        <?php
+                                        if($count_spent == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_spent";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+
+                            
                             </p>
                         </div>
                     </div>
