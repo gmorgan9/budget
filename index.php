@@ -329,10 +329,10 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div style="background-color: rgb(215,215,215); width: 100% margin: 0; padding: 0;">
+            <div style="background-color: rgb(215,215,215); margin-right:-1px;">
 
             <!-- top -->
-                <div class="row d-flex justify-content-center">
+                <div class="row">
                     <div class="card" style="margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                           <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
