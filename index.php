@@ -196,7 +196,7 @@ session_start();
 
 
 <?php if(!isset($_SESSION['username'])) {?>
-    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
+    <body style="background-color: #3e4881;">
 
 <!-- login -->
     <div class="login">
@@ -295,7 +295,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: #3e4881; margin: 0; padding: 0; box-sizing: border-box;">
+    <body style="background-color: #3e4881;">
 
     <!-- php code -->
         <?php 
@@ -319,7 +319,7 @@ session_start();
     <!-- end php code -->
 
 <!-- Container -->
-    <div class="container">
+    <div class="container-fluid">
 
         <section class="active" data-page="home">
             <!-- header -->
