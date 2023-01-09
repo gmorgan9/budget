@@ -160,7 +160,8 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .home_page {
-                margin: 0 !important;
+                margin-left: -11px !important; 
+                margin-right: -11px !important;
                 padding: 0 !important;
                 background-color: #c0c0c0;
                 box-sizing: border-box;
@@ -337,7 +338,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div class="home_page" style="margin-left: -11px !important; margin-right: -11px !important;">
+            <div class="home_page" style="">
                 test
             </div>
 
