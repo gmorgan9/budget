@@ -398,11 +398,11 @@ session_start();
                         <!-- end php code -->
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
                           <p class="card-text fs-5 text-start fw-bold">
-                            <div class="row">
+                            <div class="row" style="padding-top: -15px;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
                                   <?php echo $option['category']; ?>
                               </div>
-                              <div class="col text-end" style="">
+                              <div class="col text-end pb-1" style="">
                                   $0.00
                               </div>
                               <hr>
