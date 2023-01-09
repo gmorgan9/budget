@@ -160,6 +160,7 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
+                background-color: #3e4881 !important;
                 position: fixed; /* Set the navbar to fixed position */
                 top: 30; /* Position the navbar at the top of the page */
                 width: 100%; /* Full width */
@@ -326,7 +327,7 @@ session_start();
 
         <section class="active" data-page="home">
             <!-- header -->
-                <div class="header" stlye="position: sticky; background-color: #3e4881 !important;">
+                <div class="header">
                     <div class="mt-4"></div>
                     <h2 class="text-white">
                     <?php 
