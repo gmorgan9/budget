@@ -388,7 +388,7 @@ session_start();
                                     while($cap = mysqli_fetch_assoc($put)) {
                                         $cat_name    = $cap['category'];
                                 }}
-                                $query ="SELECT * FROM categories";
+                                $query ="SELECT * FROM categories where parent = 'income'";
                                 $result = $conn->query($query);
                                 if($result->num_rows> 0){
                                   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
