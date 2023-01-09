@@ -398,27 +398,11 @@ session_start();
                                 foreach ($options as $option) {
 
                                     $cat_idno = $option['idno'];
-                                    
-
-
-
-                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno'";
+                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $month_expenses=mysqli_fetch_array($result); 
                                     $m_expenses = $month_expenses[0];
                                     
-
-
-
-
-                                    // $cat = $option['category'];
-                                    // $select = " SELECT * FROM income WHERE category = '$cat' ";
-                                    // $r = mysqli_query($conn, $select);
-                                    // if (mysqli_num_rows($r) > 0) {
-                                    //     while($row = mysqli_fetch_assoc($r)) {
-                                    //         $cat_name    = $row['category'];
-                                    //     }
-                                    // }
                             ?>
                         <!-- end php code -->
                             <!-- <hr style="width: 105%; margin-left: -10px;"> -->
