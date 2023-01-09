@@ -400,7 +400,7 @@ session_start();
                           <p class="card-text fs-5 text-start fw-bold">
                             <div class="row">
                               <div class="col-8 text-start" style="margin-left: -10px;">
-                                  <?php $option['category']; ?>
+                                  <?php echo $option['category']; ?>
                               </div>
                               <div class="col text-end pb-2" style="">
                                   $0.00
