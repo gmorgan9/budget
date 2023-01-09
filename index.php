@@ -332,7 +332,7 @@ session_start();
         <section class="active" data-page="home">
             <!-- header -->
                 <div class="header">
-                    <h2 class="text-white" style="padding-left: 10px; padding-top: 80px;">
+                    <h2 class="text-white" style="padding-left: 10px; padding-top: 100px;">
                     <?php 
                         date_default_timezone_set('America/Denver');
                         $month_budget = date('F Y');
