@@ -165,7 +165,6 @@ session_start();
                 background-color: #3e4881 !important;
                 position: fixed; 
                 top: 0 !important; 
-                margin-top: 0 !important;
                 width: 100%;
                 height: 120px !important;
             }
@@ -355,7 +354,7 @@ session_start();
                             <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
                             <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
 
-                            <!-- php code -->
+                        <!-- php code -->
                             <?php
 
                                 $month_year = date('F Y');
@@ -379,16 +378,14 @@ session_start();
                         <!-- end php code -->
 
                         <!-- php code -->
-                        <?php
-                                        if($count_spent == 0){
-                                            echo "$0.00";
-                                        } else {
-                                             echo "$$m_spent";
-                                        }
-                                    ?>
-                                <!-- end php code -->
-                                
-                                <?php //} ?>
+                            <?php
+                                if($count_spent == 0){
+                                    echo "$0.00";
+                                } else {
+                                    echo "$$m_spent";
+                                }
+                            ?>
+                        <!-- end php code -->
                             
                             </p>
                         </div>
@@ -401,7 +398,7 @@ session_start();
                           
 
 
-                          <!-- php code -->
+                        <!-- php code -->
                             <?php
 
                                 $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
