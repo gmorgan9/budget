@@ -379,10 +379,10 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Income</p>
                                 <p class="card-title text-muted float-end">Received</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
+                            <!-- <hr style="width: 105%; margin-left: -10px;"> -->
                           <p class="card-text fs-5 text-start fw-bold">
                           <div class="row">
-                            <div class="col-8">
+                            <div class="col-8 text-start">
                                 Paycheck 1
                             </div>
                             <div class="col text-end" style="">
