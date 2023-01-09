@@ -402,7 +402,7 @@ session_start();
                               <div class="col-8 text-start" style="margin-left: -10px;">
                                   <?php echo $option['category']; ?>
                               </div>
-                              <div class="col text-end pb-1" style="">
+                              <div class="col text-end" style="">
                                   $0.00
                               </div>
                               <hr>
