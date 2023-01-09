@@ -159,19 +159,16 @@ session_start();
     <!-- custom styles -->
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
-            body, html{
-                margin:0;
-                padding:0;
-            }
-            .home_page { 
-                /* background-color: rgb(215,215,215); */
-                /* width: 100%; */
+            .home_page {
                 margin: 0;
                 padding: 0;
                 background-color: #c0c0c0;
+                box-sizing: border-box;
             }
             * {
-                margin: 0; padding: 0; box-sizing: border-box;
+                margin: 0; 
+                padding: 0; 
+                box-sizing: border-box;
             }
             .success {
                 width: 70%;
