@@ -365,12 +365,11 @@ session_start();
                     <div class="card mt-3 mb-3" style="border: none;width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
 
-                            <div class="row">
+                                <div class="row d-flex">
                                     <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px;line-height: .95; margin-top: -10px;">Income</p>
                                     <p class="card-title text-muted text-end" style="line-height: .95; margin-top: -10px;">Received</p>
                                     <hr>
                                 </div>
-                            </div>
 
 
 
