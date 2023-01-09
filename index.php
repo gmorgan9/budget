@@ -160,8 +160,6 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
-                margin-top: 100 !important;
-                padding-top: -55px !important;
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
@@ -169,14 +167,11 @@ session_start();
                 top: 0 !important; 
                 margin-top: 0 !important;
                 width: 100%;
-                height: 75px !important;
+                height: 150px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
                 box-sizing: border-box;
-            }
-            body {
-                top: -15 !important;
             }
             * {
                 margin: 0; 
