@@ -606,12 +606,12 @@ session_start();
                                 
                                     $cat_idno = $t['idno'];
                                 
-                                    $sql="SELECT count('1') FROM income WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $rowtotal=mysqli_fetch_array($result); 
                                     $count_trans = $rowtotal[0];
                                 
-                                    $sql="SELECT sum(amount) FROM income WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $month_trans=mysqli_fetch_array($result); 
                                     $m_trans = $month_trans[0];
