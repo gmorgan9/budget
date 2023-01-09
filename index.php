@@ -340,9 +340,9 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <main class="home_page" style="">
-            test
-            </main>
+            <div class="home_page" style="">
+                test
+            </div>
 
             <!-- top -->
                 <!-- <div class="row">
@@ -721,7 +721,7 @@ session_start();
             </nav>
         </div>
 
-    </div>
+    <!-- </div> -->
 <!-- end Container -->
 
 
