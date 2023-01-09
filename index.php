@@ -160,6 +160,7 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
+                z-index: 1;
                 background-color: #3e4881 !important;
                 position: fixed; /* Set the navbar to fixed position */
                 top: 30; /* Position the navbar at the top of the page */
