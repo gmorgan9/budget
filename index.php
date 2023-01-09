@@ -365,26 +365,27 @@ session_start();
                                 $lastday = strtotime("last day of ". $month_year);
                                 $last_day = date('Y-m-d', $lastday);
                                 
-                                $query ="SELECT * FROM categories";
-                                $result = $conn->query($query);
-                                if($result->num_rows> 0){
-                                  $spent= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                                }
-                                foreach ($spent as $sp) {
+                                // $query ="SELECT * FROM categories where parent = 'income'";
+                                // $result = $conn->query($query);
+                                // if($result->num_rows> 0){
+                                //   $income= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                // }
+                                // foreach ($income as $i) {
 
-                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+
+                                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $rowtotal=mysqli_fetch_array($result); 
                                     $count_spent = $rowtotal[0];
 
-                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
                                     $result=mysqli_query($conn,$sql);
                                     $month_spent=mysqli_fetch_array($result); 
                                     $m_spent = $month_spent[0];
                                     
                             ?>
                         <!-- end php code -->
-                                
+
                         <!-- php code -->
                         <?php
                                         if($count_spent == 0){
@@ -394,7 +395,8 @@ session_start();
                                         }
                                     ?>
                                 <!-- end php code -->
-
+                                
+                                <?php //} ?>
                             
                             </p>
                         </div>
