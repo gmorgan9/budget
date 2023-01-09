@@ -411,20 +411,22 @@ session_start();
                                     
                             ?>
                         <!-- end php code -->
-                            <!-- <hr style="width: 105%; margin-left: -10px;"> -->
+
                           <p class="card-text fs-5 text-start fw-bold">
                             <div class="row" style="margin-top: -25px !important;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
                                   <?php echo $option['category']; ?>
                               </div>
                               <div class="col text-end pb-1" style="">
-                                <?php
-                                    if($count_m_expenses == 0){
-                                        echo "$0.00";
-                                    } else {
-                                         echo "$$m_expenses";
-                                    }
-                                ?>
+                                <!-- php code -->
+                                    <?php
+                                        if($count_m_expenses == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_expenses";
+                                        }
+                                    ?>
+                                <!-- end php code -->
                               </div>
                               <hr>
                             </div>
@@ -445,9 +447,59 @@ session_start();
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Giving</p>
                                 <p class="card-title text-muted float-end">Spent</p>
                             </div>
-                            <hr style="width: 105%; margin-left: -10px;">
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $query ="SELECT * FROM categories where parent = 'income'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($options as $option) {
+                                
+                                    $cat_idno = $option['idno'];
+                                
+                                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_m_expenses = $rowtotal[0];
+                                
+                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_expenses=mysqli_fetch_array($result); 
+                                    $m_expenses = $month_expenses[0];
+
+                            ?>
+                        <!-- end php code -->
+                            
+                            
                           <p class="card-text fs-5 text-start fw-bold">
-                          $14
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $option['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_m_expenses == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_expenses";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
                           </p>
                         </div>
                     </div>
