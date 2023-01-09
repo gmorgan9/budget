@@ -339,7 +339,7 @@ session_start();
         
             <div class="mt-3"></div>
 
-            <div class="container-fluid" style="background-color: rgb(215,215,215);">
+            <div class="container-lg" style="background-color: rgb(215,215,215);">
 
             <!-- top -->
                 <div class="row">
