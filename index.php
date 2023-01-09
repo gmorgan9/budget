@@ -367,7 +367,6 @@ session_start();
 
                             <div class="row">
                                     <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px;line-height: .95; margin-top: -10px;">Income</p>
-                                    <hr>
                                     <p class="card-title text-muted text-end" style="line-height: .95; margin-top: -10px;">Received</p>
                                     <hr>
                                 </div>
