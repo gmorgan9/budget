@@ -160,6 +160,7 @@ session_start();
         <link rel="stylesheet" href="style.css?v=1.25">
         <style>
             .header {
+                margin-top: -15px !important;
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
