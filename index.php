@@ -162,7 +162,7 @@ session_start();
             .header {
                 margin-left: -12px !important;
                 z-index: 1;
-                background-color: #c0c0c0 !important;
+                background-color: rgb(245, 245, 245) !important;
                 position: fixed; 
                 top: 0 !important; 
                 margin-top: 0 !important;
@@ -302,7 +302,7 @@ session_start();
 <!-- end login -->
     
 <?php } else { ?>
-    <body style="background-color: #c0c0c0;">
+    <body style="background-color: rgb(245, 245, 245);">
 
     <!-- php code -->
         <?php 
