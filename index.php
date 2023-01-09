@@ -432,7 +432,7 @@ session_start();
                                     // if($count_m_expenses == 0){
                                     //     echo "$0.00";
                                     // } else {
-                                        echo "$$month_expenses[0]";
+                                        echo "$$m_expenses[0]";
                                     // }
                                 ?>
                               </div>
