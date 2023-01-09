@@ -364,24 +364,16 @@ session_start();
                                 $month_year = date('F Y');
                                 $lastday = strtotime("last day of ". $month_year);
                                 $last_day = date('Y-m-d', $lastday);
-                                
-                                // $query ="SELECT * FROM categories where parent = 'income'";
-                                // $result = $conn->query($query);
-                                // if($result->num_rows> 0){
-                                //   $income= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                                // }
-                                // foreach ($income as $i) {
 
+                                $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_spent = $rowtotal[0];
 
-                                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                    $result=mysqli_query($conn,$sql);
-                                    $rowtotal=mysqli_fetch_array($result); 
-                                    $count_spent = $rowtotal[0];
-
-                                    $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                                    $result=mysqli_query($conn,$sql);
-                                    $month_spent=mysqli_fetch_array($result); 
-                                    $m_spent = $month_spent[0];
+                                $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $month_spent=mysqli_fetch_array($result); 
+                                $m_spent = $month_spent[0];
                                     
                             ?>
                         <!-- end php code -->
@@ -406,7 +398,36 @@ session_start();
                           <i class="fs-1 bi bi-cash-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
                           <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 70%; line-height: .95;">Received So Far</p>
                           <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
-                          $25
+                          
+
+
+                          <!-- php code -->
+                            <?php
+
+                                $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_inc = $rowtotal[0];
+
+                                $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $month_inc=mysqli_fetch_array($result); 
+                                $m_inc = $month_inc[0];
+    
+                            ?>
+                        <!-- end php code -->
+
+                        <!-- php code -->
+                            <?php
+                                if($count_inc == 0){
+                                    echo "$0.00";
+                                } else {
+                                     echo "$$m_inc";
+                                }
+                            ?>
+                        <!-- end php code -->
+
+
                           </p>
                         </div>
                     </div>
