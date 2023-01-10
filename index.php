@@ -499,7 +499,7 @@ session_start();
                             </div>
                             <div class="add_form">
                                 <form action="" method="post">
-                                    <input type="text" name="category" style="border:none;">
+                                    <input type="text" name="category" style="border:none;" placeholder="Item Label">
                                 </form>
                             </div>
 
