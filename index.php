@@ -1166,7 +1166,7 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="background" style="z-index: 6; background-color: gray; height: 15px; width: 100%; margin-top: 125px;"></div>
+            <div class="row d-flex justify-content-center background" style="z-index: 6;height: 15px; width: 100%; margin-top: 125px; background-color: rgb(245, 245, 245);"></div>
 
             <!-- header -->
             <div class="header">
