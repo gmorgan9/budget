@@ -1159,14 +1159,6 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
-
-                <h5 class="text-black" style="margin-top: 135px;">
-                    January 2023
-                </h5>
-        
-            </div>
-
             <!-- header -->
             <div class="header">
                     <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
@@ -1175,6 +1167,17 @@ session_start();
                     <div class="mt-3"></div>
                 </div>
             <!-- end header -->
+
+            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+
+                <h5 class="text-black" style="margin-top: 135px;">
+                    January 2023
+                </h5>
+
+        
+            </div>
+
+            
             <div class="mt-5"></div>
 
             <!-- start -->
