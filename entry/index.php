@@ -213,11 +213,11 @@ session_start();
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
-                        <button class="add-nav-link active" data-nav-link>Expenses</button>
+                        <i class="bi bi-dash"></i><button class="add-nav-link active" data-nav-link>Expenses</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item" style="">
-                        <button class="add-nav-link" data-nav-link>Income</button>
+                        <i class="bi bi-plus"></i><button class="add-nav-link" data-nav-link>Income</button>
                     </li>
                 </ul>
             </nav>
