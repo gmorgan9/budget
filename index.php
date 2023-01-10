@@ -1159,7 +1159,7 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="row d-flex justify-content-center background" style="z-index: 6; left: 0 !important; right: 0 !important; height: 15px; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"></div>
+            <div class="row d-flex justify-content-center background" style="z-index: 6; left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"></div>
 
             <!-- header -->
             <div class="header">
