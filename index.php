@@ -1170,9 +1170,23 @@ session_start();
 
             <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
 
-                <h5 class="text-black" style="margin-top: 135px;">
-                    January 2023
-                </h5>
+
+            <!--  deleted -->
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
+                            <div>
+                                <h4 class="card-title fw-bold" style="margin-left: -10px;"><i class="bi bi-trash me-3"></i> Deleted</h4>
+                            </div>
+
+                          <p class="card-text fs-5 text-start fw-bold">
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end deleted -->
 
                 <!-- income -->
                 
