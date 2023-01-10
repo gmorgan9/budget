@@ -1184,6 +1184,7 @@ session_start();
 
             <!--  deleted -->
                 <div class="mt-3"></div>
+                <div style="margin-top: 50px;"></div>
                 <div class="row" style="background-color: rgb(245, 245, 245);">
                 
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
