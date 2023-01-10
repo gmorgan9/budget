@@ -190,7 +190,7 @@ session_start();
                 position: sticky; 
                 top: 0 !important; 
                 width: 100vw !important;
-                height: 120px !important;
+                height: 100px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
@@ -1161,7 +1161,7 @@ session_start();
 
             <!-- header -->
             <div class="header">
-                    <h2 class="text-white" style="padding-left: 10px; margin-top: 15px;">
+                    <h2 class="text-white" style="padding-left: 10px; margin-top: 20px;">
                         Transactions
                     </h2>
                     <!-- <div class="mt-3"></div> -->
