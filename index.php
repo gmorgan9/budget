@@ -529,7 +529,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Giving</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -599,7 +599,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Housing</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -669,7 +669,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Transportation</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -741,7 +741,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Food</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -812,7 +812,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Personal</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -881,7 +881,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Lifestyle</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -951,7 +951,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Health</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -1022,7 +1022,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Insurance</p>
                                 <p class="card-title text-muted float-end">Spent</p>
@@ -1093,7 +1093,7 @@ session_start();
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
                     <div class="card mt-3 mb-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
-                        <div class="card-body">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
                                 <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Debt</p>
                                 <p class="card-title text-muted float-end">Spent</p>
