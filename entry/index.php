@@ -213,7 +213,7 @@ session_start();
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
-                        <button class="add-nav-link active" data-nav-link>— Expenses</button>
+                        <button class="add-nav-link active" data-nav-link>&#8211; Expenses</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item" style="">
@@ -224,7 +224,7 @@ session_start();
         </div>
 
 
-        <section class="active" data-page="— expenses">
+        <section class="active" data-page="&#8211; expenses">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
