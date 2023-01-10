@@ -197,10 +197,10 @@ session_start();
                 z-index: 1;
                 background-color: #3e4881 !important;
                 position: fixed; 
-                top: 0 !important; 
+                top: 70 !important; 
                 width: 100vw !important;
-                height: 120px !important;
-                margin-bottom: 120px;
+                height: 70px !important;
+                margin-bottom: 70px;
             }
             .home_page {
                 background-color: #c0c0c0;
