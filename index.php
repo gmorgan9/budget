@@ -1170,7 +1170,7 @@ session_start();
 
             <!-- header -->
             <div class="header2">
-                    <h2 class="text-white" style="padding-left: 10px; margin-top: 20px;">
+                    <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
                         Transactions
                     </h2>
                     <!-- <div class="mt-3"></div> -->
