@@ -187,7 +187,7 @@ session_start();
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
-                position: fixed; 
+                position: sticky; 
                 top: 0 !important; 
                 width: 100%;
                 height: 120px !important;
