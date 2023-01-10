@@ -223,7 +223,7 @@ session_start();
 
             <!-- header -->
                 <div class="header2">
-                    <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
+                    <h2 class="text-white" style="padding-left: 10px; padding-top: 10px;">
                     <?php 
                         date_default_timezone_set('America/Denver');
                         $month_budget = date('F Y');
