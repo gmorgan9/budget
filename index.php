@@ -212,14 +212,7 @@ session_start();
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                 word-wrap:break-word
             }
-            .background {
-                background-color: rgb(242, 247, 253);
-                /* width: 70%; */
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: 15px;
-                margin-top: 25%;
-            }
+            
         </style>
     <!-- end custom styles -->
 
