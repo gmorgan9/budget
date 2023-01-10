@@ -1174,10 +1174,10 @@ session_start();
                     <div class="mt-3"></div>
                 </div>
             <!-- end header -->
-            
+            <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="trans" style="padding-top: 65px !important;">
+            <div class="trans" style="margin-top: 65px !important;">
 
             
             <?php 
