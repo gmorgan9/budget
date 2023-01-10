@@ -493,7 +493,16 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
-                            <a style="margin-left: -10px; text-decoration: none; color: #327ba8; font-weight: 500;" class="" href="">Add Income</a>
+
+                            <div class="add_btn">
+                                <a style="margin-left: -10px; text-decoration: none; color: #327ba8; font-weight: 500;" class="" href="">Add Income</a>
+                            </div>
+                            <div class="add_form">
+                                <form action="" method="post">
+                                    <input type="text" name="category">
+                                </form>
+                            </div>
+
                           </p>
                         </div>
                     </div>
