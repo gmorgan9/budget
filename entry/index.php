@@ -220,7 +220,7 @@ session_start();
     <div class="container-fluid">
 
             <!-- header -->
-                <div class="header2" style="background-color: #3e4881; width: 108% !important; height: 15px; margin-left: -5%;">
+                <div class="header2" style="background-color: #3e4881; width: 108% !important; height: 45px; margin-left: -5%;">
                     <h3 class="text-white text-center" style="padding-top: 10px;">
                         Add Transaction
                     </h3>
