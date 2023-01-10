@@ -223,269 +223,6 @@ session_start();
         </style>
     <!-- end custom styles -->
 
-    
-<!-- income add item -->
-    <?php if(isset($_POST['add-btn'])){ ?>
-
-
-        <style>
-            .add_btn {
-                display: none;
-            }
-            .add_form {
-                display: block;
-            }
-        </style>
-
-    <?php } else { ?>
-
-        <style>
-            .add_btn {
-                display: block;
-            }
-            .add_form {
-                display: none;
-            }
-        </style>
-
-    <?php } ?>
-<!-- end income add item -->
-
-<!-- giving add item -->
-    <?php if(isset($_POST['add-g'])){ ?>
-
-        <style>
-            .g_btn {
-                display: none;
-            }
-            .g_form {
-                display: block;
-            }
-        </style>
-
-    <?php } else { ?>
-        
-        <style>
-            .g_btn {
-                display: block;
-            }
-            .g_form {
-                display: none;
-            }
-        </style>
-
-    <?php } ?>
-<!-- end giving add item -->
-
-<!-- housing add item -->
-    <?php if(isset($_POST['add-house'])){ ?>
-
-    <style>
-        .hou_btn {
-            display: none;
-        }
-        .hou_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .hou_btn {
-            display: block;
-        }
-        .hou_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end housing add item -->
-
-<!-- transportation add item -->
-    <?php if(isset($_POST['add-trans'])){ ?>
-
-    <style>
-        .t_btn {
-            display: none;
-        }
-        .t_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .t_btn {
-            display: block;
-        }
-        .t_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end transportation add item -->
-
-<!-- food add item -->
-    <?php if(isset($_POST['add-food'])){ ?>
-
-    <style>
-        .f_btn {
-            display: none;
-        }
-        .f_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .f_btn {
-            display: block;
-        }
-        .f_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end food add item -->
-
-<!-- personal add item -->
-    <?php if(isset($_POST['add-personal'])){ ?>
-
-    <style>
-        .p_btn {
-            display: none;
-        }
-        .p_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .p_btn {
-            display: block;
-        }
-        .p_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end personal add item -->
-
-<!-- lifestyle add item -->
-    <?php if(isset($_POST['add-lifestyle'])){ ?>
-
-    <style>
-        .l_btn {
-            display: none;
-        }
-        .l_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .l_btn {
-            display: block;
-        }
-        .l_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end lifestyle add item -->
-
-<!-- health add item -->
-    <?php if(isset($_POST['add-health'])){ ?>
-
-    <style>
-        .he_btn {
-            display: none;
-        }
-        .he_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .he_btn {
-            display: block;
-        }
-        .he_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end health add item -->
-
-<!-- insurance add item -->
-    <?php if(isset($_POST['add-insurance'])){ ?>
-
-    <style>
-        .ins_btn {
-            display: none;
-        }
-        .ins_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .ins_btn {
-            display: block;
-        }
-        .ins_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end health add item -->
-
-<!-- debt add item -->
-    <?php if(isset($_POST['add-debt'])){ ?>
-
-    <style>
-        .d_btn {
-            display: none;
-        }
-        .d_form {
-            display: block;
-        }
-    </style>
-
-    <?php } else { ?>
-
-    <style>
-        .d_btn {
-            display: block;
-        }
-        .d_form {
-            display: none;
-        }
-    </style>
-
-    <?php } ?>
-<!-- end debt add item -->
-
-
 
 </head>
 
@@ -781,47 +518,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <?php if(isset($_POST['add-btn'])){ ?>
-
-                                <style>
-                                    .add_btn {
-                                        display: none;
-                                    }
-                                    .add_form {
-                                        display: block;
-                                    }
-                                </style>
-
-                            <?php } else { ?>
-
-                                <style>
-                                    .add_btn {
-                                        display: block;
-                                    }
-                                    .add_form {
-                                        display: none;
-                                    }
-                                </style>
-
-                            <?php } ?>
-
-
-
-
-                            <div class="add_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Income" name="add-btn" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="add_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="income">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
                           </p>
                         </div>
                     </div>
@@ -892,23 +588,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-
-
-                            <div class="g_btn" style="margin-top: -10px;">
-                                <form action="" method="post">
-                                    <input type="submit" value="Add Item" name="add-g" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                                </form>  
-                            </div>
-
-                            <div class="g_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="giving">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
-
                           </p>
                         </div>
                     </div>
@@ -978,21 +657,6 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
-
-                            <div class="hou_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-house" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="hou_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="housing">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
 
                           </p>
                         </div>
@@ -1066,21 +730,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="t_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-trans" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="t_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="transportation">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
-
                           </p>
                         </div>
                     </div>
@@ -1152,21 +801,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="f_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-food" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="f_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="food">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
-
                           </p>
                         </div>
                     </div>
@@ -1235,21 +869,6 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
-
-                            <div class="p_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-personal" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="p_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="personal">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
 
                           </p>
                         </div>
@@ -1320,21 +939,6 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
-
-                            <div class="l_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-lifestyle" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="l_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="lifestyle">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
 
                           </p>
                         </div>
@@ -1407,20 +1011,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="he_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-health" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="he_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="health">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
                           </p>
                         </div>
                     </div>
@@ -1492,20 +1082,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="ins_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-insurance" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="ins_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="insurance">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
-
                           </p>
                         </div>
                     </div>
@@ -1576,20 +1152,6 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
-
-                            <div class="d_btn" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-debt" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
-                            </div>
-                            <div class="d_form">
-                                <form action="" method="post">
-                                    <input type="hidden" name="parent" value="debt">
-                                    <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
-                                    <button type="submit" class="btn" name="add_item" style="background-color: rgb(245, 245, 245); border-radius: 100px; float:right; margin-top: -10px; font-weight: 500; padding: -5px;"><i class="bi bi-plus"></i></button>
-                                </form>
-                            </div>
 
                           </p>
                             
