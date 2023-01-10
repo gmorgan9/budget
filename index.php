@@ -1192,6 +1192,7 @@ session_start();
                             <div>
                             
                                 <h5 class="card-title">
+                                <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                     
                                 </h5>
@@ -1277,7 +1278,7 @@ session_start();
         
             </div>
 
-            <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+            
             <div class="mt-5"></div>
 
             <!-- start -->
@@ -1521,7 +1522,7 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- custom scripts -->
 <script>
-    $(window).unload(function() {$.cookie('scrollTop',$(window).scrollTop());});
+    
 </script>
 </body>
 </html>
