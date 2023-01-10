@@ -125,7 +125,7 @@ session_start();
     // end add income
 
      // add income
-     if(isset($_POST['add-btn'])){
+     if(isset($_POST['add-item'])){
         $idno  = rand(10000, 99999); 
         $category = mysqli_real_escape_string($conn, $_POST['category']);
         $parent = mysqli_real_escape_string($conn, $_POST['parent']);
