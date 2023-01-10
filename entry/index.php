@@ -176,7 +176,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav">
+    <div class="nav" style="background-color: pink;">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
                     <li class="navbar-item">
