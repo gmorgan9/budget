@@ -188,6 +188,7 @@ session_start();
         padding-bottom: unset !important;
         padding-top: 5px !important;
         margin-top: 8% !important;
+        padding-bottom: 12px !important;
         transition: background 0.45s ease;
     }
     </style>
