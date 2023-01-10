@@ -1176,7 +1176,8 @@ session_start();
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body" style="margin-bottom: -10px;">
                             <div>
-                                <i class="bi bi-trash me-3 text-primary" style="margin-left: -10px;></i><h4 class="card-title"">Deleted</h4>
+                                <i class="bi bi-trash me-3 text-primary" style="margin-left: -10px;"></i>
+                                <h5 class="card-title">Deleted</h5>
                             </div>
 
                           <p class="card-text fs-5 text-start fw-bold">
