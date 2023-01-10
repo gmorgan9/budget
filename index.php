@@ -200,6 +200,32 @@ session_start();
         </style>
     <!-- end custom styles -->
 
+
+    <?php if(isset($_POST['add-btn'])){ ?>
+
+        <style>
+            .add-btn {
+                display: none;
+            }
+            .add-form {
+                display: block;
+            }
+        </style>
+
+    <?php } else { ?>
+
+        <style>
+            .add-btn {
+                display: block;
+            }
+            .add-form {
+                display: none;
+            }
+        </style>
+
+    <?php } ?>
+
+
 </head>
 
 
@@ -495,7 +521,10 @@ session_start();
                             <?php } ?>
 
                             <div class="add_btn" style="margin-top: -10px;">
-                                <a style="margin-left: -10px; text-decoration: none; color: #327ba8; font-weight: 500;" class="" href="">Add Income</a>
+                            <form action="" method="post">
+                                <input type="submit" name="add-btn" style="margin-left: -10px; color: #327ba8; font-weight: 500;">Add Income</a>
+                            </form>
+                                
                             </div>
                             <div class="add_form">
                                 <form action="" method="post">
