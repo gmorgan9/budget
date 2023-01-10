@@ -161,7 +161,7 @@ session_start();
     color: #000;
     font-size: 15px;
     padding: 20px 7px;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.45s ease-in-out;
   }
   .nav-icon {
     color: #d6d6d6;
