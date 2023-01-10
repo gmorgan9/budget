@@ -552,6 +552,7 @@ session_start();
                             </div>
                             <div class="add_form">
                                 <form action="" method="post">
+                                    <input type="hidden" name="parent" value="income">
                                     <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
                                     <button type="submit" class="btn" name="add_item" style="float:right; margin-top: -10px; font-weight: 500;"><i class="bi bi-plus"></i></button>
                                 </form>
