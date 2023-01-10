@@ -1190,9 +1190,22 @@ session_start();
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                     
                         <div class="card-body">
-                        <li class="navbar-item">
-                            <button class="navbar-link" data-nav-link>Deleted</button>
-                        </li>
+                        
+
+
+                        <div class="footer-nav">
+                            <nav class="navbar d-flex justify-content-center">
+                                <ul class="navbar-list">
+                                    <li class="navbar-item">
+                                        <button class="navbar-link active" data-nav-link>Home</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        
+
                             <a style="text-decoration: none; color: black;" href="/entry/">
                                 <h5 class="card-title">
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
