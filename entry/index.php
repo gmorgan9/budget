@@ -191,7 +191,7 @@ session_start();
         </div>
 
 
-        <section class="" data-page="expenses">
+        <section class="active" data-page="expenses">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
