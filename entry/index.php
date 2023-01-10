@@ -152,7 +152,7 @@ session_start();
 
 .nav {
     width: 100%;
-    height: 25px;
+    height: 55px;
     background-color: rgb(245, 245, 245);
     /* backdrop-filter: blur(10px); */
     border: 1px solid rgb(225, 225, 225);
