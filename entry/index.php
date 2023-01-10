@@ -244,7 +244,7 @@ session_start();
             </nav>
         </div>
 
-        <section class="active" data-page="&#8211; expenses" style="background-color: pink;">
+        <section class="active" data-page="&#8211; expenses" style="background-color: pink; margin:unset !important;">
             <!-- <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
