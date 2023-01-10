@@ -161,8 +161,6 @@ session_start();
   }
 
         .navbar-list {
-            margin-left: auto !important;
-            margin-right: auto !important;
             padding: 0 10px;
         }
   
@@ -220,7 +218,7 @@ session_start();
     <div class="container-fluid">
 
     <div class="nav mt-3">
-            <nav class=" ">
+            <nav class="d-flex justify-content-center">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
                         <button class="add-nav-link active" data-nav-link>&#8211; Expenses</button>
