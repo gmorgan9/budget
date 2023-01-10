@@ -24,9 +24,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // page navigation variables
-const newLinks = document.querySelectorAll("[data-nav-link]");
+const newLinks = document.querySelectorAll("[new-nav-link]");
 //const navigationLink = document.getElementByClass('active');
-const newPages = document.querySelectorAll("[data-page]");
+const newPages = document.querySelectorAll("[new-page]");
 
 // add event to all nav link
 for (let i = 0; i < newLinks.length; i++) {
