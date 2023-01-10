@@ -273,7 +273,7 @@ session_start();
                 </div>
                 <div class="row">
                 <div class="mb-3 w-50">
-                    <label for="category" class="form-label text-black">Category</label>
+                    <label for="category" class="form-label text-black">Budget Item</label>
                     <select name="cat_idno" id="category" class="form-control">
                         <option value="">Select one...</option>
                         <?php
@@ -291,7 +291,7 @@ session_start();
                     </select>
                 </div>
                 <div class="mb-3 w-50">
-                    <label for="date" class="form-label text-black">Card</label>
+                    <label for="date" class="form-label text-black">Source</label>
                     <select name="card_idno" id="card" class="form-control">
                         <option value="">Select one...</option>
                         <?php
