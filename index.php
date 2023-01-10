@@ -1177,7 +1177,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="trans" style="width: 110% !important; margin-top: 125px !important; background-color: pink !important;">
+            <div class="trans" style="width: 110% !important; margin-left: -10px; margin-top: 125px !important; background-color: pink !important;">
 
             
             <?php 
