@@ -181,7 +181,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css?v=1.31">
+        <link rel="stylesheet" href="style.css?v=1.32">
         <style>
             .header {
                 margin-left: -12px !important;
