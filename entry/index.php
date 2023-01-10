@@ -161,15 +161,14 @@ session_start();
   }
 
         .navbar-list {
+            margin-left: auto;
+            margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     padding: 0 10px;
   }
   
   .add-nav-link {
-    /* background: #blue; */
     color: #000;
     font-size: 15px;
     padding: 20px 7px;
