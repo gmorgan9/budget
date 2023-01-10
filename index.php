@@ -1172,7 +1172,7 @@ session_start();
 
 
             <!--  deleted -->
-                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="margin-top: 165px; background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body" style="margin-bottom: -30px !important;">
                             <div>
