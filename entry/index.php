@@ -221,6 +221,22 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
+            <!-- header -->
+                <div class="header">
+                    <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
+                    <?php 
+                        date_default_timezone_set('America/Denver');
+                        $month_budget = date('F Y');
+                        echo $month_budget;
+                    ?>
+                        <a style="text-decoration: none; color: white;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+                    </h2>
+            
+        
+                    <div class="mt-3"></div>
+                </div>
+            <!-- end header -->
+
         <div class="nav mt-3 d-flex justify-content-center">
             <nav class="">
                 <ul class="navbar-list" style="">
