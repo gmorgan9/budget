@@ -222,7 +222,7 @@ session_start();
     <div class="container-fluid">
 
             <!-- header -->
-                <div class="header">
+                <div class="header2">
                     <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
                     <?php 
                         date_default_timezone_set('America/Denver');
