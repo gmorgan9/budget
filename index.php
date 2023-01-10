@@ -493,6 +493,7 @@ session_start();
                               <hr>
                             </div>
                             <?php } ?>
+                            <a href="">Add Income</a>
                           </p>
                         </div>
                     </div>
