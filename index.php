@@ -494,7 +494,7 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="add_btn">
+                            <div class="add_btn" style="margin-top: -10px;">
                                 <a style="margin-left: -10px; text-decoration: none; color: #327ba8; font-weight: 500;" class="" href="">Add Income</a>
                             </div>
                             <div class="add_form">
