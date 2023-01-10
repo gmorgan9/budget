@@ -283,7 +283,7 @@ session_start();
                     </select>
                 </div>
                 <div class="mb-3 w-50">
-                    <label for="date" class="form-label text-black">Source</label>
+                    <label for="date" class="form-label text-black">Card</label>
                     <select name="card_idno" id="card" class="form-control">
                         <option value="">Select one...</option>
                         <?php
