@@ -1164,7 +1164,7 @@ session_start();
 
         </section>
 
-        <section class="" data-page="expenses">
+        <section class="" data-page="transactions">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
@@ -1358,7 +1358,7 @@ session_start();
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Expenses</button>
+                        <button class="navbar-link" data-nav-link>Transactions</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
