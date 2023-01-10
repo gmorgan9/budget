@@ -1159,7 +1159,7 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <!-- <div class="row d-flex justify-content-center background" style="z-index: -1; left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"></div> -->
+            <div class="row d-flex justify-content-center background" style="z-index: -1; left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"></div>
 
             <!-- header -->
             <div class="header">
@@ -1172,7 +1172,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="row background" style="left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"">
+            <div class="trans d-flex flex-column justify-content-center" style=" background-color: pink !important;">
 
             
             <?php 
@@ -1187,7 +1187,7 @@ session_start();
                 Compliled list of Expenses for <?php echo $month_year; ?>.
             </p>
             <hr style="color: rgb(242, 247, 253);">
-            <!-- <div class="mt-4"></div> -->
+            <div class="mt-4"></div>
 
             <?php 
                 $month_year = date('F Y');
