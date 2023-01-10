@@ -1159,7 +1159,13 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important;height: 100vh !important; width: 100vw !important;background-color: rgb(245, 245, 245);"></div>
+            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important;height: 100vh !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+
+                <h6>
+                    January
+                </h6>
+        
+            </div>
 
             <!-- header -->
             <div class="header">
