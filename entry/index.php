@@ -210,7 +210,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="" style="background-color: pink; height: 50px !important;">
+    <div class="" style="background-color: pink; height: 25px !important;">
         <div class="mt-4"></div>
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="">
