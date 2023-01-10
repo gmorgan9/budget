@@ -183,8 +183,6 @@ session_start();
         background: rgb(215,215,215);
         font-weight: 700; 
         /* border-bottom: 5px solid #3e4881; */
-        padding-bottom: unset !important;
-        padding-bottom: 5px !important;
         transition: background 0.45s ease;
     }
     </style>
@@ -217,7 +215,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav mt-3 d-flex justify-content-center align-item-center">
+    <div class="nav mt-3 d-flex justify-content-center">
             <nav class="">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
