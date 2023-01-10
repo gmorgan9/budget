@@ -168,7 +168,10 @@ session_start();
     color: #000;
     font-size: 15px;
     padding: 20px 7px;
-    margin-top: 8% !important;
+    padding-bottom: unset !important;
+        padding-top: 8px !important;
+        margin-top: 8% !important;
+        padding-bottom: 8px !important;
     /* padding-bottom: unset !important;
     margin-top: -10px !important; */
     
