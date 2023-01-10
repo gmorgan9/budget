@@ -190,7 +190,16 @@ session_start();
                 position: sticky; 
                 top: 0 !important; 
                 width: 100vw !important;
-                height: 100px !important;
+                height: 65px !important;
+            }
+            .header3 {
+                margin-left: -12px !important;
+                z-index: 1;
+                background-color: #3e4881 !important;
+                position: sticky; 
+                top: 0 !important; 
+                width: 100vw !important;
+                height: 50px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
