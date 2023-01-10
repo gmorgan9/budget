@@ -1169,7 +1169,7 @@ session_start();
         <section class="" data-page="transactions">
 
             <!-- header -->
-            <div class="header2">
+            <div class="header3">
                     <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
                         Transactions
                     </h2>
