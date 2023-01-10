@@ -1192,16 +1192,13 @@ session_start();
                         <div class="card-body">
                         
 
-
-                        <div class="footer-nav">
-                            <nav class="navbar d-flex justify-content-center">
+                            <nav class="navbar">
                                 <ul class="navbar-list">
                                     <li class="navbar-item">
                                         <button class="navbar-link active" data-nav-link>Home</button>
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
 
 
                         
