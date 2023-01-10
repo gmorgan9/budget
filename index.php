@@ -1191,7 +1191,7 @@ session_start();
                         <div class="card-body">
 
                         <div id="myDIV">
-                            <button class="link">Deleted</button>
+                            <button class="link">delete</button>
                         </div>
 
                             
