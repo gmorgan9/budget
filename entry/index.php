@@ -200,7 +200,7 @@ session_start();
 
 
 </head>
-<body style="background-color: #3e4881;">
+<body>
 
     <!-- php code -->
         <?php 
@@ -227,10 +227,12 @@ session_start();
     <div class="container-fluid">
 
             <!-- header -->
-                <h3 class="text-white text-center" style="padding-left: 10px; padding-top: 10px;">
-                    Add Transaction
-                </h3>
-                <div class="mt-3"></div>
+                <div class="header2" style="background-color: #3e4881;">
+                    <h3 class="text-white text-center" style="padding-left: 10px; padding-top: 10px;">
+                        Add Transaction
+                    </h3>
+                    <div class="mt-3"></div>
+                </div>
             <!-- end header -->
 
         <div class="nav mt-3 d-flex justify-content-center" style="top: 30;">
