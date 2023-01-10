@@ -242,7 +242,7 @@ session_start();
             </nav>
         </div>
 
-        <section class="active" data-page="&#8211; expenses" style="width: 100% !important;">
+        <section class="active" data-page="&#8211; expenses">
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
@@ -251,7 +251,7 @@ session_start();
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
-                    <label for="desc" class="form-label text-black">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
+                    <label for="desc" class="form-label text-black">Merchant &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
                 </div>
                 <label for="amount" class="form-label text-black">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
