@@ -217,7 +217,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav mt-3 d-flex justify-content-center">
+    <div class="nav mt-3 d-flex justify-content-center align-items-center">
             <nav class="">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
