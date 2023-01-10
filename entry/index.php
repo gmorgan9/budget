@@ -245,14 +245,14 @@ session_start();
         </div>
 
         <section class="active" data-page="&#8211; expenses">
-            <div class="mt-4"></div>
+            <!-- <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
             </h2>
             <p class="" style="color: rgb(242, 247, 253);">
                 Enter an expense to keep track of.
             </p>
-            <hr>
+            <hr> -->
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
