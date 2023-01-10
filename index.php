@@ -458,7 +458,7 @@ session_start();
 
             <!-- income -->
                 
-                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                <div class="row d-flex justify-content-center" style="margin-bottom: 0; background-color: rgb(245, 245, 245);">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
@@ -498,7 +498,7 @@ session_start();
                             ?>
                         <!-- end php code -->
 
-                          <p class="card-text fs-5 text-start fw-bold" style="margin-bottom: -15px !important;">
+                          <p class="card-text fs-5 text-start fw-bold">
                             <div class="row" style="margin-top: -25px !important;">
                               <div class="col-8 text-start" style="margin-left: -10px;">
                                   <?php echo $i['category']; ?>
