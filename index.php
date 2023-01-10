@@ -1176,10 +1176,10 @@ session_start();
             <!-- end header -->
             
 
-            <div class="mt-4"></div>
+            <!-- start -->
+            <div class="trans" style="margin-top: 65px;">
 
-
-            <div class="mt-4"></div>
+            
             <?php 
                 $month_year = date('F Y');
                 
@@ -1264,6 +1264,10 @@ session_start();
 
                 
             </table>
+
+
+            </div>
+            <!-- end -->
             
 
         </section>
