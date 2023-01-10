@@ -546,7 +546,7 @@ session_start();
 
                             <div class="add_btn" style="margin-top: -10px;">
                             <form action="" method="post">
-                                <input type="submit" value="Add Income" name="add-btn" style="background-color: transparent; color: #327ba8; font-weight: 500;">
+                                <input type="submit" value="Add Income" name="add-btn" style="background-color: transparent; margin-left: -10px; margin-top: 10px; color: #327ba8; font-weight: 500;">
                             </form>
                                 
                             </div>
