@@ -1166,6 +1166,8 @@ session_start();
 
         <section class="" data-page="transactions">
 
+            <div class="background" style="z-index: -1; background-color: gray;"></div>
+
             <!-- header -->
             <div class="header">
                     <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
