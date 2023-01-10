@@ -1192,13 +1192,10 @@ session_start();
                         <div class="card-body">
                         
 
-                            <nav class="navbar">
-                                <ul class="navbar-list">
-                                    <li class="navbar-item">
-                                        <button class="navbar-link" new-nav-link>Deleted</button>
+                           
+                                    <div id="myDIV">
+                                        <button class="link">Deleted</button>
                                     </li>
-                                </ul>
-                            </nav>
 
 
                         
