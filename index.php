@@ -1187,7 +1187,7 @@ session_start();
                 Compliled list of Expenses for <?php echo $month_year; ?>.
             </p>
             <hr style="color: rgb(242, 247, 253);">
-            <div class="mt-4"></div>
+            <!-- <div class="mt-4"></div> -->
 
             <?php 
                 $month_year = date('F Y');
