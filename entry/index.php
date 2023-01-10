@@ -149,6 +149,11 @@ session_start();
     <!-- end custom styles -->
 
     <style>
+        * {
+                margin: 0; 
+                padding: 0; 
+                box-sizing: border-box;
+            }
         .nav {
             width: 100%;
             height: 55px;
