@@ -1192,7 +1192,7 @@ session_start();
                         <div class="card-body">
                             
                                 <h5 class="card-title">
-                                <a href="/entry/">test</a>
+                                <a style="z-index: 1;" href="/entry/">test</a>
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                     
                                 </h5>
