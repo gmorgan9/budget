@@ -222,8 +222,8 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav mt-3">
-            <nav class=" d-flex justify-content-center">
+    <div class="nav mt-3 d-flex justify-content-center">
+            <nav class=" ">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
                         <button class="add-nav-link active" data-nav-link>&#8211; Expenses</button>
