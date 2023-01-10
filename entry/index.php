@@ -163,8 +163,8 @@ session_start();
         .navbar-list {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     padding: 0 10px;
   }
   
@@ -222,7 +222,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav mt-3 d-flex justify-content-center">
+    <div class="nav mt-3">
             <nav class=" ">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
