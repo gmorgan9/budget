@@ -186,7 +186,7 @@ session_start();
         font-weight: 700; 
         /* border-bottom: 5px solid #3e4881; */
         padding-bottom: unset !important;
-        padding-bottom: 10px !important;
+        padding-bottom: 11px !important;
         transition: background 0.45s ease;
     }
     </style>
