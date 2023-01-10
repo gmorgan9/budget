@@ -187,8 +187,8 @@ session_start();
         /* border-bottom: 5px solid #3e4881; */
         padding-bottom: unset !important;
         padding-top: 5px !important;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 5%;
+        /* margin-bottom: auto; */
         padding-bottom: 11px !important;
         transition: background 0.45s ease;
     }
