@@ -180,7 +180,7 @@ session_start();
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Expenses</button>
+                        <button class="navbar-link active" data-nav-link>Expenses</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
