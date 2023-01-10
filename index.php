@@ -124,6 +124,29 @@ session_start();
         };
     // end add income
 
+     // add income
+     if(isset($_POST['add-btn'])){
+        $idno  = rand(10000, 99999); 
+        $category = mysqli_real_escape_string($conn, $_POST['category']);
+        $parent = mysqli_real_escape_string($conn, $_POST['parent']);
+
+        $select = " SELECT * FROM categories WHERE idno = '$idno'";
+
+        $result = mysqli_query($conn, $select);
+
+        if(mysqli_num_rows($result) > 0){
+
+            $error[] = 'category already exist!';
+
+        }else {
+            $insert = "INSERT INTO categories (idno, category, parent) VALUES ('$idno', '$category','$parent')";
+            mysqli_query($conn, $insert);
+            header('location: /');
+        }
+
+    };
+// end add income
+
     // success message
         if(isset($_GET['success'])) {
             $success = '
@@ -202,6 +225,7 @@ session_start();
 
 
     <?php if(isset($_POST['add-btn'])){ ?>
+
 
         <style>
             .add_btn {
@@ -529,6 +553,7 @@ session_start();
                             <div class="add_form">
                                 <form action="" method="post">
                                     <input type="text" name="category" style="margin-left: -10px; border:none;" placeholder="Item Label">
+                                    <button type="submit" name="add_item" style="float:right; font-weight: 500;"><i class="bi bi-plus"></i></button>
                                 </form>
                             </div>
 
