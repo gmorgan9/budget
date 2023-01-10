@@ -363,7 +363,7 @@ session_start();
                         $month_budget = date('F Y');
                         echo $month_budget;
                     ?>
-                        <a style="text-decoration: none; color: white;" href="#"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+                        <a style="text-decoration: none; color: white;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
                     </h2>
             
         
