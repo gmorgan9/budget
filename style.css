@@ -130,7 +130,7 @@ li { list-style: none; }
     width: 100%;
     background-color: rgb(245, 245, 245);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--jet);
+    border: 1px solid rgb(225, 225, 225);
     border-radius: 12px 12px 0 0;
     box-shadow: var(--shadow-2);
     z-index: 5;
