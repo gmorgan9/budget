@@ -1172,15 +1172,17 @@ session_start();
 
 
             <!--  deleted -->
+                <a style="text-decoration: none; color: unset;" href="entry/">
                 <div class="row d-flex justify-content-center" style="margin-top: 165px; background-color: rgb(245, 245, 245);">
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body" style="margin-bottom: -10px;">
                             <div>
-                                <a style="text-decoration: none; color: unset;" href="entry/"><h5 class="card-title"><i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i></h5></a>
+                                <h5 class="card-title"><i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i></h5>
                             </div>
                         </div>
                     </div>
                 </div>
+                </a>
             <!-- end deleted -->
 
             <!-- income -->
