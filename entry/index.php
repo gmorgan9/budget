@@ -163,8 +163,6 @@ session_start();
         .navbar-list {
             margin-left: auto !important;
             margin-right: auto !important;
-            display: flex;
-            justify-content: center;
             padding: 0 10px;
         }
   
