@@ -1185,15 +1185,15 @@ session_start();
             <!--  deleted -->
                 <div class="mt-3"></div>
                 <div style="margin-top: 165px;"></div>
-                <div class="row d-flex justify-content-center" style=" background-color: rgb(245, 245, 245);">
+                <div class="row" style=" background-color: rgb(245, 245, 245);">
                 
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                     
-                        <div class="card-body" style="margin-bottom: -10px;">
+                        <div class="card-body">
                             <div>
                             
                                 <h5 class="card-title">
-                                <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+                                <a style="text-decoration: none; color: black;" class="stretch-link" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                     
                                 </h5>
