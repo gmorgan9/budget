@@ -189,7 +189,7 @@ session_start();
                 background-color: #3e4881 !important;
                 position: sticky; 
                 top: 0 !important; 
-                width: 100%;
+                width: 100vw !important;
                 height: 120px !important;
             }
             .home_page {
