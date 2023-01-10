@@ -184,6 +184,7 @@ session_start();
 
     .add-nav-link.active{ 
         color: #3e4881;
+        border-radius: 15px;
         background: rgb(215,215,215);
         font-weight: 700; 
         /* border-bottom: 5px solid #3e4881; */
