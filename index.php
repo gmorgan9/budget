@@ -684,13 +684,13 @@ session_start();
 
 
 
-                            <div class="add_g" style="margin-top: -10px;">
-                            <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-g" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
-                            </form>
-                                
+                            <div class="g_btn" style="margin-top: -10px;">
+                                <form action="" method="post">
+                                    <input type="submit" value="Add Item" name="add-g" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
+                                </form>  
                             </div>
-                            <div class="add_g">
+
+                            <div class="g_btn">
                                 <form action="" method="post">
                                     <input type="hidden" name="parent" value="giving">
                                     <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
