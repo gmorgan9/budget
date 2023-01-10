@@ -1159,7 +1159,7 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="row d-flex justify-content-center background" style="position: absolute; z-index: -1; left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important;background-color: rgb(245, 245, 245);"></div>
+            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important;height: 100vh !important; width: 100vw !important;background-color: rgb(245, 245, 245);"></div>
 
             <!-- header -->
             <div class="header">
@@ -1172,7 +1172,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="trans d-flex flex-column justify-content-top" style="margin-top: 125px; position: relative; background-color: pink !important;">
+            <div class="trans d-flex flex-column justify-content-top" style="margin-top: 125px; position: absolute; background-color: pink !important;">
 
             
             <?php 
