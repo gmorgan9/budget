@@ -1165,12 +1165,17 @@ session_start();
         </section>
 
         <section class="" data-page="transactions">
-            <div class="header" style="padding-left: 10px; padding-top: 65px;">
-                <div class="mt-4"></div>
-                <h2 class="text-white">
-                    Transactions
-                </h2>
-            </div>
+
+            <!-- header -->
+            <div class="header">
+                    <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
+                        Transactions
+                    </h2>
+                    <div class="mt-3"></div>
+                </div>
+            <!-- end header -->
+            
+
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
