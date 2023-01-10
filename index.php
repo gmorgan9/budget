@@ -544,6 +544,33 @@ session_start();
                             </div>
                             <?php } ?>
 
+                            <?php if(isset($_POST['add-btn'])){ ?>
+
+                                <style>
+                                    .add_btn {
+                                        display: none;
+                                    }
+                                    .add_form {
+                                        display: block;
+                                    }
+                                </style>
+
+                            <?php } else { ?>
+
+                                <style>
+                                    .add_btn {
+                                        display: block;
+                                    }
+                                    .add_form {
+                                        display: none;
+                                    }
+                                </style>
+
+                            <?php } ?>
+
+
+
+
                             <div class="add_btn" style="margin-top: -10px;">
                             <form action="" method="post">
                                 <input type="submit" value="Add Income" name="add-btn" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
@@ -628,13 +655,38 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <div class="add_btn" style="margin-top: -10px;">
+                            <?php if(isset($_POST['add-g'])){ ?>
+
+                                <style>
+                                    .g_btn {
+                                        display: none;
+                                    }
+                                    .g_form {
+                                        display: block;
+                                    }
+                                </style>
+
+                            <?php } else { ?>
+                                
+                                <style>
+                                    .g_btn {
+                                        display: block;
+                                    }
+                                    .g_form {
+                                        display: none;
+                                    }
+                                </style>
+
+                            <?php } ?>
+
+
+                            <div class="add_g" style="margin-top: -10px;">
                             <form action="" method="post">
-                                <input type="submit" value="Add Item" name="add-btn" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
+                                <input type="submit" value="Add Item" name="add-g" style="background-color: transparent; margin-left: -10px; margin-top: 5px; color: #327ba8; font-weight: 500;">
                             </form>
                                 
                             </div>
-                            <div class="add_form">
+                            <div class="add_g">
                                 <form action="" method="post">
                                     <input type="hidden" name="parent" value="giving">
                                     <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
