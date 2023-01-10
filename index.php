@@ -458,7 +458,7 @@ session_start();
 
             <!-- income -->
                 
-                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245); margin-bottom: -15px;">
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245); padding-bottom: -15px;">
                     <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body">
                             <div>
