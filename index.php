@@ -249,6 +249,33 @@ session_start();
 
     <?php } ?>
 
+<!-- giving add item -->
+    <?php if(isset($_POST['add-g'])){ ?>
+
+        <style>
+            .g_btn {
+                display: none;
+            }
+            .g_form {
+                display: block;
+            }
+        </style>
+
+    <?php } else { ?>
+        
+        <style>
+            .g_btn {
+                display: block;
+            }
+            .g_form {
+                display: none;
+            }
+        </style>
+
+    <?php } ?>
+<!-- end giving add item -->
+
+
 
 </head>
 
@@ -655,29 +682,6 @@ session_start();
                             </div>
                             <?php } ?>
 
-                            <?php if(isset($_POST['add-g'])){ ?>
-
-                                <style>
-                                    .g_btn {
-                                        display: none;
-                                    }
-                                    .g_form {
-                                        display: block;
-                                    }
-                                </style>
-
-                            <?php } else { ?>
-                                
-                                <style>
-                                    .g_btn {
-                                        display: block;
-                                    }
-                                    .g_form {
-                                        display: none;
-                                    }
-                                </style>
-
-                            <?php } ?>
 
 
                             <div class="add_g" style="margin-top: -10px;">
