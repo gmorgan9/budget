@@ -169,7 +169,7 @@ session_start();
     font-size: 15px;
     padding: 20px 7px;
     /* padding-bottom: unset !important; */
-    margin-bottom: 3px !important;
+    margin-top: -10px !important;
     
   }
   .nav-icon {
