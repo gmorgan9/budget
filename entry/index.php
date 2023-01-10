@@ -158,11 +158,11 @@ session_start();
   }
   
   .add-nav-link {
-    background: #blue;
+    /* background: #blue; */
     color: #000;
     font-size: 15px;
     padding: 20px 7px;
-    transition: background 0.45s ease-in-out;
+    
   }
   .nav-icon {
     color: #d6d6d6;
@@ -173,11 +173,12 @@ session_start();
 
     .add-nav-link.active{ 
         color: #3e4881;
-        background-color: rgb(215,215,215);
+        background: rgb(215,215,215);
         font-weight: 700; 
         /* border-bottom: 5px solid #3e4881; */
         padding-bottom: unset !important;
         padding-bottom: 5px !important;
+        transition: background 0.45s ease-in-out;
     }
     </style>
 
