@@ -1172,7 +1172,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="trans d-flex flex-column justify-content-top" style="position: relative; background-color: pink !important;">
+            <div class="trans d-flex flex-column justify-content-top" style="margin-top: 90px; position: relative; background-color: pink !important;">
 
             
             <?php 
