@@ -199,7 +199,7 @@ session_start();
                 position: fixed; 
                 top: 0 !important; 
                 width: 100vw !important;
-                height: 50px !important;
+                height: 150px !important;
             }
             .home_page {
                 background-color: #c0c0c0;
