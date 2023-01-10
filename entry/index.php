@@ -213,18 +213,18 @@ session_start();
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
-                        <i class="bi bi-dash"></i><button class="add-nav-link active" data-nav-link>Expenses</button>
+                        <button class="add-nav-link active" data-nav-link>- Expenses</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item" style="">
-                        <i class="bi bi-plus"></i><button class="add-nav-link" data-nav-link>Income</button>
+                        <button class="add-nav-link" data-nav-link>+ Income</button>
                     </li>
                 </ul>
             </nav>
         </div>
 
 
-        <section class="active" data-page="expenses">
+        <section class="active" data-page="- expenses">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Expenses
@@ -299,7 +299,7 @@ session_start();
             </form>
         </section>
 
-        <section class="" data-page="income">
+        <section class="" data-page="+ income">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Income
