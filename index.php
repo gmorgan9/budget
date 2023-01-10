@@ -181,7 +181,7 @@ session_start();
     <!-- end bootstrap -->
 
     <!-- custom styles -->
-        <link rel="stylesheet" href="style.css?v=1.32">
+        <link rel="stylesheet" href="style.css?v=1.35">
         <style>
             .header {
                 margin-left: -12px !important;
@@ -191,7 +191,6 @@ session_start();
                 top: 0 !important; 
                 width: 100vw !important;
                 height: 120px !important;
-                /* margin-bottom: 165px; */
             }
             .header3 {
                 margin-left: -12px !important;

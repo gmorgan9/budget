@@ -108,7 +108,7 @@ section {
     border-radius: 100px;
 }
 
-section .active {
+section.active {
     height: auto;
     display: block;
     color: white;
