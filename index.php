@@ -1301,9 +1301,20 @@ session_start();
         </section>
 
         <section class="" data-page="deleted">
-                    <br><br><br><br>
 
-                    hello
+            <!-- header -->
+                <div class="header3">
+                    <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
+                        Deleted
+                    </h2>
+                    <!-- <div class="mt-3"></div> -->
+                </div>
+            <!-- end header -->
+
+            <div class="row d-flex justify-content-center background" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+
+
+            </div>
 
         </section>
 
