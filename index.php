@@ -1297,7 +1297,7 @@ session_start();
 
         </section>
 
-        <section class="" new-page="deleted">
+        <!-- <section class="" new-page="deleted"> -->
 
             <!-- header -->
                 <div class="header3">
@@ -1309,7 +1309,7 @@ session_start();
             <!-- end header -->
 
 
-        </section>
+        <!-- </section> -->
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
