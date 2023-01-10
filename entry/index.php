@@ -223,16 +223,9 @@ session_start();
 
             <!-- header -->
                 <div class="header2">
-                    <h2 class="text-white" style="padding-left: 10px; padding-top: 10px;">
-                    <?php 
-                        date_default_timezone_set('America/Denver');
-                        $month_budget = date('F Y');
-                        echo $month_budget;
-                    ?>
-                        <a style="text-decoration: none; color: white;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
-                    </h2>
-            
-        
+                    <h3 class="text-white" style="padding-left: 10px; padding-top: 10px;">
+                        Add Transaction
+                    </h3>
                     <div class="mt-3"></div>
                 </div>
             <!-- end header -->
