@@ -237,7 +237,7 @@ session_start();
                 </div>
             <!-- end header -->
 
-        <div class="nav mt-3 d-flex justify-content-center">
+        <div class="nav mt-3 d-flex justify-content-center" style="top: 30;">
             <nav class="">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
