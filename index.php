@@ -187,10 +187,11 @@ session_start();
                 margin-left: -12px !important;
                 z-index: 1;
                 background-color: #3e4881 !important;
-                position: sticky; 
+                position: fixed; 
                 top: 0 !important; 
                 width: 100vw !important;
                 height: 65px !important;
+                margin-bottom: 165px;
             }
             .header3 {
                 margin-left: -12px !important;
