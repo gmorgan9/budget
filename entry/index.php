@@ -176,9 +176,9 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="" style="background-color: pink; padding-top: -10px; height: 50px !important;">
+    <div class="" style="background-color: pink; height: 50px !important;">
             <nav class=" d-flex justify-content-center">
-                <ul class="navbar-list">
+                <ul class="navbar-list" style="padding-top: -10px;">
                     <li class="navbar-item">
                         <button class="navbar-link active" data-nav-link>Expenses</button>
                     </li>
