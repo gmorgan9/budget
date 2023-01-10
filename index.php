@@ -204,10 +204,10 @@ session_start();
     <?php if(isset($_POST['add-btn'])){ ?>
 
         <style>
-            .add-btn {
+            .add_btn {
                 display: none;
             }
-            .add-form {
+            .add_form {
                 display: block;
             }
         </style>
@@ -215,10 +215,10 @@ session_start();
     <?php } else { ?>
 
         <style>
-            .add-btn {
+            .add_btn {
                 display: block;
             }
-            .add-form {
+            .add_form {
                 display: none;
             }
         </style>
