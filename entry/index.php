@@ -243,14 +243,6 @@ session_start();
         </div>
 
         <section class="active" data-page="&#8211; expenses" style="width: 100% !important;">
-            <!-- <div class="mt-4"></div>
-            <h2 class="text-white">
-                Expenses
-            </h2>
-            <p class="" style="color: rgb(242, 247, 253);">
-                Enter an expense to keep track of.
-            </p>
-            <hr> -->
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
@@ -318,14 +310,6 @@ session_start();
         </section>
 
         <section class="" data-page="&#43; income">
-            <!-- <div class="mt-4"></div>
-            <h2 class="text-white">
-                Income
-            </h2>
-            <p class="" style="color: rgb(242, 247, 253);">
-                Enter an income to keep track of.
-            </p>
-            <hr> -->
             <div class="mt-4"></div>
 
             <form action="" class="" method="POST">
@@ -334,21 +318,21 @@ session_start();
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
-                    <label for="desc" class="form-label text-white">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "Paycheck"</span></label>
+                    <label for="desc" class="form-label text-black">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "Paycheck"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
                 </div>
-                <label for="amount" class="form-label text-white">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 630.40</span></label>
+                <label for="amount" class="form-label text-black">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 630.40</span></label>
                 <div class="mb-3 input-group">
                     <span class="input-group-text" id="basic-addon1">$</span>
                     <input type="text" name="amount" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label text-white">Date Gained</label>
+                    <label for="date" class="form-label text-black">Date Gained</label>
                     <input type="date" name="date_gained" class="form-control" id="amount">
                 </div>
                 <div class="row">
                 <div class="mb-3 w-50">
-                    <label for="category" class="form-label text-white">Category</label>
+                    <label for="category" class="form-label text-black">Budget Item</label>
                     <select name="cat_idno" id="category" class="form-control">
                         <option value="">Select one...</option>
                         <?php
@@ -366,7 +350,7 @@ session_start();
                     </select>
                 </div>
                 <div class="mb-3 w-50">
-                    <label for="date" class="form-label text-white">Card</label>
+                    <label for="date" class="form-label text-black">Source</label>
                     <select name="card_idno" id="card" class="form-control">
                         <option value="">Select one...</option>
                         <?php
