@@ -1176,16 +1176,17 @@ session_start();
                 <div class="row d-flex justify-content-center" style="margin-top: 165px; background-color: rgb(245, 245, 245);">
                 
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
+                    <a class="stretched-link" style="text-decoration: none; color: black;" href="/entry/">
                         <div class="card-body" style="margin-bottom: -10px;">
                             <div>
                                 <h5 class="card-title">
-                                    <a class="stretched-link" style="text-decoration: none; color: black;" href="/entry/">
-                                        <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
-                                    </a>
+                                    <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
+                                    
                                 </h5>
                                 
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
                 
