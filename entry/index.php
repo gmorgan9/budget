@@ -193,7 +193,7 @@ session_start();
 
 
 </head>
-<body style="background-color: rgb(245,245,245);">
+<body style="background-color: rgb(235,235,235);">
 
     <!-- php code -->
         <?php 
