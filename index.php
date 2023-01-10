@@ -1195,7 +1195,7 @@ session_start();
                             <nav class="navbar">
                                 <ul class="navbar-list">
                                     <li class="navbar-item">
-                                        <button class="navbar-link active" data-new-link>Deleted</button>
+                                        <button class="navbar-link" data-new-link>Deleted</button>
                                     </li>
                                 </ul>
                             </nav>
