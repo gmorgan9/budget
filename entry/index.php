@@ -149,52 +149,48 @@ session_start();
     <!-- end custom styles -->
 
     <style>
-
-.nav {
-    width: 100%;
-    height: 55px;
-    background-color: rgb(245, 245, 245);
-    /* backdrop-filter: blur(10px); */
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 12px 12px 12px 12px;
-    box-shadow: var(--shadow-2);
-  }
-
+        .nav {
+            width: 100%;
+            height: 55px;
+            background-color: rgb(245, 245, 245);
+            /* backdrop-filter: blur(10px); */
+            border: 1px solid rgb(225, 225, 225);
+            border-radius: 12px 12px 12px 12px;
+            box-shadow: var(--shadow-2);
+        }
         .navbar-list {
             padding: 0 10px;
         }
-  
-  .add-nav-link {
-    color: #000;
-    font-size: 15px;
-    padding: 20px 7px;
-    padding-bottom: unset !important;
-        padding-top: 8px !important;
-        margin-top: 8% !important;
-        padding-bottom: 8px !important;
-    /* padding-bottom: unset !important;
-    margin-top: -10px !important; */
-    
-  }
-  .nav-icon {
-    color: #d6d6d6;
-  }
-  
-  .add-nav-link:hover,
-  .add-nav-link:focus { color: rgba(214, 214, 214, 0.7); }
+        .add-nav-link {
+          color: #000;
+          font-size: 15px;
+          padding: 20px 7px;
+          padding-bottom: unset !important;
+              padding-top: 8px !important;
+              margin-top: 8% !important;
+              padding-bottom: 8px !important;
+          /* padding-bottom: unset !important;
+          margin-top: -10px !important; */
+        
+        }
+        .nav-icon {
+          color: #d6d6d6;
+        }
+        .add-nav-link:hover,
+        .add-nav-link:focus { color: rgba(214, 214, 214, 0.7); }
 
-    .add-nav-link.active{ 
-        color: #3e4881;
-        border-radius: 15px;
-        background: rgb(215,215,215);
-        font-weight: 700; 
-        /* border-bottom: 5px solid #3e4881; */
-        /* padding-bottom: unset !important;
-        padding-top: 8px !important;
-        margin-top: 8% !important;
-        padding-bottom: 8px !important; */
-        transition: background 0.45s ease;
-    }
+        .add-nav-link.active{ 
+            color: #3e4881;
+            border-radius: 15px;
+            background: rgb(215,215,215);
+            font-weight: 700; 
+            /* border-bottom: 5px solid #3e4881; */
+            /* padding-bottom: unset !important;
+            padding-top: 8px !important;
+            margin-top: 8% !important;
+            padding-bottom: 8px !important; */
+            transition: background 0.45s ease;
+        }
     </style>
 
 
@@ -225,7 +221,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="nav mt-3 d-flex justify-content-center">
+        <div class="nav mt-3 d-flex justify-content-center">
             <nav class="">
                 <ul class="navbar-list" style="">
                     <li class="navbar-item">
@@ -233,12 +229,11 @@ session_start();
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item" style="">
-                        <button class="add-nav-link" data-nav-link>+ Income</button>
+                        <button class="add-nav-link" data-nav-link>&#43; Income</button>
                     </li>
                 </ul>
             </nav>
         </div>
-
 
         <section class="active" data-page="&#8211; expenses">
             <div class="mt-4"></div>
@@ -315,7 +310,7 @@ session_start();
             </form>
         </section>
 
-        <section class="" data-page="+ income">
+        <section class="" data-page="&#43; income">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Income
@@ -391,6 +386,7 @@ session_start();
         </section>
 
     </div>
+
 <!-- end Container -->
 
 
