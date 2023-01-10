@@ -148,6 +148,17 @@ session_start();
         </style>
     <!-- end custom styles -->
 
+    <style>
+    .navbar-link.active{ 
+        color: #3e4881;
+        background-color: rgb(215,215,215);
+        font-weight: 700; 
+        border-bottom: 5px solid #3e4881;
+        padding-bottom: unset !important;
+        padding-bottom: 5px !important;
+    }
+    </style>
+
 
 </head>
 <body style="background-color: #3e4881;">
@@ -180,11 +191,11 @@ session_start();
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="margin-top: -10px !important;">
                     <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>Expenses</button>
+                        <button class="navbar-link active" data-nav-link>- Expenses</button>
                     </li>
                     <div class="pe-4"></div>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Income</button>
+                    <li class="navbar-item" style="">
+                        <button class="navbar-link" data-nav-link>+ Income</button>
                     </li>
                 </ul>
             </nav>
