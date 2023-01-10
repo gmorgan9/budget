@@ -1192,7 +1192,7 @@ session_start();
                 </div>
                 
             <!-- end deleted -->
-            <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+            
             <!-- income -->
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
@@ -1266,7 +1266,7 @@ session_start();
         
             </div>
 
-            
+            <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
             <div class="mt-5"></div>
 
             <!-- start -->
