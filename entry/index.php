@@ -221,7 +221,7 @@ session_start();
 
             <!-- header -->
                 <div class="header2" style="background-color: #3e4881; width: 108% !important; height: 60px; margin-left: -5%;">
-                    <h3 class="text-white text-center" style="padding-top: 18px;">
+                    <h3 class="text-white text-center" style="padding-top: 17px;">
                         Add Transaction
                     </h3>
                     <div class="mt-3"></div>
