@@ -153,9 +153,9 @@ session_start();
 .nav {
     width: 100%;
     background-color: rgb(245, 245, 245);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border: 1px solid rgb(225, 225, 225);
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 12px 12px;
     box-shadow: var(--shadow-2);
   }
 
