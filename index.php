@@ -190,8 +190,8 @@ session_start();
                 position: fixed; 
                 top: 0 !important; 
                 width: 100vw !important;
-                height: 65px !important;
-                margin-bottom: 165px;
+                height: 120px !important;
+                /* margin-bottom: 165px; */
             }
             .header3 {
                 margin-left: -12px !important;
