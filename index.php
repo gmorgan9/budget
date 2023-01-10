@@ -1192,10 +1192,16 @@ session_start();
                         <div class="card-body">
                         
 
-                           
-                                    <div id="myDIV">
-                                        <button class="link">Deleted</button>
+
+                        <div class="footer-nav">
+                            <nav class="navbar d-flex justify-content-center">
+                                <ul class="navbar-list">
+                                    <li class="navbar-item">
+                                        <button class="navbar-link active" data-nav-link>Home</button>
                                     </li>
+                                </ul>
+                            </nav>
+                        </div>
 
 
                         
@@ -1297,19 +1303,12 @@ session_start();
 
         </section>
 
-        <!-- <section class="" new-page="deleted"> -->
+        <section class="" data-page="deleted">
+                    <br><br><br><br>
 
-            <!-- header -->
-                <div class="header3">
-                    <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
-                        Deleted
-                    </h2>
-                    <!-- <div class="mt-3"></div> -->
-                </div>
-            <!-- end header -->
+                    hello
 
-
-        <!-- </section> -->
+        </section>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
@@ -1455,6 +1454,8 @@ session_start();
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- custom scripts -->
-
+<script>
+    
+</script>
 </body>
 </html>
