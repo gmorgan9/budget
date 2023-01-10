@@ -1195,7 +1195,7 @@ session_start();
                             <nav class="navbar">
                                 <ul class="navbar-list">
                                     <li class="navbar-item">
-                                        <button class="navbar-link active" data-nav-link>Deleted</button>
+                                        <button class="navbar-link active" data-new-link>Deleted</button>
                                     </li>
                                 </ul>
                             </nav>
@@ -1300,7 +1300,7 @@ session_start();
 
         </section>
 
-        <section class="" data-page="deleted">
+        <section class="" new-page="deleted">
 
             <!-- header -->
                 <div class="header3">
