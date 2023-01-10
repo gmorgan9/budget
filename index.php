@@ -1179,7 +1179,7 @@ session_start();
                     
                         <div class="card-body" style="margin-bottom: -10px;">
                             <div>
-                            <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
+                            
                                 <h5 class="card-title">
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                     
@@ -1192,7 +1192,7 @@ session_start();
                 </div>
                 
             <!-- end deleted -->
-
+            <a style="text-decoration: none; color: black;" href="/entry/"><i class="float-end pe-3 bi bi-plus" style="font-size: 36px; margin-top: -10px !important;"></i></a>
             <!-- income -->
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
