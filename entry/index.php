@@ -150,10 +150,10 @@ session_start();
 
     <style>
         * {
-                margin: 0; 
-                padding: 0; 
-                box-sizing: border-box;
-            }
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
         .nav {
             width: 100%;
             height: 55px;
@@ -171,11 +171,9 @@ session_start();
           font-size: 15px;
           padding: 20px 7px;
           padding-bottom: unset !important;
-              padding-top: 8px !important;
-              margin-top: 8% !important;
-              padding-bottom: 8px !important;
-          /* padding-bottom: unset !important;
-          margin-top: -10px !important; */
+          padding-top: 8px !important;
+          margin-top: 8% !important;
+          padding-bottom: 8px !important;
         
         }
         .nav-icon {
@@ -188,12 +186,7 @@ session_start();
             color: #3e4881;
             border-radius: 15px;
             background: rgb(215,215,215);
-            font-weight: 700; 
-            /* border-bottom: 5px solid #3e4881; */
-            /* padding-bottom: unset !important;
-            padding-top: 8px !important;
-            margin-top: 8% !important;
-            padding-bottom: 8px !important; */
+            font-weight: 700;
             transition: background 0.45s ease;
         }
     </style>
@@ -228,7 +221,7 @@ session_start();
 
             <!-- header -->
                 <div class="header2" style="background-color: #3e4881;">
-                    <h3 class="text-white text-center" style="padding-left: 10px; padding-top: 10px;">
+                    <h3 class="text-white text-center" style="padding-top: 10px;">
                         Add Transaction
                     </h3>
                     <div class="mt-3"></div>
