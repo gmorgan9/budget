@@ -1206,6 +1206,8 @@ session_start();
             <!-- deleted section -->
 
                 <section class="" data-page="deleted">
+                    <br><br><br><br>
+
                     hello
 
                 </section>
