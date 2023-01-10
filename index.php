@@ -1177,7 +1177,7 @@ session_start();
             
 
             <!-- start -->
-            <div class="trans" style="top: 65;">
+            <div class="trans" style="padding-top: 65px !important;">
 
             
             <?php 
