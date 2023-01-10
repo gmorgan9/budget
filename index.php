@@ -1159,9 +1159,9 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; margin-top: 135px; width: 100vw !important;background-color: rgb(245, 245, 245);">
+            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
 
-                <h5 class="text-black">
+                <h5 class="text-black" style="margin-top: 135px;">
                     January 2023
                 </h5>
         
