@@ -211,7 +211,7 @@ session_start();
     <div class="" style="background-color: pink; height: 50px !important;">
         <div class="mt-4"></div>
             <nav class=" d-flex justify-content-center">
-                <ul class="navbar-list" style="margin-top: -10px !important;">
+                <ul class="navbar-list" style="">
                     <li class="navbar-item">
                         <button class="add-nav-link active" data-nav-link>- Expenses</button>
                     </li>
