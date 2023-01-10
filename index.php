@@ -690,7 +690,7 @@ session_start();
                                 </form>  
                             </div>
 
-                            <div class="g_btn">
+                            <div class="g_form">
                                 <form action="" method="post">
                                     <input type="hidden" name="parent" value="giving">
                                     <input type="text" name="category" style="float: left; margin-left: -10px; border:none;" placeholder="Item Label">
