@@ -259,21 +259,21 @@ session_start();
                 <input type="hidden" class="form-control" name="person_idno" value="<?php echo $user_idno;?>">
                 <input type="hidden" class="form-control" name="account_link" value="<?php echo $account_link;?>">
                 <div class="mb-3">
-                    <label for="desc" class="form-label">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
+                    <label for="desc" class="form-label text-black">Description &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g "McDonalds"</span></label>
                     <input type="text" name="description" class="form-control" id="desc">
                 </div>
-                <label for="amount" class="form-label">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
+                <label for="amount" class="form-label text-black">Amount &nbsp;<span style="font-size: 10px; color: rgb(169, 169, 169);">e.g 130.40</span></label>
                 <div class="mb-3 input-group">
                     <span class="input-group-text" id="basic-addon1">$</span>
                     <input type="text" name="amount" class="form-control" id="amount">
                 </div>
                 <div class="mb-3">
-                    <label for="date" class="form-label">Date Spent</label>
+                    <label for="date" class="form-label text-black">Date Spent</label>
                     <input type="date" name="date_spent" class="form-control" id="amount">
                 </div>
                 <div class="row">
                 <div class="mb-3 w-50">
-                    <label for="category" class="form-label">Category</label>
+                    <label for="category" class="form-label text-black">Category</label>
                     <select name="cat_idno" id="category" class="form-control">
                         <option value="">Select one...</option>
                         <?php
@@ -291,7 +291,7 @@ session_start();
                     </select>
                 </div>
                 <div class="mb-3 w-50">
-                    <label for="date" class="form-label">Card</label>
+                    <label for="date" class="form-label text-black">Card</label>
                     <select name="card_idno" id="card" class="form-control">
                         <option value="">Select one...</option>
                         <?php
@@ -310,7 +310,7 @@ session_start();
                 </div>
                 </div>
                 <div class="mb-3">
-                    <label for="comment" class="form-label">Comments</label>
+                    <label for="comment" class="form-label text-black">Comments</label>
                     <textarea class="form-control" name="comments" id="comment"></textarea>
                 </div>
                 <button type="submit" name="exp" class="mt-3 btn" style="background-color: rgb(242, 247, 253);">Submit</button>
