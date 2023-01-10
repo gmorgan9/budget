@@ -178,7 +178,7 @@ session_start();
         /* border-bottom: 5px solid #3e4881; */
         padding-bottom: unset !important;
         padding-bottom: 5px !important;
-        transition: background 0.45s ease-in-out;
+        transition: background 0.45s ease;
     }
     </style>
 
