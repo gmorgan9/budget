@@ -1205,12 +1205,7 @@ session_start();
 
             <!-- deleted section -->
 
-                <section class="" data-page="deleted">
-                    <br><br><br><br>
-
-                    hello
-
-                </section>
+                
 
 
             <!-- end deleted section -->
@@ -1386,6 +1381,13 @@ session_start();
             
 
         </section>
+
+        <section class="" data-page="deleted">
+                    <br><br><br><br>
+
+                    hello
+
+                </section>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
