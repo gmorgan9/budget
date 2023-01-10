@@ -1161,9 +1161,9 @@ session_start();
 
             <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; margin-top: 135px; width: 100vw !important;background-color: rgb(245, 245, 245);">
 
-                <h6>
-                    January
-                </h6>
+                <h5 class="text-black">
+                    January 2023
+                </h5>
         
             </div>
 
