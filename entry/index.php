@@ -168,8 +168,8 @@ session_start();
     color: #000;
     font-size: 15px;
     padding: 20px 7px;
-    padding-bottom: unset !important;
-        padding-bottom: 3px !important;
+    /* padding-bottom: unset !important; */
+    margin-bottom: 3px !important;
     
   }
   .nav-icon {
