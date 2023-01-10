@@ -1179,7 +1179,7 @@ session_start();
                 </div>
             <!-- end header -->
 
-            <div class="row d-flex justify-content-center background" style="position: relative; z-index: -1; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+            <div class="row d-flex justify-content-center background" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
 
 
             <!--  deleted -->
