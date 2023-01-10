@@ -1172,7 +1172,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="row d-flex justify-content-center background" style="left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"">
+            <div class="row background" style="left: 0 !important; right: 0 !important; height: 100vh !important; width: 100vw !important; margin-top: 125px; background-color: rgb(245, 245, 245);"">
 
             
             <?php 
