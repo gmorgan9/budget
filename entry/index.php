@@ -174,7 +174,7 @@ session_start();
         color: #3e4881;
         background-color: rgb(215,215,215);
         font-weight: 700; 
-        border-bottom: 5px solid #3e4881;
+        /* border-bottom: 5px solid #3e4881; */
         padding-bottom: unset !important;
         padding-bottom: 5px !important;
     }
