@@ -1174,7 +1174,7 @@ session_start();
             <!--  deleted -->
                 
                 <div class="row d-flex justify-content-center" style="margin-top: 165px; background-color: rgb(245, 245, 245);">
-                <a style="text-decoration: none; color: black;" href="entry/">
+                <a style="text-decoration: none; color: black;" href="https://morganserver.com">
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                         <div class="card-body" style="margin-bottom: -10px;">
                             <div>
