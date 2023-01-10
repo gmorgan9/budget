@@ -1174,6 +1174,76 @@ session_start();
                     January 2023
                 </h5>
 
+                <!-- income -->
+                
+                <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
+                    <div class="card mt-3" style="border: none; width: 85%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body" style="margin-bottom: -30px !important;">
+                            <div>
+                                <p class="card-title text-muted fw-bold float-start" style="margin-left: -10px;">Income</p>
+                                <p class="card-title text-muted float-end">Received</p>
+                            </div>
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+                                
+                                $query ="SELECT * FROM categories where parent = 'income'";
+                                $result = $conn->query($query);
+                                if($result->num_rows> 0){
+                                  $income= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                }
+                                foreach ($income as $i) {
+
+                                    $cat_idno = $i['idno'];
+
+                                    $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $rowtotal=mysqli_fetch_array($result); 
+                                    $count_income = $rowtotal[0];
+
+                                    $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND cat_idno = '$cat_idno' AND account_link = '$account_link'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $month_income=mysqli_fetch_array($result); 
+                                    $m_income = $month_income[0];
+                                    
+                            ?>
+                        <!-- end php code -->
+
+                          <p class="card-text fs-5 text-start fw-bold">
+                            <div class="row" style="margin-top: -25px !important;">
+                              <div class="col-8 text-start" style="margin-left: -10px;">
+                                  <?php echo $i['category']; ?>
+                              </div>
+                              <div class="col text-end pb-1" style="">
+                                <!-- php code -->
+                                    <?php
+                                        if($count_income == 0){
+                                            echo "$0.00";
+                                        } else {
+                                             echo "$$m_income";
+                                        }
+                                    ?>
+                                <!-- end php code -->
+                              </div>
+                              <hr>
+                            </div>
+                            <?php } ?>
+
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end income -->
+                
+
         
             </div>
 
