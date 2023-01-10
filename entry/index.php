@@ -149,6 +149,16 @@ session_start();
     <!-- end custom styles -->
 
     <style>
+
+.nav {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-2);
+  }
+
         .navbar-list {
     display: flex;
     flex-wrap: wrap;
@@ -210,7 +220,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-    <div class="" style="background-color: pink; height: 25px !important;">
+    <div class="nav" style="background-color: pink; height: 25px !important;">
         <div class="mt-4"></div>
             <nav class=" d-flex justify-content-center">
                 <ul class="navbar-list" style="">
