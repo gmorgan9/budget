@@ -149,6 +149,27 @@ session_start();
     <!-- end custom styles -->
 
     <style>
+        .navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0 10px;
+  }
+  
+  .add-nav-link {
+    color: #000;
+    font-size: 15px;
+    padding: 20px 7px;
+    transition: color 0.25s ease;;
+  }
+  .nav-icon {
+    color: #d6d6d6;
+  }
+  
+  .add-nav-link:hover,
+  .add-nav-link:focus { color: rgba(214, 214, 214, 0.7); }
+
     .add-nav-link.active{ 
         color: #3e4881;
         background-color: rgb(215,215,215);
