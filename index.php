@@ -1165,7 +1165,7 @@ session_start();
         </section>
 
         <section class="" data-page="transactions">
-            <div class="header">
+            <div class="header" style="padding-left: 10px; padding-top: 65px;">
                 <div class="mt-4"></div>
                 <h2 class="text-white">
                     Transactions
