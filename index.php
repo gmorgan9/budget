@@ -1166,7 +1166,7 @@ session_start();
 
         <section class="" data-page="transactions">
 
-            <div class="background" style="z-index: 6; background-color: gray; height: 15px; width: 100%;"></div>
+            <div class="background" style="z-index: 6; background-color: gray; height: 15px; width: 100%; margin-top: 90px;"></div>
 
             <!-- header -->
             <div class="header">
@@ -1179,7 +1179,7 @@ session_start();
             <div class="mt-5"></div>
 
             <!-- start -->
-            <div class="trans d-flex flex-column justify-content-center" style="margin-top: 125px !important; background-color: pink !important;">
+            <div class="trans d-flex flex-column justify-content-center" style=" background-color: pink !important;">
 
             
             <?php 
