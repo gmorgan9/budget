@@ -1283,7 +1283,7 @@ session_start();
             
             <div class="d-flex">
                 <button id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button>
-                <h2 class="text-white justify-content-center">Deleted</h2>
+                <h2 class="text-white d-flex justify-content-center">Deleted</h2>
             </div>
             
             <p class="" style="color: rgb(242, 247, 253);">
