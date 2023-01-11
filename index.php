@@ -1282,6 +1282,7 @@ session_start();
             
 
         <main class="" style="display: none;" id="deleted">
+            <input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
