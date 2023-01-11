@@ -1194,7 +1194,7 @@ session_start();
                         <div class="card-body">
 
                         <div id="test">
-                            <button style="visibility: hidden;" class="link new">delete</button>
+                            <button style="visibility: hidden;" class="link active">delete</button>
                             <button class="link">delete</button>
                         </div>
 
