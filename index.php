@@ -1282,7 +1282,7 @@ session_start();
             <div class="mt-5"></div>
             
                 <button class="float-start" id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button>
-                <h2 class="float-end text-white d-flex justify-content-center">Deleted</h2>
+                <h2 class="text-center text-white">Deleted</h2>
             
             <p class="" style="color: rgb(242, 247, 253);">
                 Enter an income to keep track of.
