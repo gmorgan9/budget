@@ -1194,8 +1194,8 @@ session_start();
                         <div class="card-body">
 
                         <div id="test">
-                            <button style="visibility: hidden;" class="link active">delete</button>
-                            <button class="link">delete</button>
+                            <button style="visibility: hidden;" class="link active" link>delete</button>
+                            <button class="link" link>Deleted</button>
                         </div>
 
                             
@@ -1290,103 +1290,20 @@ session_start();
 
         
             </div>
-
             
-            <div class="mt-5"></div>
 
-            <!-- start -->
-            <div class="trans d-flex flex-column justify-content-top" style="margin-top: 125px; position: absolute; background-color: pink !important;">
+        </section>
 
-            
-            <?php 
-                $month_year = date('F Y');
-                
-            ?>
-            <h2 class="text-white">
-                <?php echo $month_year; ?> Expenses
-            </h2>
-            
-            <p class="" style="color: rgb(242, 247, 253);">
-                Compliled list of Expenses for <?php echo $month_year; ?>.
-            </p>
-            <hr style="color: rgb(242, 247, 253);">
+        <section class="" page="deleted">
             <div class="mt-4"></div>
-
-            <?php 
-                $month_year = date('F Y');
-                $firstday = strtotime("first day of ". $month_year);
-                $first_day = date('Y-m-d', $firstday);
-                $month_year = date('F Y');
-                $lastday = strtotime("last day of ". $month_year);
-                $last_day = date('Y-m-d', $lastday);
-                
-                ?>
-                <p class="text-white">
-                    <?php 
-
-                    $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
-                    $result=mysqli_query($conn,$sql);
-                    $rowtotal=mysqli_fetch_array($result); 
-                    echo "<b>Expense Records:</b> $rowtotal[0]";
-
-                    ?>
-                </p>
-
-
-            <table class=" table table-bordered">
-                <thead style="background-color: white;">
-                  <tr>
-                    <th class="text-center" scope="col-1">ID #</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Amount</th>
-                    <th class="text-center" scope="col">Actions</th>
-                  </tr>
-                </thead>
-                <tbody class="table-group-divider" style="background-color: #f0f0f0;">
-
-                <?php
-
-                    $sql = "SELECT * FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link' ORDER BY date_spent DESC ";
-                    $all = mysqli_query($conn, $sql);
-                    if($all) {
-                        while ($row = mysqli_fetch_assoc($all)) {
-                          $exp_id         = $row['exp_id'];
-                          $idno           = $row['idno'];
-                          $description    = $row['description'];
-                          $amount         = $row['amount'];
-                          ?>
-                  <tr>
-                      <th class="text-center" scope="row" style="width: 15px;"><?php echo $idno; ?></th>
-                      <td><?php echo $description; ?></td>
-                      <td>$<?php echo $amount; ?></td>
-                      <td style="width: 20px;">
-                        <div class="d-flex justify-content-center">
-                          <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="view/index.php?id=<?php echo $exp_id; ?>"><span class="badge text-bg-success">View</span></a>
-                          &nbsp;
-                          <form method="post" action="">
-                            <input type="hidden" name="exp_id" value="<?php echo $exp_id; ?>" />
-                            <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
-                          </form>
-                        </div>
-                      </td>
-                      <?php }}?>
-                </tbody>
-                <thead class="table-group-divider" style="background-color: white;">
-                  <tr>
-                    <th class="text-center" scope="col">ID #</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Amount</th>
-                    <th class="text-center" scope="col">Actions</th>
-                  </tr>
-                </thead>
-
-                
-            </table>
-
-
-            </div>
-            <!-- end -->
-            
+            <h2 class="text-white">
+                Deleted
+            </h2>
+            <p class="" style="color: rgb(242, 247, 253);">
+                Enter an income to keep track of.
+            </p>
+            <hr>
+            <div class="mt-4"></div>
 
         </section>
 
