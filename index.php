@@ -1178,7 +1178,7 @@ session_start();
                 </div>
             <!-- end header -->
 
-            <div class="row d-flex justify-content-center background" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+            <div class="row d-flex justify-content-center" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
                 <div class="mt-3"></div>
                 <div style="margin-top: 85px;"></div>
 
@@ -1274,9 +1274,6 @@ session_start();
             </div>
             
         </section>
-
-
-
         <!-- Modal -->
             <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-fullscreen">
@@ -1339,31 +1336,6 @@ session_start();
               </div>
             </div> -->
         <!-- end modal -->
-
-
-
-
-
-
-
-        
-
-        <div class="" style="display: none;" id="deleted">
-            
-            <div class="mt-5"></div>
-            
-            
-                <button class="float-start" stlye="background-color: pink;" type="button" value="Click" id="btn2"><i class="bi bi-chevron-left"></i></button>
-                <h2 class="text-center text-white">Deleted</h2>
-            
-            <p class="" style="color: rgb(242, 247, 253);">
-                Enter an income to keep track of.
-            </p>
-            <hr>
-            <div class="mt-4"></div>
-            <li class="back"><a href="#trans">back</a></li>
-
-        </div>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
