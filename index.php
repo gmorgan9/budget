@@ -1277,7 +1277,7 @@ session_start();
         </section>
             
 
-        <main class="" style="display: none;" id="deleted">
+        <div class="" style="display: none;" id="deleted">
             
             <div class="mt-5"></div>
             
@@ -1291,9 +1291,8 @@ session_start();
             <hr>
             <div class="mt-4"></div>
             <li class="back"><a href="#trans">back</a></li>
-            <input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
 
-        </main>
+        </div>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
@@ -1461,16 +1460,17 @@ session_start();
 
 
 <script>
-    $(document).ready(function () {
+$(document).ready(function () {
 
-$("li.go").click(function () {
-    $("#deleted").show();
-    $("#trans").hide();
-});
 
 $("li.back").click(function () {
     $("#trans").show();
     $("#deleted").hide();
+}); 
+
+$("li.go").click(function () {
+    $("#deleted").show();
+    $("#trans").hide();
 });
     });
 </script>
