@@ -1289,7 +1289,7 @@ session_start();
             </div>
             
 
-        <div class="" id="deleted">
+        <main class="" id="deleted">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
@@ -1300,7 +1300,7 @@ session_start();
             <hr>
             <div class="mt-4"></div>
 
-        </div>
+                                    </main>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
