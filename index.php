@@ -1271,11 +1271,12 @@ session_start();
 
             <!-- end income -->
 
-            <li class="delete"><a href="#deleted">go</a></li>
+            
                 
 
         
             </div>
+            <li class="delete"><a href="#deleted">go</a></li>
         </section>
             
 
