@@ -1191,16 +1191,12 @@ session_start();
                         <div class="card-body">
 
                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-<h5 class="card-title">
-                                    <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <h5 class="card-title">
+                            <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                 </h5>
-</button>
+                        </button>
                 
-                            <a style="text-decoration: none; color: black;cursor:pointer;" class="btn">
-
-                                
-                            </a>
                             
                         </div>
                     </div>
@@ -1283,7 +1279,36 @@ session_start();
             </div>
             
         </section>
-        <li class="delete"><a href="#deleted">go</a></li>
+
+
+
+        <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- end modal -->
+
+
+
+
+
+
+
+        
 
         <div class="" style="display: none;" id="deleted">
             
