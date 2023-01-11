@@ -1279,7 +1279,7 @@ session_start();
 
 
         <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header mt-5">
@@ -1290,7 +1290,7 @@ session_start();
                     
                     <!-- php code -->
                     <?php
-                        $query ="SELECT * FROM expenses where sataus = 'deleted'";
+                        $query ="SELECT * FROM expenses WHERE status = 'deleted'";
                         $result = $conn->query($query);
                         if($result->num_rows> 0){
                           $deleted= mysqli_fetch_all($result, MYSQLI_ASSOC);
