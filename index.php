@@ -1189,12 +1189,17 @@ session_start();
                     <div class="card" style="border: none; background-color: rgb(255, 255, 255) !important; color: black;">
                     
                         <div class="card-body">
+
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<h5 class="card-title">
+                                    <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
+                                </h5>
+</button>
                 
                             <a style="text-decoration: none; color: black;cursor:pointer;" class="btn">
 
-                                <h5 class="card-title">
-                                    <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
-                                </h5>
+                                
                             </a>
                             
                         </div>
@@ -1430,31 +1435,7 @@ session_start();
             </nav>
         </div>
 
-        <nav class="clearfix">
-  <ul class="clearfix">
-     <li class="home"><a href="#home">Home</a></li>
-     <li class="overview"><a href="#page1">Overview</a></li>
-  </ul>
-  </nav>
-
-
-        <div id="home">
-homepage with title here 
-</div>
-
-<div class="sections" id="page1" style="display: none;">
-<li class="deleted"><a href="#page2">deleted</a></li>
-page 1
-</div>
-
-<div class="sections" id="page2" style="display: none;">
-<li class="back"><a href="#home">back</a></li>
-page 2
-</div>
-
-
-
-
+        
     </div>
 <!-- end Container -->
 
@@ -1467,51 +1448,7 @@ page 2
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- custom scripts -->
-<script>
-    // function switchVisible() {
-    // if (document.getElementById('deleted')) {
 
-    //     if (document.getElementById('deleted').style.display == 'none') {
-    //         document.getElementById('deleted').style.display = 'block';
-    //         document.getElementById('trans').style.display = 'none';
-    //         document.getElementById('footer').style.display = 'none';
-
-    //     }
-    //     else {
-    //         document.getElementById('deleted').style.display = 'none';
-    //         document.getElementById('trans').style.display = 'block';
-    //         document.getElementById('footer').style.display = 'block';
-    //     }
-    // }
-    // }
-</script>
-
-
-<script>
-$(document).ready(function () {
-
-
-$("li.back").click(function () {
-    $("#home").hide();
-    $("#page1").show();
-    $("#page2").hide();
-}); 
-
-$("li.overview").click(function () {
-    $("#page1").show();
-    $("#home").hide();
-});
-$("li.deleted").click(function () {
-    $("#page2").show();
-    $("#home").hide();
-    $("#page1").hide();
-});
-$("li.page1").click(function () {
-    $("#page1").show();
-    $("#home").hide();
-});
-    });
-</script>
 
 </body>
 </html>
