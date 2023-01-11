@@ -1310,6 +1310,14 @@ session_start();
 
                     <!-- end php code -->
 
+                    <div class="">
+                        <?php 
+
+                        $date = $d['date_spent'];
+                        echo date('M dd', $date);
+                        
+                        ?>
+                    </div>
                     <h6 class="text-muted text-capitalize">
                         <?php echo $d['description']; ?>
                     </h6>
