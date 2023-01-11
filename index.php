@@ -222,9 +222,6 @@ session_start();
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                 word-wrap:break-word
             }
-            .link.active {
-                color: red;
-            }
             
         </style>
     <!-- end custom styles -->
@@ -1303,7 +1300,7 @@ session_start();
             <hr>
             <div class="mt-4"></div>
 
-                                    </div>
+        </div>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
