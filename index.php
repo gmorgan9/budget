@@ -1310,7 +1310,7 @@ session_start();
 
                     <!-- end php code -->
 
-                    <div class="float-start d-flex align-items-center wrap-text" style="background-color: gray; border-radius: 100px; width: 50px; height: 50px;">
+                    <div class="float-start d-flex align-items-center wrap-text" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px;">
                         <?php 
 
                         $date = $d['date_spent'];
