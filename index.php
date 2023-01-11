@@ -1430,6 +1430,23 @@ session_start();
             </nav>
         </div>
 
+        <div id="home">
+homepage with title here 
+</div>
+
+<div class="sections" id="page1">
+<li class="deleted"><a href="#page2">deleted</a></li>
+page 1
+</div>
+
+<div class="sections" id="page2">
+<li class="back"><a href="#home">back</a></li>
+page 2
+</div>
+
+
+
+
     </div>
 <!-- end Container -->
 
@@ -1467,13 +1484,23 @@ $(document).ready(function () {
 
 
 $("li.back").click(function () {
-    $("#trans").show();
-    $("#deleted").hide();
+    $("#home").hide();
+    $("#page1").show();
+    $("#page2").hide();
 }); 
 
-$("li.delete").click(function () {
-    $("#deleted").show();
-    $("#trans").hide();
+$("li.overview").click(function () {
+    $("#page1").show();
+    $("#home").hide();
+});
+$("li.deleted").click(function () {
+    $("#page2").show();
+    $("#home").hide();
+    $("#page1").hide();
+});
+$("li.page1").click(function () {
+    $("#page1").show();
+    $("#home").hide();
 });
     });
 </script>
