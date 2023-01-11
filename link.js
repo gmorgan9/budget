@@ -25,7 +25,7 @@
 // page navigation variables
 const Links = document.querySelectorAll("[link]");
 //const navigationLink = document.getElementByClass('active');
-const Pages = document.querySelectorAll("[page]");
+const Pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
 for (let i = 0; i < Links.length; i++) {
