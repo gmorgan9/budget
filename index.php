@@ -1170,7 +1170,7 @@ session_start();
 
         </section>
 
-        <section class="" data-page="transactions">
+        <section class="" data-page="transactions" id="trans">
 
             <!-- header -->
             <div class="header3">
@@ -1292,10 +1292,7 @@ session_start();
             </div>
             
 
-        </section class="set active" id="set">
-
-        </section>
-        <section class="set" id="set">
+        <section class="" id="deleted">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
