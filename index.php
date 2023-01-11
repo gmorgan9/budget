@@ -1167,10 +1167,10 @@ session_start();
 
         </section>
 
-        <section class="" data-page="transactions" id="trans">
+        <section class="" data-page="transactions">
 
             <!-- header -->
-            <div class="header3">
+                <div class="header3">
                     <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
                         Transactions
                     </h2>
@@ -1193,7 +1193,7 @@ session_start();
                         <!-- Button trigger modal -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <h5 class="card-title">
-                            <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
+                            <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right text-end" style="color: #327ba8;"></i>
                                 </h5>
                         </button>
                 
@@ -1271,10 +1271,6 @@ session_start();
                     </div>
 
             <!-- end income -->
-
-            
-                
-
         
             </div>
             
