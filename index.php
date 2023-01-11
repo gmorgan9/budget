@@ -356,7 +356,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-        <div id="home" >
+        <section class="active" data-page="home">
 
             <!-- header -->
                 <div class="header">
@@ -1165,13 +1165,13 @@ session_start();
 
             <!-- end debt -->
 
-        </div>
+        </section>
 
-        <div class="" id="trans">
+        <section class="" data-page="transactions" id="trans">
 
             <!-- header -->
             <div class="header3">
-                    <h2 class="text-white" style="padding-left: 10px; padding-top: 50px;">
+                    <h2 class="text-white" style="padding-left: 10px; margin-top: 50px;">
                         Transactions
                     </h2>
                     <!-- <div class="mt-3"></div> -->
@@ -1190,12 +1190,11 @@ session_start();
                     
                         <div class="card-body">
                 
-                            <a style="text-decoration: none; color: black;cursor:pointer;" onclick="switchVisible();">
+                            <a style="text-decoration: none; color: black;cursor:pointer;" id="btn">
                                 <h5 class="card-title">
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                 </h5>
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -1272,15 +1271,15 @@ session_start();
                 
 
         
-       
-        </div>
+            </div>
+        </section>
             
 
         <main class="" style="display: none;" id="deleted">
             
             <div class="mt-5"></div>
             
-                <button class="float-start" stlye="background-color: pink;" id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button>
+                <button class="float-start" stlye="background-color: pink;" type="button" value="Click" id="btn2"><i class="bi bi-chevron-left"></i></button>
                 <h2 class="text-center text-white">Deleted</h2>
             
             <p class="" style="color: rgb(242, 247, 253);">
@@ -1406,15 +1405,13 @@ session_start();
         <div class="footer-nav" id="footer">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
-                    <!-- <li class="navbar-item">
+                    <li class="navbar-item">
                         <button class="navbar-link active" data-nav-link>Home</button>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Transactions</button>
-                    </li> -->
-                    <li class="home"><a href="#home">Home</a></li>
-                    <li class="trans"><a href="#trans">Overview</a></li>
+                    </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Income</button>
@@ -1434,45 +1431,44 @@ session_start();
 <?php } ?>
 
 <!-- custom script -->
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
     <script src="link.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- custom scripts -->
+<script>
+    // function switchVisible() {
+    // if (document.getElementById('deleted')) {
 
+    //     if (document.getElementById('deleted').style.display == 'none') {
+    //         document.getElementById('deleted').style.display = 'block';
+    //         document.getElementById('trans').style.display = 'none';
+    //         document.getElementById('footer').style.display = 'none';
 
-<!-- <script>
-    function switchVisible() {
-    if (document.getElementById('deleted')) {
+    //     }
+    //     else {
+    //         document.getElementById('deleted').style.display = 'none';
+    //         document.getElementById('trans').style.display = 'block';
+    //         document.getElementById('footer').style.display = 'block';
+    //     }
+    // }
+    // }
+</script>
 
-        if (document.getElementById('deleted').style.display == 'none') {
-            document.getElementById('deleted').style.display = 'block';
-            document.getElementById('trans').style.display = 'none';
-            document.getElementById('footer').style.display = 'none';
-
-        }
-        else {
-            document.getElementById('deleted').style.display = 'none';
-            document.getElementById('trans').style.display = 'block';
-            document.getElementById('footer').style.display = 'block';
-        }
-    }
-    }
-</script> -->
 
 <script>
     $(document).ready(function () {
 
-$(".home").click(function () {
-    $("#home").show();
+$("#btn").click(function () {
+    $("#deleted").show();
     $("#trans").hide();
 });
 
-$(".trans").click(function () {
+$("#btn2").click(function () {
     $("#trans").show();
-    $("#home").hide();
+    $("#deleted").hide();
 });
-    })
+    });
 </script>
 
 </body>
