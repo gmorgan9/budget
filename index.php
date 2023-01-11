@@ -1430,6 +1430,14 @@ session_start();
             </nav>
         </div>
 
+        <nav class="clearfix">
+  <ul class="clearfix">
+     <li class="home"><a href="#home">Home</a></li>
+     <li class="overview"><a href="#page1">Overview</a></li>
+  </ul>
+  </nav>
+
+
         <div id="home">
 homepage with title here 
 </div>
