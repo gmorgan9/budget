@@ -1191,10 +1191,12 @@ session_start();
                         <div class="card-body">
                 
                             <a style="text-decoration: none; color: black;cursor:pointer;" class="btn">
+
                                 <h5 class="card-title">
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                 </h5>
                             </a>
+                            <li class="go"><a href="#deleted">Overview</a></li>
                         </div>
                     </div>
                 </div>
@@ -1279,6 +1281,7 @@ session_start();
             
             <div class="mt-5"></div>
             
+            
                 <button class="float-start" stlye="background-color: pink;" type="button" value="Click" id="btn2"><i class="bi bi-chevron-left"></i></button>
                 <h2 class="text-center text-white">Deleted</h2>
             
@@ -1287,6 +1290,7 @@ session_start();
             </p>
             <hr>
             <div class="mt-4"></div>
+            <li class="back"><a href="#trans">Overview</a></li>
             <input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
 
         </main>
@@ -1459,12 +1463,12 @@ session_start();
 <script>
     $(document).ready(function () {
 
-$("a.btn").click(function () {
+$("a.go").click(function () {
     $("#deleted").show();
     $("#trans").hide();
 });
 
-$("#btn2").click(function () {
+$("li.back").click(function () {
     $("#trans").show();
     $("#deleted").hide();
 });
