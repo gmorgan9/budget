@@ -1280,6 +1280,7 @@ session_start();
         <main class="" style="display: none;" id="deleted">
             
             <div class="mt-4"></div>
+            <i class="bi bi-chevron-left"></i>
             <h2 class="text-white">
                 Deleted
             </h2>
