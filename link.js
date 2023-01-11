@@ -23,24 +23,24 @@
 // }
 
 // page navigation variables
-const Links = document.querySelectorAll("[link]");
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
 //const navigationLink = document.getElementByClass('active');
-const Pages = document.querySelectorAll("[data-page]");
+const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
-for (let i = 0; i < Links.length; i++) {
-  Links[i].addEventListener("click", function () {
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
     
 
-    for (let i = 0; i < Pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === Pages[i].dataset.page) {
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         // console.log(this.innerHTML.toLowerCase());
-        Pages[i].classList.add("active");
-        Links[i].classList.add("active");
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        Pages[i].classList.remove("active");
-        Links[i].classList.remove("active");
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
       }
     }
 
