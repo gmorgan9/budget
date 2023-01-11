@@ -1279,10 +1279,10 @@ session_start();
 
         <main class="" style="display: none;" id="deleted">
             
-            <div class="mt-4"></div>
-            <i class="bi bi-chevron-left"></i>
+            <div class="mt-5"></div>
+            
             <h2 class="text-white">
-                Deleted
+                <button id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button> Deleted
             </h2>
             <p class="" style="color: rgb(242, 247, 253);">
                 Enter an income to keep track of.
