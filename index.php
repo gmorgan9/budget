@@ -1182,7 +1182,7 @@ session_start();
 
 
             <!--  deleted -->
-                <div class="mt-3"></div>
+                <!-- <div class="mt-3"></div>
                 <div style="margin-top: 85px;"></div>
                 <div class="row" style="background-color: rgb(245, 245, 245);">
                 
@@ -1190,7 +1190,6 @@ session_start();
                     
                         <div class="card-body">
 
-                        <!-- Button trigger modal -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <h5 class="card-title">
                             <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right text-end" style="color: #327ba8;"></i>
@@ -1200,7 +1199,7 @@ session_start();
                             
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
             <!-- end deleted -->
             
@@ -1279,58 +1278,58 @@ session_start();
 
 
         <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header mt-5">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Deleted Transactions</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body"> -->
                     
                     <!-- php code -->
-                    <?php
-                        $query ="SELECT * FROM expenses WHERE status = 'deleted'";
-                        $result = $conn->query($query);
-                        if($result->num_rows> 0){
-                          $deleted= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                        }
-                        foreach ($deleted as $d) {
-                            $cat_idno = $d['cat_idno'];
+                        <?php
+                        // $query ="SELECT * FROM expenses WHERE status = 'deleted'";
+                        // $result = $conn->query($query);
+                        // if($result->num_rows> 0){
+                        //   $deleted= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        // }
+                        // foreach ($deleted as $d) {
+                        //     $cat_idno = $d['cat_idno'];
 
-                            $select = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
-                            $result = mysqli_query($conn, $select);
-                            if (mysqli_num_rows($result) > 0) {
-                                while($row = mysqli_fetch_assoc($result)) {
-                                    $category      = $row['category'];
-                            }}
+                        //     $select = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
+                        //     $result = mysqli_query($conn, $select);
+                        //     if (mysqli_num_rows($result) > 0) {
+                        //         while($row = mysqli_fetch_assoc($result)) {
+                        //             $category      = $row['category'];
+                        //     }}
 
-                    ?>
+                        ?>
 
 
                     <!-- end php code -->
 
-                    <div class="float-start text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px; font-size: 12px;">
+                    <!-- <div class="float-start text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px; font-size: 12px;">
                         <?php 
 
-                        $date = $d['date_spent'];
-                        $month = date('M', strtotime($date));
-                        $day = date('d', strtotime($date));
+                        // $date = $d['date_spent'];
+                        // $month = date('M', strtotime($date));
+                        // $day = date('d', strtotime($date));
                         ?>
 
-                        <p class="text-center"><?php echo $month; ?></p><br>
-                        <p class="text-center"><?php echo $day; ?></p>
+                        <p class="text-center"><?php //echo $month; ?></p><br>
+                        <p class="text-center"><?php //echo $day; ?></p>
                     </div>
                     <h6 class="text-muted text-capitalize">
-                        <?php echo $d['description']; ?>
+                        <?php //echo $d['description']; ?>
                     </h6>
                     <h6 class="text-capitalize fw-bold">
-                        <?php echo $category; ?>
+                        <?php //echo $category; ?>
                     </h6>
                     <div class="pt-1"></div>
                     <hr>
 
-                    <?php } ?>
+                    <?php //} ?>
 
                   </div>
                   <div class="modal-footer">
@@ -1338,7 +1337,7 @@ session_start();
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
         <!-- end modal -->
 
 
