@@ -1294,7 +1294,7 @@ session_start();
 
         </section>
 
-        <section class="" page="deleted">
+        <section class="" id="set">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
