@@ -1310,12 +1310,12 @@ session_start();
 
                     <!-- end php code -->
 
-                    <div class="float-start d-flex align-items-center text-center text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px; font-size: 12px;">
+                    <div class="float-start text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px; font-size: 12px;">
                         <?php 
 
                         $date = $d['date_spent'];
                         $month = date('M', strtotime($date));
-                        $day = date('M', strtotime($date));
+                        $day = date('d', strtotime($date));
                         ?>
 
                         <p class="text-center"><?php echo $month; ?></p><br>
