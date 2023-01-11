@@ -1451,6 +1451,7 @@ session_start();
         else {
             document.getElementById('deleted').style.display = 'none';
             document.getElementById('trans').style.display = 'block';
+            document.getElementById('footer').style.display = 'block';
         }
     }
     }
