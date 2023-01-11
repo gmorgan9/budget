@@ -1463,7 +1463,7 @@ session_start();
 <script>
     $(document).ready(function () {
 
-$("a.go").click(function () {
+$("li.go").click(function () {
     $("#deleted").show();
     $("#trans").hide();
 });
