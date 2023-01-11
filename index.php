@@ -1170,7 +1170,7 @@ session_start();
         <section class="" data-page="transactions">
 
             <!-- header -->
-            <div class="header">
+                <div class="header">
                     <h2 class="text-white" style="padding-left: 10px; padding-top: 65px;">
                         Transactions
                     </h2>
@@ -1179,6 +1179,92 @@ session_start();
                     <div class="mt-3"></div>
                 </div>
             <!-- end header -->
+
+            <!-- top -->
+            <div class="row d-flex justify-content-center" style="margin-top: 90px !important; background-color: rgb(245, 245, 245);">
+                    <div class="card mt-5" style="border: none; margin-right: 20px; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                            <i class="fs-1 bi bi-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
+                            <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 50%; line-height: .95;">Spent So Far</p>
+                            <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
+
+                        <!-- php code -->
+                            <?php
+
+                                $month_year = date('F Y');
+                                $firstday = strtotime("first day of ". $month_year);
+                                $first_day = date('Y-m-d', $firstday);
+                                $month_year = date('F Y');
+                                $lastday = strtotime("last day of ". $month_year);
+                                $last_day = date('Y-m-d', $lastday);
+
+                                $sql="SELECT count('1') FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_spent = $rowtotal[0];
+
+                                $sql="SELECT sum(amount) FROM expenses WHERE date_spent BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $month_spent=mysqli_fetch_array($result); 
+                                $m_spent = $month_spent[0];
+                                    
+                            ?>
+                        <!-- end php code -->
+
+                        <!-- php code -->
+                            <?php
+                                if($count_spent == 0){
+                                    echo "$0.00";
+                                } else {
+                                    echo "$$m_spent";
+                                }
+                            ?>
+                        <!-- end php code -->
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mt-5" style="border:none; width: 40%; background-color: rgb(255, 255, 255) !important; color: black;">
+                        <div class="card-body">
+                          <i class="fs-1 bi bi-cash-coin" style="margin-left: -20px; color: rgb(210,210,210)"></i>
+                          <p class="card-title text-start text-muted fw-bold" style="margin-left: -20px; width: 70%; line-height: .95;">Received So Far</p>
+                          <p class="card-text fs-5 text-start fw-bold" style="margin-left: -20px;">
+                          
+
+
+                        <!-- php code -->
+                            <?php
+
+                                $sql="SELECT count('1') FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $rowtotal=mysqli_fetch_array($result); 
+                                $count_inc = $rowtotal[0];
+
+                                $sql="SELECT sum(amount) FROM income WHERE date_gained BETWEEN '$first_day' AND '$last_day' AND account_link = '$account_link'";
+                                $result=mysqli_query($conn,$sql);
+                                $month_inc=mysqli_fetch_array($result); 
+                                $m_inc = $month_inc[0];
+    
+                            ?>
+                        <!-- end php code -->
+
+                        <!-- php code -->
+                            <?php
+                                if($count_inc == 0){
+                                    echo "$0.00";
+                                } else {
+                                     echo "$$m_inc";
+                                }
+                            ?>
+                        <!-- end php code -->
+
+
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- end top -->
+
 
             <!-- <div class="row d-flex justify-content-center" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);"> -->
             <div class="row d-flex justify-content-center" style="margin-top: 90px !important; background-color: rgb(245, 245, 245);">
