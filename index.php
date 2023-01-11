@@ -1461,12 +1461,12 @@ session_start();
 <script>
     $(document).ready(function () {
 
-$("li.home").click(function () {
+$(".home").click(function () {
     $("#home").show();
     $("#trans").hide();
 });
 
-$("li.trans").click(function () {
+$(".trans").click(function () {
     $("#trans").show();
     $("#home").hide();
 });
