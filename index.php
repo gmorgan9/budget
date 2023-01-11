@@ -1314,7 +1314,7 @@ session_start();
                         <?php 
 
                         $date = $d['date_spent'];
-                        echo date('M dd', $date);
+                        echo date_format($date,"M d");
                         
                         ?>
                     </div>
