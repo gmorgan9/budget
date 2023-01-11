@@ -1279,10 +1279,10 @@ session_start();
 
 
         <!-- Modal -->
-            <div class="modal fade mt-5" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
-                  <div class="modal-header">
+                  <div class="modal-header mt-5">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
