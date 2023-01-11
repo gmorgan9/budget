@@ -1190,11 +1190,11 @@ session_start();
                     
                         <div class="card-body">
                 
-                            <button style="text-decoration: none; color: black;" onclick="switchVisible();">
+                            <a style="text-decoration: none; color: black;" onclick="switchVisible();">
                                 <h6 class="card-title">
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                 </h6>
-                            </button>
+                            </a>
                         </div>
                         <!-- </a> -->
                     </div>
