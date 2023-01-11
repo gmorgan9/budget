@@ -1178,7 +1178,8 @@ session_start();
                 </div>
             <!-- end header -->
 
-            <div class="row d-flex justify-content-center" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);">
+            <!-- <div class="row d-flex justify-content-center" style="position: relative; left: 0 !important; width: 100vw !important;background-color: rgb(245, 245, 245);"> -->
+            <div class="row d-flex justify-content-center" style="margin-top: 90px !important; background-color: rgb(245, 245, 245);">
                 <div class="mt-3"></div>
                 <div style="margin-top: 85px;"></div>
 
