@@ -1283,11 +1283,42 @@ session_start();
               <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header mt-5">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Deleted Transactions</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    
+                    <!-- php code -->
+                    <?php
+                        $query ="SELECT * FROM expenses where sataus = 'deleted'";
+                        $result = $conn->query($query);
+                        if($result->num_rows> 0){
+                          $deleted= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                        }
+                        foreach ($deleted as $d) {
+                            $cat_idno = $d['cat_idno'];
+
+                            $select = " SELECT * FROM categories WHERE idno = '$cat_idno' ";
+                            $result = mysqli_query($conn, $select);
+                            if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)) {
+                                    $category      = $row['category'];
+                            }}
+
+                    ?>
+
+
+                    <!-- end php code -->
+
+                    <h6 class="text-muted">
+                        <?php echo $d['description']; ?>
+                    </h6>
+                    <h6>
+                        <?php echo $category; ?>
+                    </h6>
+
+                    <?php } ?>
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
