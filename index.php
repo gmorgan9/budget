@@ -356,7 +356,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-        <section id="home" >
+        <div id="home" >
 
             <!-- header -->
                 <div class="header">
@@ -1165,9 +1165,9 @@ session_start();
 
             <!-- end debt -->
 
-        </section>
+        </div>
 
-        <section class="" id="trans">
+        <div class="" id="trans">
 
             <!-- header -->
             <div class="header3">
@@ -1273,7 +1273,7 @@ session_start();
 
         
        
-        </section>
+        </div>
             
 
         <main class="" style="display: none;" id="deleted">
