@@ -1281,7 +1281,7 @@ session_start();
         </section>
             
 
-        <main class="" id="deleted">
+        <main class="" style="display: none;" id="deleted">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
@@ -1452,7 +1452,8 @@ session_start();
             document.getElementById('trans').style.display = 'block';
         }
     }
-}
+    }
 </script>
+
 </body>
 </html>
