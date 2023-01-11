@@ -1314,12 +1314,12 @@ session_start();
                         <?php 
 
                         $date = $d['date_spent'];
-                        echo date('M', strtotime($date)); ?>
-                        <br>
-                        <?php
-                        echo date('d', strtotime($date));
-                        
+                        $month = date('M', strtotime($date));
+                        $day = date('M', strtotime($date));
                         ?>
+
+                        <p class="text-center"><?php echo $month; ?></p><br>
+                        <p class="text-center"><?php echo $day; ?></p>
                     </div>
                     <h6 class="text-muted text-capitalize">
                         <?php echo $d['description']; ?>
