@@ -1406,15 +1406,15 @@ session_start();
         <div class="footer-nav" id="footer">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
-                    <li class="navbar-item home">
-                        <!-- <button class="navbar-link active" data-nav-link>Home</button> -->
-                        <a class="navbar-link" href="#home">Home</a>
+                    <!-- <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Home</button>
                     </li>
                     <div class="pe-4"></div>
-                    <li class="navbar-item trans">
-                        <!-- <button class="navbar-link" data-nav-link>Transactions</button> -->
-                        <a class="navbar-link" href="#trans">Trans</a>
-                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Transactions</button>
+                    </li> -->
+                    <li class="home"><a href="#home">Home</a></li>
+                    <li class="trans"><a href="#trans">Overview</a></li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
                         <button class="navbar-link" data-nav-link>Income</button>
@@ -1439,7 +1439,9 @@ session_start();
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- custom scripts -->
-<script>
+
+
+<!-- <script>
     function switchVisible() {
     if (document.getElementById('deleted')) {
 
@@ -1456,7 +1458,7 @@ session_start();
         }
     }
     }
-</script>
+</script> -->
 
 <script>
     $(document).ready(function () {
