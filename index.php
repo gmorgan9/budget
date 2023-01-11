@@ -1310,11 +1310,11 @@ session_start();
 
                     <!-- end php code -->
 
-                    <div class="float-start d-flex align-items-center wrap-text text-center text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px;">
+                    <div class="float-start d-flex align-items-center text-center text-white" style="background-color: gray; border-radius: 100px; width: 45px; height: 45px; font-size: 12px;">
                         <?php 
 
                         $date = $d['date_spent'];
-                        echo date('M d', strtotime($date));
+                        echo date('M \n d', strtotime($date));
                         
                         ?>
                     </div>
