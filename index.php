@@ -1310,10 +1310,10 @@ session_start();
 
                     <!-- end php code -->
 
-                    <h6 class="text-muted">
+                    <h6 class="text-muted text-capitalize">
                         <?php echo $d['description']; ?>
                     </h6>
-                    <h6>
+                    <h6 class="text-capitalize">
                         <?php echo $category; ?>
                     </h6>
 
