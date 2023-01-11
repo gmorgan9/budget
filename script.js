@@ -24,7 +24,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // Get the container element
-var btnContainer = document.getElementById("myDIV");
+var btnContainer = document.getElementById("test");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("link");
