@@ -1195,7 +1195,7 @@ session_start();
 
                         <div id="test">
                             <button style="visibility: hidden;" class="link active" link>delete</button>
-                            <button class="link" data-nav-link>Deleted</button>
+                            <button class="link" link>Deleted</button>
                         </div>
 
                             
@@ -1294,7 +1294,7 @@ session_start();
 
         </section>
 
-        <section class="" data-page="deleted">
+        <section class="" page="deleted">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted

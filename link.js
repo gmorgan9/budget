@@ -23,9 +23,9 @@
 // }
 
 // page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const navigationLinks = document.querySelectorAll("link");
 //const navigationLink = document.getElementByClass('active');
-const pages = document.querySelectorAll("[data-page]");
+const pages = document.querySelectorAll("page");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
