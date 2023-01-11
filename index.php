@@ -1292,7 +1292,7 @@ session_start();
             </div>
             
 
-        <section class="" id="deleted">
+        <div class="" id="deleted">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
@@ -1303,7 +1303,7 @@ session_start();
             <hr>
             <div class="mt-4"></div>
 
-        </section>
+                                    </div>
 
         <section class="" data-page="income">
             <div class="mt-4"></div>
