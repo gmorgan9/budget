@@ -189,6 +189,9 @@ session_start();
             font-weight: 700;
             transition: background 0.45s ease;
         }
+        .new {
+            color: red;
+        }
     </style>
 
 
