@@ -1434,12 +1434,12 @@ session_start();
 homepage with title here 
 </div>
 
-<div class="sections" id="page1">
+<div class="sections" id="page1" style="display: none;">
 <li class="deleted"><a href="#page2">deleted</a></li>
 page 1
 </div>
 
-<div class="sections" id="page2">
+<div class="sections" id="page2" style="display: none;">
 <li class="back"><a href="#home">back</a></li>
 page 2
 </div>
