@@ -1279,7 +1279,7 @@ session_start();
 
 
         <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade mt-5" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
