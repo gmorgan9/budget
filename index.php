@@ -1310,7 +1310,7 @@ session_start();
 
                     <!-- end php code -->
 
-                    <h6 class="text-muted text-capitalize" style="font-weight: 200;">
+                    <h6 class="text-muted text-capitalize">
                         <?php echo $d['description']; ?>
                     </h6>
                     <h6 class="text-capitalize fw-bold">
