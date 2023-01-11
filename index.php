@@ -1190,10 +1190,8 @@ session_start();
                     
                         <div class="card-body">
 
-                        <div id="test">
-                            <button style="visibility: hidden;" class="link active" link>delete</button>
                             <input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
-                        </div>
+                
 
                             
                             <a style="text-decoration: none; color: black;" href="/entry/">
@@ -1207,13 +1205,6 @@ session_start();
                 </div>
                 
             <!-- end deleted -->
-
-            <!-- deleted section -->
-
-                
-
-
-            <!-- end deleted section -->
             
             <!-- income -->
                 
