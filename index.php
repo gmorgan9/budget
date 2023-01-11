@@ -1196,13 +1196,13 @@ session_start();
                                     <i class="bi bi-trash me-3" style="color: #327ba8; margin-left: -10px;"></i>  Deleted <i class="bi bi-chevron-right float-end" style="color: #327ba8;"></i>
                                 </h5>
                             </a>
-                            <li class="go"><a href="#deleted">go</a></li>
+                            
                         </div>
                     </div>
                 </div>
                 
             <!-- end deleted -->
-            
+            <li class="go"><a href="#deleted">go</a></li>
             <!-- income -->
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
