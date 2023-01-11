@@ -1275,7 +1275,7 @@ session_start();
         </section>
             
 
-        <main class="" style="visibility:hidden;" id="deleted">
+        <main class="" id="deleted">
             
             <div class="mt-5"></div>
             
