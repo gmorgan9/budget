@@ -1292,9 +1292,10 @@ session_start();
             </div>
             
 
-        </section>
+        </section class="set active" id="set">
 
-        <section class="" id="set">
+        </section>
+        <section class="set" id="set">
             <div class="mt-4"></div>
             <h2 class="text-white">
                 Deleted
