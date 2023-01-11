@@ -1202,7 +1202,7 @@ session_start();
                 </div>
                 
             <!-- end deleted -->
-            <li class="go"><a href="#deleted">go</a></li>
+            
             <!-- income -->
                 
                 <div class="row d-flex justify-content-center" style="background-color: rgb(245, 245, 245);">
@@ -1270,6 +1270,8 @@ session_start();
                     </div>
 
             <!-- end income -->
+
+            <li class="delete"><a href="#deleted">go</a></li>
                 
 
         
@@ -1468,7 +1470,7 @@ $("li.back").click(function () {
     $("#deleted").hide();
 }); 
 
-$("li.go").click(function () {
+$("li.delete").click(function () {
     $("#deleted").show();
     $("#trans").hide();
 });
