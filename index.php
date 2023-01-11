@@ -1195,7 +1195,7 @@ session_start();
 
                         <div id="test">
                             <button style="visibility: hidden;" class="link active" link>delete</button>
-                            <button class="link" link>Deleted</button>
+                            <input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
                         </div>
 
                             
