@@ -1276,9 +1276,9 @@ session_start();
 
         
             </div>
-            <li class="delete"><a href="#deleted">go</a></li>
-        </section>
             
+        </section>
+        <li class="delete"><a href="#deleted">go</a></li>
 
         <div class="" style="display: none;" id="deleted">
             
