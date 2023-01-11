@@ -1281,7 +1281,7 @@ session_start();
             
             <div class="mt-5"></div>
             
-                <button class="float-start" id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button>
+                <button class="float-start" stlye="background-color: pink;" id="Button1" type="button" value="Click" onclick="switchVisible();"><i class="bi bi-chevron-left"></i></button>
                 <h2 class="text-center text-white">Deleted</h2>
             
             <p class="" style="color: rgb(242, 247, 253);">
@@ -1404,7 +1404,7 @@ session_start();
             </div>
         </section>
 
-        <div class="footer-nav">
+        <div class="footer-nav" id="footer">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -1445,6 +1445,8 @@ session_start();
         if (document.getElementById('deleted').style.display == 'none') {
             document.getElementById('deleted').style.display = 'block';
             document.getElementById('trans').style.display = 'none';
+            document.getElementById('footer').style.display = 'none';
+
         }
         else {
             document.getElementById('deleted').style.display = 'none';
