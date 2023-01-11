@@ -1267,7 +1267,6 @@ session_start();
                           </p>
                         </div>
                     </div>
-                </div>
 
             <!-- end income -->
                 
