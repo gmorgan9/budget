@@ -1310,7 +1310,7 @@ session_start();
 
                     <!-- end php code -->
 
-                    <div class="">
+                    <div class="float-start">
                         <?php 
 
                         $date = $d['date_spent'];
