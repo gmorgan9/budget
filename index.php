@@ -1313,8 +1313,8 @@ session_start();
                     <div class="">
                         <?php 
 
-                       
-                        echo date_format($d['date_spent'],"M d");
+                        $date = $d['date_spent'];
+                        echo date('M d', strtotime($date));
                         
                         ?>
                     </div>
