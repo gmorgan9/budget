@@ -356,7 +356,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-        <section class="active" data-page="home">
+        <section class="active" id="home" data-page="home">
 
             <!-- header -->
                 <div class="header">
@@ -1406,12 +1406,14 @@ session_start();
         <div class="footer-nav" id="footer">
             <nav class="navbar d-flex justify-content-center">
                 <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>Home</button>
+                    <li class="navbar-item home">
+                        <!-- <button class="navbar-link active" data-nav-link>Home</button> -->
+                        <a class="navbar-link" href="#home">Home</a>
                     </li>
                     <div class="pe-4"></div>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Transactions</button>
+                    <li class="navbar-item trans">
+                        <!-- <button class="navbar-link" data-nav-link>Transactions</button> -->
+                        <a class="navbar-link" href="#trans">Home</a>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
@@ -1454,6 +1456,21 @@ session_start();
         }
     }
     }
+</script>
+
+<script>
+    $(document).ready(function () {
+
+$("li.home").click(function () {
+    $("#home").show();
+    $("#trans").hide();
+});
+
+$("li.trans").click(function () {
+    $("#trans").show();
+    $("#home").hide();
+});
+    })
 </script>
 
 </body>
