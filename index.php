@@ -1316,6 +1316,8 @@ session_start();
                     <h6 class="text-capitalize fw-bold">
                         <?php echo $category; ?>
                     </h6>
+                    <div class="pt-1"></div>
+                    <hr>
 
                     <?php } ?>
 
