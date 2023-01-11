@@ -1314,7 +1314,10 @@ session_start();
                         <?php 
 
                         $date = $d['date_spent'];
-                        echo date('M \n d', strtotime($date));
+                        echo date('M', strtotime($date)); ?>
+                        <br>
+                        <?php
+                        echo date('d', strtotime($date));
                         
                         ?>
                     </div>
