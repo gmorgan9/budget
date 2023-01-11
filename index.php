@@ -356,7 +356,7 @@ session_start();
 <!-- Container -->
     <div class="container-fluid">
 
-        <section class="active" id="home" data-page="home">
+        <section id="home" >
 
             <!-- header -->
                 <div class="header">
@@ -1167,7 +1167,7 @@ session_start();
 
         </section>
 
-        <section class="" data-page="transactions" id="trans">
+        <section class="" id="trans">
 
             <!-- header -->
             <div class="header3">
@@ -1413,7 +1413,7 @@ session_start();
                     <div class="pe-4"></div>
                     <li class="navbar-item trans">
                         <!-- <button class="navbar-link" data-nav-link>Transactions</button> -->
-                        <a class="navbar-link" href="#trans">Home</a>
+                        <a class="navbar-link" href="#trans">Trans</a>
                     </li>
                     <div class="pe-4"></div>
                     <li class="navbar-item">
